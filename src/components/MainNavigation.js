@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-export default function Header(){
+export default function MainNavigation(){
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -9,24 +10,24 @@ export default function Header(){
   return(
     <>
       <Navbar color="dark" dark expand='md'>
-        <NavbarBrand href="/">Reffett Associates Logo</NavbarBrand>
+        <NavbarBrand tag={Link} to="/">Reffett Associates Logo</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink disabled href="/">About</NavLink>
+              <NavLink tag={Link} to="/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="/">Services</NavLink>
+              <NavLink tag={Link} to="/services">Services</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="/">Process</NavLink>
+              <NavLink tag={Link} to="/processes">Process</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="/">Contact</NavLink>
+              <NavLink tag={Link} to="/contact">Contact</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="/">News</NavLink>
+              <NavLink tag={Link} to="/news">News</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
