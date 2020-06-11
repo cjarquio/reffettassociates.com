@@ -6,7 +6,9 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(()=>
   createStyles({
     root: {
-      
+      position: 'fixed',
+      bottom: 0,
+      width: '100%'
     }
   })
 );
@@ -19,7 +21,7 @@ export default function BottomNavigation(){
 
   return(
     <div className={classes.root}>
-      <Navbar expand='md'>
+      <Navbar color="faded" light expand='md'>
         <NavbarBrand tag={Link} to="/">Reffett Associates Logo</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

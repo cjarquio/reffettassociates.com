@@ -19,7 +19,7 @@ export default function MainNavigation(){
 
   return(
     <div className={classes.root}>
-      <Navbar expand='md'>
+      <Navbar color="faded" light expand='md'>
         <NavbarBrand tag={Link} to="/"><img height='80px' src='/images/Logo.png'/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
