@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button, NavLink
-} from 'reactstrap';
+import { Card, CardImg, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import locations from '../assets/data/locations';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
@@ -10,7 +7,7 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(() =>
   createStyles({
     officeCards: {
-      height: 350,
+      height: 345,
       margin: 20
     },
     cardImage: {
@@ -23,14 +20,14 @@ export default function HomePage() {
   const classes = useStyles();
 
   return (
-    <div className='container'>
+    <div style={{paddingBottom: 60}} className='container'>
       <div className='row'>
         {
           locations.map((office) => {
             return (
               <div className="col-12 col-sm-6">
                 <Card outline color='primary' className={classes.officeCards} key={office.id}>
-                  <NavLink style={{height:'inherit'}} tag={Link} to="/contact">
+                  <NavLink style={{ height: 'inherit' }} tag={Link} to="/contact">
                     <CardImg top className={classes.cardImage} src={office.image} alt={office.location} />
                   </NavLink>
                 </Card>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import MainNavigation from './components/MainNavigation';
 import BottomNavigation from './components/BottomNavigation';
