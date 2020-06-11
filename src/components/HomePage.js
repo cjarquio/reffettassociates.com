@@ -7,17 +7,21 @@ import locations from '../assets/data/locations';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className='container'>
+      <div className='row'>
       {
         locations.map((office) => {
           return (
-            <Card key={office.id}>
-              <CardImg top width="100%" src="reffettassociates/src/assets/images/Seattle.jpg" alt={office.location} />
-              <CardText>{office.address}</CardText>
-            </Card>
+            <div className='col-sm-12 col-md-3'>
+              <Card key={office.id}>
+                <CardImg top width='100%' src={office.image} alt={office.location} />
+                <CardText>{office.address}</CardText>
+              </Card>
+            </div>
           )
         })
       }
+      </div>
     </div>
   );
 }

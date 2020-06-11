@@ -2,28 +2,28 @@
   {
     "id": 0,
     "location": "Seattle",
-    "image": "assets/images/Seattle.jpg",
+    "image": "/images/Seattle.jpg",
     "address": "11900 NE 1st St, Suite 300 Bellevue, WA 98005",
     "link":""
   },
   {
     "id": 1,
     "location": "Texas",
-    "image": "src/assets/images/Dallas.jpg",
+    "image": "/images/Dallas.jpg",
     "address": "4514 Cole Avenue, Suite 600 Dallas, TX 75205",
     "link":""
   },
   {
     "id": 2,
     "location": "Washington DC",
-    "image": "src/assets/images/DC.jpg",
+    "image": "/images/DC.jpg",
     "address": "2111 Wilson Boulevard, Suite 700 Arlington, VA 22201",
     "link":""
   },
   {
     "id": 3,
     "location": "New York",
-    "image": "src/assets/images/NewYork.jpg",
+    "image": "/images/NewYork.jpg",
     "address": "100 Pearl St, 14th Floor Hartford, CT 06103",
     "link":""
   }
