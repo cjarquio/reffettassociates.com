@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(()=>
+  createStyles({
+    root: {
+      
+    }
+  })
+);
 
 export default function MainNavigation(){
+  const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return(
-    <>
-      <Navbar color="dark" dark expand='md'>
-        <NavbarBrand tag={Link} to="/">Reffett Associates Logo</NavbarBrand>
+    <div className={classes.root}>
+      <Navbar expand='md'>
+        <NavbarBrand tag={Link} to="/"><img height='80px' src='/images/Logo.png'/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -32,6 +42,6 @@ export default function MainNavigation(){
           </Nav>
         </Collapse>
       </Navbar>
-    </>
+    </div>
   );
 }

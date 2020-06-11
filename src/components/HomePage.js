@@ -10,7 +10,7 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(() =>
   createStyles({
     officeCards: {
-      height: 375,
+      height: 350,
       margin: 20
     },
     cardImage: {

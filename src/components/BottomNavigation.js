@@ -19,7 +19,7 @@ export default function BottomNavigation(){
 
   return(
     <div className={classes.root}>
-      <Navbar color="dark" dark expand='md'>
+      <Navbar expand='md'>
         <NavbarBrand tag={Link} to="/">Reffett Associates Logo</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
