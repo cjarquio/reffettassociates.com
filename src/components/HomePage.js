@@ -17,20 +17,21 @@ const useStyles = makeStyles(() =>
       width: '100%'
     },
     bannerImage: {
-      backgroundImage: `url('/images/Landscape.jpg')`,
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/images/Landscape.jpg')`,
       height: '50%',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-      position: 'relative'
+      position: 'relative',
+      paddingTop: 50,
+      paddingBottom: 50 
     },
     bannerText: {
-      textAlign: 'center',
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: `translate(-50%, -50%)`,
-      color: 'white'
+      margin: 'auto',
+      color: 'white',
+      width: '60%',
+      fontFamily: 'Georgia',
+      fontStyle: 'italic'
     }
   })
 );
@@ -40,6 +41,11 @@ export default function HomePage() {
 
   return (
     <div>
+      <div className={classes.bannerImage}>
+        <div className={classes.bannerText}>
+          <h1>A LEADER IN EXECUTIVE SEARCH</h1>
+        </div>
+      </div>
       <div className='row'>
         {
           locations.map((office) => {
