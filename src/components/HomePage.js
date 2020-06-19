@@ -17,7 +17,7 @@ const useStyles = makeStyles(() =>
       width: '100%'
     },
     bannerImage: {
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/images/Landscape.jpg')`,
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/images/Banner/Landscape.jpg')`,
       height: '50%',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
