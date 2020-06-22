@@ -23,8 +23,8 @@ const useStyles = makeStyles(() =>
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       position: 'relative',
-      paddingTop: 50,
-      paddingBottom: 50 
+      paddingTop: 30,
+      paddingBottom: 30 
     },
     bannerText: {
       margin: 'auto',
