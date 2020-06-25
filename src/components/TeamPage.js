@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function NewsPage(){
+export default function TeamPage(){
   return(
     <div>
-      This is the News page.
+      This is the Team page.
     </div>
   );
 }
