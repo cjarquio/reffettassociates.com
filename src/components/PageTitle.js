@@ -7,7 +7,7 @@ const useStyles = makeStyles(() =>
       width: '100%'
     },
     bio: {
-      fontSize: '0.85em'
+      
     }
   })
 );
