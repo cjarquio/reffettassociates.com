@@ -36,7 +36,7 @@ const useStyles = makeStyles(() =>
 
 const items = [
   {
-    src: '/images/HomeSlides/Crowd.jpg',
+    src: '/images/HomeSlides/Crowd.JPG',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
