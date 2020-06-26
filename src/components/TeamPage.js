@@ -9,7 +9,7 @@ const useStyles = makeStyles(() =>
       width: '100%'
     },
     bio: {
-      fontSize: '0.85em'
+      fontSize: '0.95em'
     }
   })
 );
@@ -23,7 +23,7 @@ export default function TeamPage() {
     return (
       team.map((member) => {
         return (
-          <div style={{ borderBottom: '2px solid black' }} className='row' key={member.id}>
+          <div style={{ borderBottom: '2px solid black', paddingTop: 10 }} className='row' key={member.id}>
             <div className='col-12 col-md-2'>
               <img className={classes.picture} src={member.image} alt={member.name} />
               <p>
