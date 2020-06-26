@@ -1,7 +1,6 @@
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import PageTitle from './PageTitle';
-import team from '../assets/data/team.json';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -9,7 +8,7 @@ const useStyles = makeStyles(() =>
       width: '100%'
     },
     bio: {
-      fontSize: '0.85em'
+
     }
   })
 );
@@ -25,6 +24,7 @@ export default function AboutPage() {
         title='About'
         subtitle={subtitle}
       />
+      <p className={classes.bio}>About</p>
     </div>
   );
 }
