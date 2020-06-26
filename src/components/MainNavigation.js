@@ -14,7 +14,8 @@ const useStyles = makeStyles(() =>
     },
     navOptions: {
       marginLeft: 'auto',
-      fontSize: '1.2em'
+      fontSize: '1.2em',
+      fontWeight: 'bold'
     },
     activeLink: {
       textDecoration: 'underline'
@@ -42,13 +43,10 @@ export default function MainNavigation() {
               <NavLink tag={Link} to="/offices">Offices</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/processes">Process</NavLink>
+              <NavLink tag={Link} to="/process">Process</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/team">Our Team</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/services">Services</NavLink>
+              <NavLink tag={Link} to="/eta">Executive Transition Assistance</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/contact">Contact</NavLink>

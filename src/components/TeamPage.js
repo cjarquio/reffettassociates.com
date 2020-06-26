@@ -14,7 +14,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-const subtitle = `Our team is comprised of executives with tangible industry experience, possessing real world, relatable knowledge about the challenges executives face in managing talent in a competitive marketplace.`;
+const subtitle = `Our team of experienced and trusted executive search experts are dedicated to providing our clients and candidates the best possible recruitment experience possible. Every search is an opportunity to build relationships through integrity, communication and hard work.`;
 
 export default function TeamPage() {
   const classes = useStyles();
