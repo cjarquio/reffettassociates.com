@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Carousel, CarouselItem } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl } from 'reactstrap';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() =>
@@ -41,12 +41,12 @@ const items = [
     caption: 'Slide 1'
   },
   {
-    src: '/images/HomeSlides/Diverse.jpg',
+    src: '/images/HomeSlides/Diverse.JPG',
     altText: 'Slide 2',
     caption: 'Slide 2'
   },
   {
-    src: '/images/HomeSlides/Efficient.jpg',
+    src: '/images/HomeSlides/Efficient.JPG',
     altText: 'Slide 3',
     caption: 'Slide 3'
   },
@@ -93,7 +93,7 @@ export default function HomePage() {
           <h1>A LEADER IN EXECUTIVE SEARCH</h1>
         </div>
       </div>
-      <br/><br/><br/>
+      <br /><br /><br />
       <Carousel
         activeIndex={activeIndex}
         next={next}
@@ -101,6 +101,8 @@ export default function HomePage() {
         interval={3000}
       >
         {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
     </div>
   );
