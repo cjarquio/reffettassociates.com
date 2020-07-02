@@ -1,7 +1,5 @@
 import React from 'react';
 import PageTitle from './PageTitle';
-import TeamPage from './TeamPage';
-import ServicesPage from './ServicesPage';
 
 const subtitle = `Reffett Associates is a nationally recognized, fully retained executive search firm. As one of the premiere boutique firms in the executive search industry, we work with you to build a stronger organization by finding diverse candidates that fit your organization’s cultures and values.
 \n\n
@@ -17,8 +15,6 @@ export default function AboutPage() {
         title='About'
         subtitle={subtitle}
       />
-      <TeamPage />
-      <ServicesPage />
     </div>
   );
 }

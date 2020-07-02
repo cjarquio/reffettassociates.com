@@ -42,7 +42,13 @@ export default function BottomNavigation() {
               <NavLink className={classes.navLink} tag={Link} to="/offices">Offices</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink className={classes.navLink} tag={Link} to="/team">Our Team</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink className={classes.navLink} tag={Link} to="/process">Process</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className={classes.navLink} tag={Link} to="/services">Services</NavLink>
             </NavItem>
             <NavItem>
               <NavLink className={classes.navLink} tag={Link} to="/eta">Executive Transition Assistance</NavLink>
