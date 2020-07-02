@@ -21,7 +21,8 @@ const useStyles = makeStyles(() =>
     navLink: {
       padding: '0.5rem 1rem 0.5rem 0rem',
       color:'white',
-      textDecoration: 'underline'
+      textDecoration: 'underline',
+      fontSize: '0.9em'
     }
   })
 );

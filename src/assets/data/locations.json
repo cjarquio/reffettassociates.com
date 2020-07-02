@@ -26,5 +26,12 @@
     "image": "/images/Locations/NewYork.jpg",
     "address": "100 Pearl St, 14th Floor Hartford, CT 06103",
     "link":""
+  },
+  {
+    "id": 4,
+    "location": "Greensboro",
+    "image": "/images/Locations/Greensboro.jpg",
+    "address": "",
+    "link":""
   }
 ]
