@@ -13,7 +13,6 @@ const useStyles = makeStyles(() =>
       height: 'auto'
     },
     navOptions: {
-      marginLeft: 'auto',
       fontSize: '1.2em',
       fontWeight: 'bold'
     },

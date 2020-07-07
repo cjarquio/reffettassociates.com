@@ -36,24 +36,29 @@ const useStyles = makeStyles(() =>
 
 const items = [
   {
-    src: '/images/HomeSlides/Crowd.JPG',
+    src: '/images/HomeSlides/ReffettAssociatesHome.jpg',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
   {
-    src: '/images/HomeSlides/Diverse.JPG',
+    src: '/images/HomeSlides/Crowd.JPG',
     altText: 'Slide 2',
     caption: 'Slide 2'
   },
   {
-    src: '/images/HomeSlides/Efficient.JPG',
+    src: '/images/HomeSlides/Diverse.JPG',
     altText: 'Slide 3',
     caption: 'Slide 3'
   },
   {
-    src: '/images/HomeSlides/Expansive.jpg',
+    src: '/images/HomeSlides/Efficient.JPG',
     altText: 'Slide 4',
     caption: 'Slide 4'
+  },
+  {
+    src: '/images/HomeSlides/Expansive.jpg',
+    altText: 'Slide 5',
+    caption: 'Slide 5'
   }
 ];
 
@@ -93,7 +98,6 @@ export default function HomePage() {
           <h1>A LEADER IN EXECUTIVE SEARCH</h1>
         </div>
       </div>
-      <br/><br/>
       <Carousel
         activeIndex={activeIndex}
         next={next}
