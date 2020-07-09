@@ -17,7 +17,7 @@ export default function PageTitle({title, subtitle}) {
 
   return (
     <>
-      <h2 className={classes.bio}>{title}</h2>
+      <h3 className={classes.bio}>{title}</h3>
       {
         subtitle.split('\n').map((paragraph)=>{
           return(<p>{paragraph}</p>)

@@ -4,7 +4,7 @@ import PageTemplate from './components/PageTemplate';
 import HomePage from './components/HomePage';
 import TeamPage from './components/TeamPage';
 import OfficesPage from './components/OfficesPage';
-import ServicesPage from './components/OfficesPage';
+import ServicesPage from './components/ServicesPage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import ProcessPage from './components/ProcessPage';

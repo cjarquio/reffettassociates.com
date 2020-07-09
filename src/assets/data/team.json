@@ -15,7 +15,7 @@
   {
     "id": 1,
     "name": "Marshall Reffett",
-    "image": "/images/Team/placeholder.jpg",
+    "image": "/images/Team/MarshallReffett.jpg",
     "title": "Managing Director",
     "location": "Seattle, Washington",
     "email": "",
@@ -29,7 +29,7 @@
   {
     "id": 2,
     "name": "Eric Reffett",
-    "image": "/images/Team/placeholder.jpg",
+    "image": "/images/Team/EricReffett.jpg",
     "title": "Senior Advisor",
     "location": "Metro DC",
     "bio": [
@@ -40,7 +40,7 @@
   {
     "id": 3,
     "name": "Angel Rodriguez",
-    "image": "/images/Team/placeholder.jpg",
+    "image": "/images/Team/AngelRodriguez.jpg",
     "title": "Managing Director",
     "location": "Dallas, TX",
     "email": "",
@@ -55,7 +55,7 @@
   {
     "id": 4,
     "name": "Tom Young",
-    "image": "/images/Team/placeholder.jpg",
+    "image": "/images/Team/TomYoung.png",
     "title": "Director of Operations",
     "location": "Seattle, WA",
     "email": "",
@@ -72,7 +72,7 @@
   {
     "id": 5,
     "name": "Gen. Glenn Lesniak (Ret.)",
-    "image": "/images/Team/placeholder.jpg",
+    "image": "/images/Team/GlennLesniak.jpg",
     "title": "",
     "location": "",
     "email": "",
