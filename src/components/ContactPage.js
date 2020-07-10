@@ -4,6 +4,7 @@ export default function ContactPage(){
   return(
     <div>
       This is the Contact page.
+      Add seattle contact here
     </div>
   );
 }
