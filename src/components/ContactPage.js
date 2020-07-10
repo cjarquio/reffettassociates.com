@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div>
       <PageTitle
-        title='Cotact Us'
+        title='Contact Us'
         subtitle=''
       />
       Main Office (Seattle)
