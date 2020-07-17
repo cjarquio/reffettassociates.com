@@ -44,6 +44,14 @@ const useStyles = makeStyles((theme) =>
       flexGrow: 1,
       width: '100%',
       backgroundColor: theme.palette.background.paper,
+      paddingTop: 50,
+      '& .MuiTab-textColorPrimary': {
+        color: 'rgba(0,0,0,1)',
+        fontWeight: 550
+      },
+      '& .MuiTab-textColorPrimary.Mui-selected':{
+        color: '#3f51b5'
+      }
     },
     picture: {
       width: '100%'
