@@ -1,4 +1,5 @@
 import React from 'react';
+import {isBrowser} from 'react-device-detect';
 import { Card, CardImg, CardHeader, CardText, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
@@ -7,6 +8,7 @@ import locations from '../assets/data/locations';
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
+      display: isBrowser? 'flex':'contents',
       flex:'0 0 50%',
       maxWidth:'50%',
       '&:last-child:nth-child(odd)': {
