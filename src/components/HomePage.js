@@ -30,6 +30,12 @@ const useStyles = makeStyles(() =>
       width: '60%',
       fontFamily: 'Georgia',
       fontStyle: 'italic'
+    },
+    locations: {
+      textAlign: 'center',
+      color: '#0f2f5b',
+      fontFamily: 'Georgia',
+      fontWeight: 'bold'
     }
   })
 );
@@ -108,6 +114,7 @@ export default function HomePage() {
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
+      <h4 className={classes.locations}>Seattle | Washington D.C. | New York | Dallas | Greensboro</h4>
     </div>
   );
 }
