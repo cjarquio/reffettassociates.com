@@ -39,16 +39,16 @@ export default function MainNavigation() {
               <NavLink tag={Link} to="/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/offices">Offices</NavLink>
+              <NavLink tag={Link} to="/team">Our Team</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/team">Our Team</NavLink>
+              <NavLink tag={Link} to="/services">Services</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/process">Process</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/services">Services</NavLink>
+              <NavLink tag={Link} to="/offices">Offices</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/eta">Executive Transition Assistance</NavLink>
