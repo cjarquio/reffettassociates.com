@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
@@ -25,13 +25,14 @@ const useStyles = makeStyles(() =>
 export default function MainNavigation() {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div className={classes.root}>
       <Navbar color="faded" light expand='md'>
-        <NavbarBrand style={{width:'250px'}} tag={Link} to="/"><img className={classes.logo} src='/images/Logo/Logo.png' alt='Logo' /></NavbarBrand>
+        <NavbarBrand style={{width:'250px', display: location.pathname === '/'? 'none':''}} tag={Link} to="/"><img className={classes.logo} src='/images/Logo/Logo.png' alt='Logo' /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className={classes.navOptions} navbar>
