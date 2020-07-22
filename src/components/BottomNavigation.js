@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { NavbarText, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
@@ -21,7 +21,6 @@ const useStyles = makeStyles(() =>
     navLink: {
       padding: '0.5rem 1rem 0.5rem 0rem',
       color: 'white',
-      textDecoration: 'underline',
       fontSize: '0.9em'
     }
   })
@@ -29,6 +28,7 @@ const useStyles = makeStyles(() =>
 
 export default function BottomNavigation() {
   const classes = useStyles();
+  const location = useLocation();
 
   return (
     <div className={classes.root}>
@@ -37,25 +37,25 @@ export default function BottomNavigation() {
         <NavbarText className={classes.bottomNavText}>&copy;2020 All Rights Reserved.</NavbarText>
         <Nav className={classes.navOptions}>
           <NavItem>
-            <NavLink className={classes.navLink} tag={Link} to="/about">About</NavLink>
+            <NavLink style={{textDecoration: location.pathname === '/about'? '':'underline'}} className={classes.navLink} tag={Link} to="/about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={classes.navLink} tag={Link} to="/team">Our Team</NavLink>
+            <NavLink style={{textDecoration: location.pathname === '/team'? '':'underline'}} className={classes.navLink} tag={Link} to="/team">Our Team</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={classes.navLink} tag={Link} to="/services">Services</NavLink>
+            <NavLink style={{textDecoration: location.pathname === '/services'? '':'underline'}} className={classes.navLink} tag={Link} to="/services">Services</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={classes.navLink} tag={Link} to="/process">Process</NavLink>
+            <NavLink style={{textDecoration: location.pathname === '/process'? '':'underline'}} className={classes.navLink} tag={Link} to="/process">Process</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={classes.navLink} tag={Link} to="/offices">Offices</NavLink>
+            <NavLink style={{textDecoration: location.pathname === '/offices'? '':'underline'}} className={classes.navLink} tag={Link} to="/offices">Offices</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={classes.navLink} tag={Link} to="/eta">Executive Transition Assistance</NavLink>
+            <NavLink style={{textDecoration: location.pathname === '/eta'? '':'underline'}} className={classes.navLink} tag={Link} to="/eta">Executive Transition Assistance</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={classes.navLink} tag={Link} to="/contact">Contact</NavLink>
+            <NavLink style={{textDecoration: location.pathname === '/contact'? '':'underline'}} className={classes.navLink} tag={Link} to="/contact">Contact</NavLink>
           </NavItem>
         </Nav>
       </div>
