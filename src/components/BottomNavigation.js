@@ -57,6 +57,9 @@ export default function BottomNavigation() {
           <NavItem>
             <NavLink style={{textDecoration: location.pathname === '/contact'? '':'underline'}} className={classes.navLink} tag={Link} to="/contact">Contact</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink style={{textDecoration: location.pathname === '/news'? '':'underline'}} className={classes.navLink} tag={Link} to="/news">News</NavLink>
+          </NavItem>
         </Nav>
       </div>
     </div>

@@ -9,6 +9,7 @@ import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import ProcessPage from './components/ProcessPage';
 import ETAPage from './components/ETAPage';
+import NewsPage from './components/NewsPage';
 import PageNotFound from './components/PageNotFound';
 
 
@@ -26,6 +27,7 @@ export default function Routes() {
             <Route path='/process' component={ProcessPage} />
             <Route path='/eta' component={ETAPage} />
             <Route path='/contact' component={ContactPage} />
+            <Route path='/news' component={NewsPage} />
             <Route component={PageNotFound} />
           </Switch>
         </PageTemplate>

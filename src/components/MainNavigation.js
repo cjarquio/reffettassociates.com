@@ -57,6 +57,9 @@ export default function MainNavigation() {
             <NavItem>
               <NavLink style={{color: location.pathname === '/contact'? 'rgba(0,0,0,0.8)':'rgba(0,0,0,0.5)'}} tag={Link} to="/contact">Contact</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink style={{color: location.pathname === '/news'? 'rgba(0,0,0,0.8)':'rgba(0,0,0,0.5)'}} tag={Link} to="/news">News</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
