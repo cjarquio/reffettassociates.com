@@ -53,8 +53,15 @@ const useStyles = makeStyles((theme) =>
         color: '#3f51b5'
       }
     },
+    name:{
+      fontWeight: 'bold'
+    },
     picture: {
       width: '100%'
+    },
+    memberInfo: {
+      textAlign: 'center',
+      fontFamily: 'Georgia'
     },
     bio: {
       fontSize: '0.95em'
@@ -78,15 +85,15 @@ export default function TeamPage() {
         return (
           <TabPanel value={value} index={member.id}>
             <div style={{ paddingTop: 10 }} className='row' key={member.id}>
-              <div className='col-12 col-md-2'>
+              <div className='col-12 col-md-3'>
                 <img className={classes.picture} src={member.image} alt={member.name} />
-                <p>
-                  {member.name}<br />
+                <p className={classes.memberInfo}>
+                  <span className={classes.name}>{member.name}</span><br />
                   {member.title}<br />
                   {member.location}
                 </p>
               </div>
-              <div className='col-12 col-md-10'>
+              <div className='col-12 col-md-9'>
                 <RenderBio bio={member.bio} />
               </div>
             </div>
