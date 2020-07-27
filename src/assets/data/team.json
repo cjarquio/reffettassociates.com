@@ -91,7 +91,7 @@
     "id": 6,
     "name": "Lonnie P. Taylor",
     "image": "/images/Team/LonnieTaylor.jpg",
-    "title": "Senior Advisor",
+    "title": "Senior Partner",
     "location": "Metro DC",
     "email": "",
     "phoneNumber": "",
@@ -137,13 +137,14 @@
   {
     "id": 9,
     "name": "Mindee Pritchard",
-    "image": "/images/Team/placeholder.jpg",
+    "image": "/images/Team/MindeePrichard.jpg",
     "title": "Office Manager",
-    "location": "",
+    "location": "Seattle, WA",
     "email": "",
     "phoneNumber": "",
     "bio": [
-      
+      "Mindee brings 15+ years of accounting experience to Reffett Associates.  Prior to joining Reffett Associates as the bookkeeper, she was a Tax Manager at Moss Adams for 11 years.  She took time off from the workforce to start a family and re-entered the workforce part-time once her youngest was in preschool.",
+      "Mindee graduated from Western Washington University with a Bachelor of Arts in Business Administration with an emphasis in Accounting.  Mindee, and her husband Matt, her 3 children and 2 boxers reside in Snoqualmie, WA."
     ]
   }
 ]
