@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "office": "Seattle",
+    "contactName": "",
+    "addressLineOne": "11900 NE 1st Street, Suite 300",
+    "addressLineTwo": "Bellevue, WA 98005",
+    "contactMethod": "(425) 637-2993",
+    "altContactMethod": "(425) 869-5347"
+  },
+  {
+    "id": 1,
+    "office": "Dallas",
+    "contactName": "Angel Rodriguez",
+    "addressLineOne": "4514 Cole Avenue, Suite 600",
+    "addressLineTwo": "Dallas, TX 75205",
+    "contactMethod": "angel@reffettassociates.com",
+    "altContactMethod": ""
+  },
+  {
+    "id": 2,
+    "office": "Washington DC",
+    "contactName": "Eric Reffett",
+    "addressLineOne": "2111 Wilson Boulevard, Suite 700",
+    "addressLineTwo": "Arlington, VA 22201",
+    "contactMethod": "ereffett@reffettassociates.com",
+    "altContactMethod": ""
+  },
+  {
+    "id": 3,
+    "office": "New York",
+    "contactName": "Glenn Lesniak",
+    "addressLineOne": "100 Pearl St, 14th Floor",
+    "addressLineTwo": "Hartford, CT 06103",
+    "contactMethod": "",
+    "altContactMethod": ""
+  },
+  {
+    "id": 4,
+    "office": "Greensboro",
+    "contactName": "Nancy Hoffmann",
+    "addressLineOne": "11900 NE 1st Street, Suite 300",
+    "addressLineTwo": "Bellevue, WA 98005",
+    "contactMethod": "",
+    "altContactMethod": ""
+  }
+]
