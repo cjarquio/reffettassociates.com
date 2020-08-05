@@ -46,6 +46,9 @@ export default function MainNavigation() {
               <NavLink style={{color: location.pathname === '/services'? 'rgba(0,0,0,0.8)':'rgba(0,0,0,0.5)'}} tag={Link} to="/services">Services</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink style={{color: location.pathname === '/veterans'? 'rgba(0,0,0,0.8)':'rgba(0,0,0,0.5)'}} tag={Link} to="/veterans">Veterans</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink style={{color: location.pathname === '/process'? 'rgba(0,0,0,0.8)':'rgba(0,0,0,0.5)'}} tag={Link} to="/process">Process</NavLink>
             </NavItem>
             <NavItem>

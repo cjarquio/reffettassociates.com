@@ -3,6 +3,7 @@ import { Route, Switch, HashRouter } from 'react-router-dom';
 import PageTemplate from './components/PageTemplate';
 import HomePage from './components/HomePage';
 import TeamPage from './components/TeamPage';
+import VeteransPage from './components/VeteransPage';
 import OfficesPage from './components/OfficesPage';
 import ServicesPage from './components/ServicesPage';
 import AboutPage from './components/AboutPage';
@@ -24,6 +25,7 @@ export default function Routes() {
             <Route path='/team' component={TeamPage} />
             <Route path='/offices' component={OfficesPage} />
             <Route path='/services' component={ServicesPage} />
+            <Route path='/veterans' component={VeteransPage} />
             <Route path='/process' component={ProcessPage} />
             <Route path='/eta' component={ETAPage} />
             <Route path='/contact' component={ContactPage} />

@@ -46,6 +46,9 @@ export default function BottomNavigation() {
             <NavLink style={{textDecoration: location.pathname === '/services'? '':'underline'}} className={classes.navLink} tag={Link} to="/services">Services</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink style={{textDecoration: location.pathname === '/veterans'? '':'underline'}} className={classes.navLink} tag={Link} to="/veterans">Veterans</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink style={{textDecoration: location.pathname === '/process'? '':'underline'}} className={classes.navLink} tag={Link} to="/process">Process</NavLink>
           </NavItem>
           <NavItem>
