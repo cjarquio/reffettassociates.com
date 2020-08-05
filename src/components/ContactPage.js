@@ -31,21 +31,21 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-function a11yProps(index) {
+/*function a11yProps(index) {
   return {
     id: `scrollable-force-tab-${index}`,
     'aria-controls': `scrollable-force-tabpanel-${index}`,
   };
-}
+}*/
 
-export default function ContactPage() {
-  const [value, setValue] = React.useState(0);
+export default function ContactPage(props) {
+  const [value, setValue] = React.useState(props.location.contactId? props.location.contactId:0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
-  const ContactInformation = () => {
+  const ContactInformation = (props) => {
     return (
       contacts.map((location) => {
         return (
@@ -70,7 +70,7 @@ export default function ContactPage() {
         title='Contact Us'
         subtitle=''
       />
-      <AppBar position="static" color="default">
+      {/*<AppBar position="static" color="default">
           <Tabs
             value={value}
             onChange={handleChange}
@@ -88,7 +88,7 @@ export default function ContactPage() {
               })
             }
           </Tabs>
-        </AppBar>
+          </AppBar>*/}
         <ContactInformation />
       <br /><br />
       <ContactForm />

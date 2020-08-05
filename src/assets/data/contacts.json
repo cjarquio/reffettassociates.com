@@ -39,8 +39,8 @@
     "id": 4,
     "office": "Greensboro",
     "contactName": "Nancy Hoffmann",
-    "addressLineOne": "11900 NE 1st Street, Suite 300",
-    "addressLineTwo": "Bellevue, WA 98005",
+    "addressLineOne": "",
+    "addressLineTwo": "",
     "contactMethod": "",
     "altContactMethod": ""
   }

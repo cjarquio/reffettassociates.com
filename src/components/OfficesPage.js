@@ -49,7 +49,7 @@ export default function OfficesPage() {
           locations.map((office) => {
             return (
               <div className={classes.root}>
-                <NavLink style={{ height: 'inherit' }} tag={Link} to="/contact">
+                <NavLink style={{ height: 'inherit' }} tag={Link} to={{pathname:"/contact", contactId:office.id }}>
                   <Card className={classes.officeCards} key={office.id}>
                     <CardHeader className={classes.cardTitle}>{office.location}</CardHeader>
                     <CardImg top className={classes.cardImage} src={office.image} alt={office.location} />
