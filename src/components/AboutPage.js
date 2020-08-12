@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <div>
       <PageTitle
-        title='About'
+        title='About: Diligent, Experienced, Relationship Focused'
         subtitle={subtitle}
       />
     </div>
