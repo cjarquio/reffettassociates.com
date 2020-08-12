@@ -26,8 +26,8 @@ export default function ETAPage() {
       <li>And more.</li>
       </ul>
       <p>On average it takes executives 9 months to make a career transition. Are you ready for your next step?</p>
-      <p><Link to='/contact'>Contact us</Link> for a 1 hour introductory meeting to find out more.</p>
-
+      <p><Link to='/contact'>Contact us</Link> for an introductory meeting to find out more.</p>
+      <p>We are committed to serving Veterans and helping them achieve their career goals. <Link to='/veterans'>Learn More.</Link></p>
     </div>
   );
 }
