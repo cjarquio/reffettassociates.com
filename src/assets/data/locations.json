@@ -9,7 +9,7 @@
     "id": 1,
     "location": "Dallas",
     "image": "/images/Locations/Dallas.jpg",
-    "address": "4514 Cole Avenue, Suite 600 Dallas, TX 75205"
+    "address": ""
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "id": 3,
     "location": "New York",
     "image": "/images/Locations/NewYork.jpg",
-    "address": "100 Pearl St, 14th Floor Hartford, CT 06103"
+    "address": ""
   },
   {
     "id": 4,
