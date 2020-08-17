@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "William \"Bill\" Reffett",
+    "name": "William Reffett",
     "image": "/images/Team/BillReffett.jpg",
     "title": "Founder, Managing Partner",
     "location": "Seattle, Washington",
@@ -16,8 +16,8 @@
     "id": 1,
     "name": "Nancy Hoffmann",
     "image": "/images/Team/NancyHoffman.jpg",
-    "title": "",
-    "location": "",
+    "title": "Managing Director",
+    "location": "Greensboro, North Carolina",
     "email": "",
     "phoneNumber": "",
     "bio": [
@@ -33,12 +33,12 @@
     "id": 2,
     "name": "Sam Mayberry",
     "image": "/images/Team/SamMayberry.jpg",
-    "title": "Senior Advisor",
-    "location": "Metro DC",
+    "title": "Principal Advisor",
+    "location": "Seattle, Washington",
     "email": "",
     "phoneNumber": "",
     "bio": [
-      "Sam Mayberry is an experienced senior executive that has focused his executive search practice on retail, consumer products, logistics and non-profits. He has spent more than 35 years building and leading teams to develop cutting edge business strategies in the retail, wholesale, and eCommerce channels.",
+      "Sam Mayberry leads Reffett Associate’s Supply Chain and Non-profit practice. He is an experienced senior executive that has focused his executive search practice on retail, consumer products, logistics and non-profits. He has spent more than 35 years building and leading teams to develop cutting edge business strategies in the retail, wholesale, and eCommerce channels.",
       "Sam has held executive positions in merchandising, operations, and private label at Supervalu, Albertson’s, Amazon, Food Lifeline and most recently at Sam Mayberry Consulting, where he provides Management Consulting services for Brand, Product, Sourcing and Staffing strategy development.",
       "Mayberry leverages an entrepreneurial mindset with strong business acumen and expertise in sales, marketing, supply chain and operations to find the best fit for every client’s organization. With deep roots in the areas of food retail, wholesale and Consumer Packaged Goods channels Sam is focused on filling executive and management positions in Supply Chain, Logistics, Sales, Marketing, Procurement and more.",
       "He holds a BS degree in Business Administration from Illinois Wesleyan University and resides in Seattle with his wife and has 4 grown children and two grandchildren. He is a past Chairman of the Iowa Industry Association and the Shakopee, Minnesota Park and Recreation Board."
@@ -89,14 +89,26 @@
   },
   {
     "id": 6,
+    "name": "Margaret Gottlieb",
+    "image": "/images/Team/placeholder.jpg",
+    "title": "Managing Director",
+    "location": "Metro DC",
+    "bio": [
+      "Margaret Gottlieb has over a decade of leadership experience in the retained executive search business. Prior to joining Reffett Associates, Ms. Gottlieb served as the Managing Director of Foster Partners, a KPMG-affiliate, retained executive search firm. At Foster Partners, Margaret handled business development and conducted executive searches for a wide array of prominent private and public sector clients. During her tenure at Foster Partners, Margaret was one of the first people in the country to be awarded retained searches for the Federal Government, including: the Internal Revenue Service, Office of Personnel Management, Government Accounting Office, US Department of Agriculture, Federal Aviation Administration, and the US Department of Energy.",
+      "Earlier in her career, Mag specialized in federal and state legislative affairs. She has held positions as Government Affairs Director for the Direct Marketing Association, President of the Washington Area State Relations Group, and Chair of the Congressional Relations Committee, Women in Government Relations. Additionally, Margaret worked on Capitol Hill and in the Ohio House of Representatives.",
+      "Mag co-authored An Association Guide to Shaping a State Government Relations Program for the American Society of Association Executives. She has been interviewed and quoted widely in leading print and media outlets, including The Wall Street Journal, The New York Times, and The Washington Post and has appeared on CNN. She received her BA in History from the University of Cincinnati and her J.D. from the Cleveland-Marshall College of Law, where she was an editor of the law review."
+    ]
+  },
+  {
+    "id": 7,
     "name": "Lonnie P. Taylor",
     "image": "/images/Team/LonnieTaylor.jpg",
-    "title": "Senior Partner",
+    "title": "Senior Advisor",
     "location": "Metro DC",
     "email": "",
     "phoneNumber": "",
     "bio": [
-      "Currently the CEO of the National Job Corps Association, Lonnie Taylor serves as Senior Advisor with Reffett Associates, a retained search firm headquartered in Seattle, Washington with offices in the Washington, DC area and throughout the U.S. He provides strategic advice on development, operations and execution matters pending before the firm.",
+      "Formerly the CEO of the National Job Corps Association, Lonnie Taylor serves as Senior Advisor with Reffett Associates, a retained search firm headquartered in Seattle, Washington with offices in the Washington, DC area and throughout the U.S. He provides strategic advice on development, operations and execution matters pending before the firm.",
       "Lonnie has over 20 years of experience in managing executives and recruiting talent. He enjoys a highly-respected reputation as a counselor to senior leadership on the strategic acquisition of exceptional talent. His experience as a search professional has included tenure with the top ten U.S. executive search firms of Heidrick & Struggles, Boyden and Diversified Search. Within the industry, Lonnie’s efforts have focused on establishing and sustaining Government, Legal and Public Affairs practice groups through search retention, execution and management counseling.",
       "Before joining the executive search industry held distinguish roles in both government and the private sector that included leadership roles on Capitol Hill, in the Administration, and with the U.S. Chamber of Commerce, among others.",
       "He is active in community affairs through his work with non-profit organizations. Lonnie currently serves on the board of International Social Service-USA, a group dedicated to reuniting families across international borders, and is the former Chairman of the Board of Youth Service America and the Washington Area Council on Alcohol and Drug Abuse.",
@@ -104,7 +116,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Marshall Reffett",
     "image": "/images/Team/MarshallReffett.jpg",
     "title": "Managing Director",
@@ -118,10 +130,10 @@
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Gen. Glenn Lesniak (Ret.)",
     "image": "/images/Team/GlennLesniak.jpg",
-    "title": "",
+    "title": "Senior Advisor",
     "location": "",
     "email": "",
     "phoneNumber": "",
@@ -135,7 +147,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Mindee Pritchard",
     "image": "/images/Team/MindeePrichard.jpg",
     "title": "Office Manager",
