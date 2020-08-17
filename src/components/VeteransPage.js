@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PageTitle from './PageTitle';
 
 const subtitle = ``;
@@ -22,7 +21,7 @@ export default function VeteransPage() {
         civilian employers. We also work closely with a host of employers that value military service and many
         of them maintain close relationship with DoD and other related government agencies.
       </p>
-      <p>As part of our commitment to veterans we offer all transiting veterans 25% off our executive transition assistance pricing. <Link to='/contact'>Contact us</Link> to learn more.</p>
+      <p>As part of our commitment to members of the military we offer all recently discharged veterans, or soon to leave active service, 25% off our Executive Transition Assistance pricing</p>
     </div>
   );
 }

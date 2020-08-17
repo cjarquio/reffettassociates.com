@@ -1,7 +1,7 @@
 import React from 'react';
 import PageTitle from './PageTitle';
 
-const subtitle = `We believe that every search is a partnership with our client and we won’t stop working on your behalf until we find the right fit for your needs. Our executive search professionals will work directly with you to create a search plan that is unique to your needs and then they will work with you until your position is successfully filled. 
+const subtitle = `We believe that every search is a partnership with our client and we won’t stop working on your behalf until we find the right fit for your needs. Our goal as a boutique firm is to provide a high level of personal attention to create a search plan that is unique to your needs and then they will work with you until your position is successfully filled. 
 \n\n
 Our goal as a small firm is to be able to provide a high level of personal attention and unparalleled service to both our clients and our candidates. For the Reffett Associates team, executive recruiting is all about relationships. Building and maintaining long-term, productive relationships with everyone with whom we work is our first priority. 
 \n\n
