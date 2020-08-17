@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
 import PageTitle from './PageTitle';
-import ContactForm from './ContactForm';
 import contacts from '../assets/data/contacts.json';
 
 const useStyles = makeStyles(() =>
@@ -111,8 +110,6 @@ export default function ContactPage(props) {
         </Tabs>
       </AppBar>
       <ContactInformation />
-      <br /><br />
-      <ContactForm />
     </div>
   );
 }
