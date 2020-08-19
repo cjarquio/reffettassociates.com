@@ -16,12 +16,13 @@ const useStyles = makeStyles(() =>
       height: 'auto'
     },
     bottomNavText: {
-      color: 'white'
+      color: 'white',
+      fontSize: '0.65em'
     },
     navLink: {
       padding: '0.5rem 1rem 0.5rem 0rem',
       color: 'white',
-      fontSize: '0.9em'
+      fontSize: '0.75em'
     }
   })
 );
