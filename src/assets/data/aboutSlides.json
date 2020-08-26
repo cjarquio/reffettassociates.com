@@ -1,0 +1,38 @@
+[
+  {
+    "src": "images/About/government.jpg",
+    "altText": "Government Contracting & Professional Services",
+    "caption": "Government Contracting & Professional Services",
+    "description": "With experience at all levels of Federal Government contracting and broad experience in working with the top Federal, State and Local Government service..."
+  },
+  {
+    "src": "images/About/manufactoringbig.jpg",
+    "altText": "Retail",
+    "caption": "Retail",
+    "description": "We have assisted companies in all areas of the Retail / Consumer world, such as traditional department stores, specialty retail companies, business to consumer, and online retailing..."
+  },
+  {
+    "src": "images/About/nonprofitbigpuz.jpg",
+    "altText": "Public Sector",
+    "caption": "Public Sector",
+    "description": "With experience ranging from holding senior level positions in the Office of Personnel Management, Department of Defense, and Capitol Hill, they are experienced in the issues that you confront and the government hiring process..."
+  },
+  {
+    "src": "images/About/privateequitybig.jpg",
+    "altText": "Private Equity & Financial Services",
+    "caption": "Private Equity & Financial Services",
+    "description": "As market conditions have changed, Private Equity has become a greater part of our firm’s practice. We understand the talents and skills required to lead companies through all the stages of their life cycle..."
+  },
+  {
+    "src": "images/About/publicsectorbig.jpg",
+    "altText": "Manufacturing & Industrials",
+    "caption": "Manufacturing & Industrials",
+    "description": "Success means leveraging external partners such as Reffett Associates to identify and attract exceptional talent that can make a significant business impact..."
+  },
+  {
+    "src": "images/About/retailbig.jpg",
+    "altText": "Associations & Nonprofits",
+    "caption": "Associations & Nonprofits",
+    "description": "Outstanding leadership skills are developed over a lifetime of great opportunities and experiences.  We are intimately familiar with the challenges you face every day..."
+  }
+]
