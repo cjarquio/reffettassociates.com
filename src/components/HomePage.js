@@ -36,7 +36,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <img src='\images\HomeSlides\ReffettAssociatesHome.jpg' alt='Reffett Associate Landing Page' className={classes.banner}/>
+      <img src='\images\Home\ReffettAssociatesHome.jpg' alt='Reffett Associate Landing Page' className={classes.banner}/>
       <h4 className={classes.locations} onClick={handleClick}>Seattle | Washington D.C. | New York | Dallas | Greensboro</h4>
     </div>
   );
