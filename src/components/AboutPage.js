@@ -82,7 +82,6 @@ export default function AboutPage() {
         key={item.src}
       >
         <img className="d-block w-100" src={item.src} alt={item.altText} />
-
       </CarouselItem>
     );
   });

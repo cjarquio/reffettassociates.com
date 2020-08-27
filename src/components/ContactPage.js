@@ -4,6 +4,8 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
 import PageTitle from './PageTitle';
 import contacts from '../assets/data/contacts.json';
+import members from '../assets/data/team.json';
+
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -15,6 +17,9 @@ const useStyles = makeStyles(() =>
       '& .MuiTab-textColorPrimary.Mui-selected': {
         color: '#3f51b5'
       }
+    },
+    picture: {
+      width: '100%'
     },
     contactInfo: {
       display: (null || "") ? 'none' : '',
@@ -65,18 +70,24 @@ export default function ContactPage(props) {
   };
 
   const ContactInformation = () => {
-
     return (
       contacts.map((location) => {
+        let contactImage = members.find(member => member.name === location.contactName).image;
         return (
           <TabPanel value={value} index={location.id}>
-            <div style={{ paddingTop: 10 }} key={location.id}>
-              <h5 style={{ fontWeight: 'bold' }}>{location.office} Office</h5>
-              <p className={classes.contactInfo}>{location.contactName}</p>
-              <p className={classes.contactInfo}>{location.addressLineOne}</p>
-              <p className={classes.contactInfo}>{location.addressLineTwo}</p>
-              <p className={classes.contactInfo}>{location.contactMethod}</p>
-              <p className={classes.contactInfo}>{location.altContactMethod}</p>
+            <div style={{ paddingTop: 10 }} className='row' key={location.id}>
+              <div className='col-12 col-md-1' />
+              <div className='col-12 col-md-3'>
+                <img className={classes.picture} src={contactImage} alt={location.contactName} />
+              </div>
+              <div className='col-12 col-md-3'>
+                <h5 style={{ fontWeight: 'bold' }}>{location.office} Office</h5>
+                <p className={classes.contactInfo}>{location.contactName}</p>
+                <p className={classes.contactInfo}>{location.addressLineOne}</p>
+                <p className={classes.contactInfo}>{location.addressLineTwo}</p>
+                <p className={classes.contactInfo}>{location.contactMethod}</p>
+                <p className={classes.contactInfo}>{location.altContactMethod}</p>
+              </div>
             </div>
           </TabPanel>
         );
@@ -94,7 +105,7 @@ export default function ContactPage(props) {
         <Tabs
           value={value}
           onChange={handleChange}
-          variant="fullWidth"
+          variant="scrollable"
           scrollButtons="on"
           indicatorColor="primary"
           textColor="primary"
