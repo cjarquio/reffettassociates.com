@@ -1,43 +1,39 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators
-} from 'reactstrap';
-import {Button} from '@material-ui/core';
+import React from 'react';
+import { ButtonBase, Typography } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import PageTitle from './PageTitle';
 import areas from '../assets/data/aboutSlides.json'
 
 const useStyles = makeStyles(() =>
   createStyles({
-    officeCards: {
-      height: 300,
-      margin: 25
+    serviceButton: {
+      border: ' 2px solid',
+      borderColor: '#0f2f5b',
+      boxShadow: '2px 2px 6px 1px rgba(0,0,0,0.15)',
+      height: '350px',
+      width: '325px',
+      textAlign: 'center',
+      margin: '15px'
     },
-    cardImage: {
-      height: '100%'
-    },
-    banner: {
-      width: '100%'
-    },
-    bannerImage: {
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/images/Banner/Landscape.jpg')`,
-      height: '50%',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
+    link: {
       position: 'relative',
-      paddingTop: 30,
-      paddingBottom: 30
+      width: '100%',
+      height: '100%',
     },
-    bannerText: {
-      margin: 'auto',
-      color: 'white',
-      width: '60%',
-      fontFamily: 'Georgia',
-      fontStyle: 'italic'
+    image: {
+      width: '100%',
+      display: 'inline-block'
+    },
+    serviceTitle: {
+      display: 'inline-block',
+      fontWeight: 'bold',
+      fontSize: '1.1em'
+    },
+    learnMore: {
+      position: 'absolute',
+      bottom: 0,
+      width: '100%',
+      textAlign: 'center'
     }
   })
 );
@@ -52,39 +48,28 @@ Our team is comprised of former executives with tangible industry experience, po
 `;
 
 export default function AboutPage() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
   const classes = useStyles();
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === areas.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? areas.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = areas.map((item) => {
+  const ServiceArea = () => {
     return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img className="d-block w-100" src={item.src} alt={item.altText} />
-      </CarouselItem>
+      areas.map((item) => {
+        return (
+
+          <ButtonBase
+            focusRipple
+            className={classes.serviceButton}
+          >
+            <div className={classes.link}>
+              <img className={classes.image} src={item.srcImg} alt={item.altText} />
+              <Typography className={classes.serviceTitle}>{item.serviceArea}</Typography>
+              <Typography>{item.description}</Typography>
+              <Typography className={classes.learnMore}>LEARN MORE</Typography>
+            </div>
+          </ButtonBase>
+        );
+      })
     );
-  });
+  }
 
   return (
     <div>
@@ -92,19 +77,7 @@ export default function AboutPage() {
         title='About: Diligent, Experienced, Relationship Focused'
         subtitle={subtitle}
       />
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-      >
-        <CarouselIndicators items={areas} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>
-      <h5>{areas[activeIndex].caption}</h5>
-      <p>{areas[activeIndex].description}</p>
-      <Button variant="contained">Learn More</Button>
+      <ServiceArea />
     </div>
   );
 }
