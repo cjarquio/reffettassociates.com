@@ -1,26 +1,25 @@
 import React from 'react';
-import {
-  useParams
-} from "react-router-dom";
-import PageNotFound from './PageNotFound';
+import { useParams } from "react-router-dom";
+import About from './AboutPage';
+import { Government, Retail, Public, Private, Manufacturing, Associations } from './ServiceAreas';
 
 export default function ServicesTopics() {
   let { topicId } = useParams();
 
   switch (topicId) {
     case 'government-professional-services':
-      return <h3>Government Contracting &amp; Professional Services</h3>;
+      return <Government />;
     case 'retail':
-      return <h3>Retail</h3>;
+      return <Retail />;
     case 'public-sector':
-      return <h3>Public Sector</h3>;
+      return <Public />;
     case 'private-equity':
-      return <h3>Private Equity &amp; Financial Services</h3>;
+      return <Private />;
     case 'manufacturing-industrials':
-      return <h3>Manufacturing &amp; Industrials</h3>;
+      return <Manufacturing />;
     case 'associations-nonprofit':
-      return <h3>Association &amp; Nonprofit</h3>;
+      return <Associations />;
     default:
-      return( <PageNotFound />);
+      return( <About />);
   }
 }
