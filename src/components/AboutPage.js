@@ -1,6 +1,7 @@
 import React from 'react';
 import { ButtonBase, Typography } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { Link, useRouteMatch } from "react-router-dom";
 import PageTitle from './PageTitle';
 import areas from '../assets/data/aboutSlides.json'
 
@@ -19,6 +20,7 @@ const useStyles = makeStyles(() =>
       position: 'relative',
       width: '100%',
       height: '100%',
+      color: 'black',
     },
     image: {
       width: '100%',
@@ -28,6 +30,9 @@ const useStyles = makeStyles(() =>
       display: 'inline-block',
       fontWeight: 'bold',
       fontSize: '1.1em'
+    },
+    description: {
+      textDecoration: 'none'
     },
     learnMore: {
       position: 'absolute',
@@ -47,25 +52,28 @@ We have extensive experience across the public, private and non-profit sectors i
 Our team is comprised of former executives with tangible industry experience, possessing real world, relatable knowledge about the challenges executives face in managing talent in a competitive marketplace.
 `;
 
-export default function AboutPage() {
+function AboutPage() {
   const classes = useStyles();
+  let match = useRouteMatch();
 
   const ServiceArea = () => {
     return (
       areas.map((item) => {
         return (
-
-          <ButtonBase
-            focusRipple
-            className={classes.serviceButton}
-          >
-            <div className={classes.link}>
-              <img className={classes.image} src={item.srcImg} alt={item.altText} />
-              <Typography className={classes.serviceTitle}>{item.serviceArea}</Typography>
-              <Typography>{item.description}</Typography>
-              <Typography className={classes.learnMore}>LEARN MORE</Typography>
-            </div>
-          </ButtonBase>
+          <Link style={{ textDecoration: 'none' }} to={`${match.url}/${item.url}`}>
+            <ButtonBase
+              focusRipple
+              className={classes.serviceButton}
+              key={item.serviceTitle}
+            >
+              <div className={classes.link}>
+                <img className={classes.image} src={item.srcImg} alt={item.altText} />
+                <Typography className={classes.serviceTitle}>{item.serviceArea}</Typography>
+                <Typography>{item.description}</Typography>
+                <Typography className={classes.learnMore}>LEARN MORE</Typography>
+              </div>
+            </ButtonBase>
+          </Link >
         );
       })
     );
@@ -81,3 +89,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+export default AboutPage;

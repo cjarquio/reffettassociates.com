@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, HashRouter } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import PageTemplate from './components/PageTemplate';
 import HomePage from './components/HomePage';
 import TeamPage from './components/TeamPage';
@@ -12,15 +12,17 @@ import ProcessPage from './components/ProcessPage';
 import ETAPage from './components/ETAPage';
 import NewsPage from './components/NewsPage';
 import PageNotFound from './components/PageNotFound';
+import ServicesTopics from './components/ServicesTopic';
 
 
 export default function Routes() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <>
         <PageTemplate>
           <Switch>
             <Route exact path='/' component={HomePage} />
+            <Route path='/about/:topicId' component={ServicesTopics} />
             <Route path='/about' component={AboutPage} />
             <Route path='/team' component={TeamPage} />
             <Route path='/offices' component={OfficesPage} />
@@ -34,6 +36,6 @@ export default function Routes() {
           </Switch>
         </PageTemplate>
       </>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
