@@ -7,14 +7,18 @@ import services from '../assets/data/services.json';
 
 const useStyles = makeStyles(() =>
   createStyles({
+    banner: {
+      width: '100%',
+      transform: 'scaleY(0.7)'
+    },
     clientButton: {
       border: ' 2px solid',
       borderColor: '#0f2f5b',
       boxShadow: '2px 2px 6px 1px rgba(0,0,0,0.15)',
       height: '250px',
-      width: '200px',
+      width: '225px',
       textAlign: 'center',
-      margin: '15px'
+      margin: '20px'
     },
     link: {
       position: 'relative',
@@ -25,7 +29,7 @@ const useStyles = makeStyles(() =>
     image: {
       paddingTop: '20px',
       width: '100%',
-      maxHeight: '70%',
+      maxHeight: '65%',
       display: 'inline-block'
     },
     clientName: {
@@ -67,6 +71,7 @@ export default function Services() {
 
   return (
     <div>
+      <img src={serviceArea.srcImg} alt={serviceArea.altText} className={classes.banner} />
       <PageTitle
         title={serviceArea.altText}
         subtitle={serviceArea.subtitle}
