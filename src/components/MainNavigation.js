@@ -32,7 +32,7 @@ export default function MainNavigation() {
   return (
     <div className={classes.root}>
       <Navbar color="faded" light expand='md'>
-        <NavbarBrand style={location.pathname === '/'?{width:'150px'}:{width:'250px'}} tag={Link} to="/"><img className={classes.logo} src={location.pathname === '/'? '/images/Logo/Logo.png':'/images/Logo/ReffettAssociatesLogov2.png'} alt='Reffett Associates' /></NavbarBrand>
+        <NavbarBrand style={location.pathname === '/'?{width:'100px'}:{width:'250px'}} tag={Link} to="/"><img className={classes.logo} src={location.pathname === '/'? '/images/Logo/Logo.png':'/images/Logo/ReffettAssociatesLogov2.png'} alt='Reffett Associates' /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className={classes.navOptions} navbar>
