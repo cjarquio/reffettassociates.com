@@ -1,4 +1,5 @@
 import React from 'react';
+import {isBrowser} from 'react-device-detect';
 import PageTitle from './PageTitle';
 
 const subtitle = ``;
@@ -22,6 +23,7 @@ export default function VeteransPage() {
         of them maintain close relationship with DoD and other related government agencies.
       </p>
       <p>As part of our commitment to members of the military we offer all recently discharged veterans, or soon to leave active service, 25% off our Executive Transition Assistance pricing</p>
+      <img src='\images\Veterans\Veterans.jpg' alt='Veteran' style={{width: '100%', height: isBrowser?'fit-content':' '}}/>
     </div>
   );
 }
