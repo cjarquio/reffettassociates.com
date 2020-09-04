@@ -43,7 +43,7 @@
     "subtitleList": []
   },
   {
-    "srcImg": "/images/About/manufactoringbig.jpg",
+    "srcImg": "/images/About/retailbig.jpg",
     "altText": "Retail",
     "serviceArea": "Retail",
     "url": "retail",
@@ -86,7 +86,7 @@
     "subtitleList": []
   },
   {
-    "srcImg": "/images/About/nonprofitbigpuz.jpg",
+    "srcImg": "/images/About/publicsectorbig.jpg",
     "altText": "Public Sector",
     "serviceArea": "Public Sector",
     "url": "public-sector",
@@ -172,7 +172,7 @@
     "subtitleList": ["On a consulting basis, using our extensive network to help provide overall market intelligence, current talent evaluation, and company position", "Performing pre-investment evaluation on a company’s existing human capital, their leadership, and overall culture", "Identifying and recruiting executives at all company levels, who can quickly provide the value added to transform the portfolio company performance", "Determining long range talent resources, both internal and external to the company."]
   },
   {
-    "srcImg": "/images/About/publicsectorbig.jpg",
+    "srcImg": "/images/About/manufactoringbig.jpg",
     "altText": "Manufacturing & Industrials",
     "serviceArea": "Manufacturing & Industrials",
     "url": "manufacturing-industrials",
@@ -215,7 +215,7 @@
     "subtitleList": []
   },
   {
-    "srcImg": "/images/About/retailbig.jpg",
+    "srcImg": "/images/About/nonprofitbigpuz.jpg",
     "altText": "Associations & Nonprofits",
     "serviceArea": "Associations & Nonprofits",
     "url": "associations-nonprofit",
