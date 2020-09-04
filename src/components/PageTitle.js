@@ -7,22 +7,29 @@ const useStyles = makeStyles(() =>
       width: '100%'
     },
     bio: {
-      
+
     }
   })
 );
 
-export default function PageTitle({title, subtitle}) {
+export default function PageTitle({ title, subtitle, subtitle2 = [] }) {
   const classes = useStyles();
 
   return (
     <>
       <h3 className={classes.bio}>{title}</h3>
       {
-        subtitle.split('\n').map((paragraph)=>{
-          return(<p>{paragraph}</p>)
+        subtitle.split('\n').map((paragraph) => {
+          return (<p>{paragraph}</p>)
         })
       }
+      <ul>
+        {
+          subtitle2.map(item => {
+            return (<li>{item}</li>)
+          })
+        }
+      </ul>
     </>
   );
 }

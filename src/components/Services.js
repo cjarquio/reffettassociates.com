@@ -15,6 +15,7 @@ export default function Services() {
       <PageTitle
         title={serviceArea.altText}
         subtitle={serviceArea.subtitle}
+        subtitle2={serviceArea.subtitleList}
       />
       {/* Map client lists */}
       <h3>Clients</h3>
