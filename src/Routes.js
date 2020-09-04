@@ -12,7 +12,7 @@ import ProcessPage from './components/ProcessPage';
 import ETAPage from './components/ETAPage';
 import NewsPage from './components/NewsPage';
 import PageNotFound from './components/PageNotFound';
-import ServicesTopics from './components/ServicesTopic';
+import Services from './components/Services';
 
 
 export default function Routes() {
@@ -22,7 +22,7 @@ export default function Routes() {
         <PageTemplate>
           <Switch>
             <Route exact path='/' component={HomePage} />
-            <Route path='/about/:topicId' component={ServicesTopics} />
+            <Route path='/about/:topicId' component={Services} />
             <Route path='/about' component={AboutPage} />
             <Route path='/team' component={TeamPage} />
             <Route path='/offices' component={OfficesPage} />

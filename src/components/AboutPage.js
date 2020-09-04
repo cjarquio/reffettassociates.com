@@ -3,7 +3,7 @@ import { ButtonBase, Typography } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Link, useRouteMatch } from "react-router-dom";
 import PageTitle from './PageTitle';
-import areas from '../assets/data/aboutSlides.json'
+import areas from '../assets/data/services.json'
 
 const useStyles = makeStyles(() =>
   createStyles({
