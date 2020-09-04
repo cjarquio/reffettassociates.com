@@ -7,7 +7,7 @@ import services from '../assets/data/services.json';
 
 const useStyles = makeStyles(() =>
   createStyles({
-    serviceButton: {
+    clientButton: {
       border: ' 2px solid',
       borderColor: '#0f2f5b',
       boxShadow: '2px 2px 6px 1px rgba(0,0,0,0.15)',
@@ -23,19 +23,12 @@ const useStyles = makeStyles(() =>
       color: 'black',
     },
     image: {
+      paddingTop: '20px',
       width: '100%',
       maxHeight: '70%',
       display: 'inline-block'
     },
-    serviceTitle: {
-      display: 'inline-block',
-      fontWeight: 'bold',
-      fontSize: '1.1em',
-    },
-    description: {
-      textDecoration: 'none'
-    },
-    learnMore: {
+    clientName: {
       fontSize: '1.1em',
       fontWeight: 'bold',
       position: 'absolute',
@@ -59,12 +52,12 @@ export default function Services() {
       clients.map((item) => {
         return (
           <ButtonBase
-              className={classes.serviceButton}
+              className={classes.clientButton}
               key={item.serviceTitle}
             >
               <div className={classes.link}>
                 <img className={classes.image} src={item.image} alt={item.name} />
-                <Typography className={classes.learnMore}>{item.name}</Typography>
+                <Typography className={classes.clientName}>{item.name}</Typography>
               </div>
             </ButtonBase>
         );
