@@ -6,7 +6,7 @@ export default function ETAPage() {
   return (
     <div>
       <PageTitle
-        title='Executive Transition Assistance'
+        title='Executive Transition Assistance | The Skills You Need To Find The Job You Deserve'
         subtitle=''
       />
       <p>Are you ready for your next career move? In uncertain times or during a booming market you should always be ready for what the next opportunity or necessity brings. Take control of your career. </p>
