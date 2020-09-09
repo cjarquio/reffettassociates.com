@@ -85,6 +85,7 @@ function AboutPage() {
         title='About | Diligent, Experienced, Relationship Focused'
         subtitle={subtitle}
       />
+      <h3>Industries Served</h3>
       <ServiceArea />
     </div>
   );
