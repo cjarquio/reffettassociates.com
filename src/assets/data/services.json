@@ -1,42 +1,30 @@
 [
   {
-    "srcImg": "/images/About/government.jpg",
+    "srcImg": "/images/About/Government.jpg",
     "altText": "Government Contracting & Professional Services",
-    "serviceArea": "Government",
+    "serviceArea": "Government Contracting & Professional Services",
     "url": "government-professional-services",
     "description": "With experience at all levels of Federal Government contracting and broad experience in working with the top Federal, State and Local Government service...",
     "clients": [
       {
-        "name": "AFRL",
-        "image": "/images/Services/Government/AFRL.jpg"
+        "name": "Battelle",
+        "image": "/images/Services/Government/Battelle.png"
       },
       {
-        "name": "City of Charlotte",
-        "image": "/images/Services/Government/City of Charlotte.png"
+        "name": "Fluor",
+        "image": "/images/Services/Government/Fluor.png"
       },
       {
-        "name": "City of Seattle",
-        "image": "/images/Services/Government/City of Seattle.jpg"
+        "name": "Hitachi Consulting",
+        "image": "/images/Services/Government/Hitachi.png"
       },
       {
-        "name": "Community Transit",
-        "image": "/images/Services/Government/Community Transit.jpg"
+        "name": "Point Blank Enterprises",
+        "image": "/images/Services/Government/Point Blank.png"
       },
       {
-        "name": "FirstNet",
-        "image": "/images/Services/Government/FirstNet.png"
-      },
-      {
-        "name": "Naval Postgraduate School",
-        "image": "/images/Services/Government/Naval Postgraduate School.png"
-      },
-      {
-        "name": "Northwest Seaport Alliance",
-        "image": "/images/Services/Government/Northwest Seaport.png"
-      },
-      {
-        "name": "Sound Transit",
-        "image": "/images/Services/Government/Sound Transit.png"
+        "name": "TASC",
+        "image": "/images/Services/Government/TASC.png"
       }
     ],
     "subtitle": "Success in today's Federal, State and Local Government markets requires leaders and executives who understand this rapidly changing marketplace.  Our group of Managing Directors has a deep understanding of your needs, and how to navigate the intricacies of doing business with the government. \n\n With experience at all levels of Federal Government contracting and broad experience in working with the top Federal, State and Local Government service providers, we understand the unique requirements for senior leaders and executives with experience in government contracting and program management.  This includes contractors performing work overseas and in combat zones in support of US Forces. \n\n Our experience encompasses the entire Federal Government, and a majority of the top 100 Federal contractors.",
@@ -126,31 +114,63 @@
       },
       {
         "name": "US Department of Agriculture",
-        "image": "/images/Services/Public Sector/DOD.png"
-      },
-      {
-        "name": "US Department of Defense",
-        "image": "/images/Services/Public Sector/DOT.png"
-      },
-      {
-        "name": "US Department of Transportation",
-        "image": "/images/Services/Public Sector/FDA.jpeg"
-      },
-      {
-        "name": "US Department of Veteran Affairs",
-        "image": "/images/Services/Public Sector/US Maritime.png"
-      },
-      {
-        "name": "US Food and Drug Administration",
-        "image": "/images/Services/Public Sector/US Merchant Marine.png"
-      },
-      {
-        "name": "US Merchant Maritime Administration",
         "image": "/images/Services/Public Sector/USDA.jpg"
       },
       {
-        "name": "US Merchant Marine Academy",
+        "name": "US Department of Defense",
+        "image": "/images/Services/Public Sector/DOD.png"
+      },
+      {
+        "name": "US Department of Transportation",
+        "image": "/images/Services/Public Sector/DOT.png"
+      },
+      {
+        "name": "US Department of Veteran Affairs",
         "image": "/images/Services/Public Sector/VA.png"
+      },
+      {
+        "name": "US Food and Drug Administration",
+        "image": "/images/Services/Public Sector/FDA.png"
+      },
+      {
+        "name": "US Merchant Maritime Administration",
+        "image": "/images/Services/Public Sector/US Maritime.png"
+      },
+      {
+        "name": "US Merchant Marine Academy",
+        "image": "/images/Services/Public Sector/US Merchant Marine.png"
+      },
+      {
+        "name": "AFRL",
+        "image": "/images/Services/Public Sector/AFRL.jpg"
+      },
+      {
+        "name": "City of Charlotte",
+        "image": "/images/Services/Public Sector/City of Charlotte.png"
+      },
+      {
+        "name": "City of Seattle",
+        "image": "/images/Services/Public Sector/City of Seattle.jpg"
+      },
+      {
+        "name": "Community Transit",
+        "image": "/images/Services/Public Sector/Community Transit.jpg"
+      },
+      {
+        "name": "FirstNet",
+        "image": "/images/Services/Public Sector/FirstNet.png"
+      },
+      {
+        "name": "Naval Postgraduate School",
+        "image": "/images/Services/Public Sector/Naval Postgraduate School.png"
+      },
+      {
+        "name": "Northwest Seaport Alliance",
+        "image": "/images/Services/Public Sector/Northwest Seaport.png"
+      },
+      {
+        "name": "Sound Transit",
+        "image": "/images/Services/Public Sector/Sound Transit.png"
       }
     ],
     "subtitle": "As a leading provider of retained executive search services to the federal government, we possess a unique understanding of your needs. Our group of Managing Directors bring with them unparalleled experience in the public sector. With experience ranging from holding senior level positions in the Office of Personnel Management, Department of Defense, on Capitol Hill, they are experienced in the government hiring process and the issues that you confront. \n\n Reffett Associates is a veteran-owned business and maintains a GSA contract (GS-02F-0194W). We are one of the few executive search firms to be awarded this prestigious qualification after completing their extensive qualification process. In addition, we are members of the National Defense Industrial Association, the Professional Services Council, and the Pacific Northwest Defense Coalition.",
@@ -224,7 +244,7 @@
       },
       {
         "name": "Lorillard",
-        "image": "/images/Services/Manufacturing/Lorillard.jpeg"
+        "image": "/images/Services/Manufacturing/Lorillard.png"
       },
       {
         "name": "POST",
@@ -291,7 +311,7 @@
       },
       {
         "name": "United Way of King County",
-        "image": "/images/Services/Associations/United Way of King County.jpeg"
+        "image": "/images/Services/Associations/United Way of King County.png"
       }
     ],
     "subtitle": "Outstanding leadership skills are developed over a lifetime of great opportunities and experiences.  We are intimately familiar with association and not-for-profit organizations and the challenges they face every day. \n\n We are especially well qualified to identify that unique person to fit your organization’s needs.  As not-for-profit organizations begin operating more like businesses and implementing best practices and governance structures, effective leadership at the top is imperative.  Reffett Associates will find the individuals who best fit your organization and will work towards the achievement of your organization’s mission. \n\n Our experience encompasses the entire Federal Government, and a majority of the top 100 Federal contractors.",
