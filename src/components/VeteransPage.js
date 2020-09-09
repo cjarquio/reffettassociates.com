@@ -8,7 +8,7 @@ export default function VeteransPage() {
   return (
     <div>
       <PageTitle
-        title='Committed to Veterans: Serving Those That Served'
+        title='Committed to Veterans | Serving Those That Served'
         subtitle={subtitle}
       />
       <h6 style={{ textDecoration: 'underline' }}>Committed to Veterans: Serving Those That Served</h6>

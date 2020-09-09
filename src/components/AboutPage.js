@@ -82,7 +82,7 @@ function AboutPage() {
   return (
     <div>
       <PageTitle
-        title='About: Diligent, Experienced, Relationship Focused'
+        title='About | Diligent, Experienced, Relationship Focused'
         subtitle={subtitle}
       />
       <ServiceArea />
