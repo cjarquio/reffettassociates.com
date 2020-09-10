@@ -142,3 +142,22 @@ export default function TeamPage() {
     </div>
   );
 }
+
+/* LEAVING HERE JUST IN CASE
+{
+    "id": 7,
+    "name": "Lonnie P. Taylor",
+    "image": "/images/Team/LonnieTaylor.jpg",
+    "title": "Senior Advisor",
+    "location": "Metro DC",
+    "email": "",
+    "phoneNumber": "",
+    "bio": [
+      "Formerly the CEO of the National Job Corps Association, Lonnie Taylor serves as Senior Advisor with Reffett Associates, a retained search firm headquartered in Seattle, Washington with offices in the Washington, DC area and throughout the U.S. He provides strategic advice on development, operations and execution matters pending before the firm.",
+      "Lonnie has over 20 years of experience in managing executives and recruiting talent. He enjoys a highly-respected reputation as a counselor to senior leadership on the strategic acquisition of exceptional talent. His experience as a search professional has included tenure with the top ten U.S. executive search firms of Heidrick & Struggles, Boyden and Diversified Search. Within the industry, Lonnie’s efforts have focused on establishing and sustaining Government, Legal and Public Affairs practice groups through search retention, execution and management counseling.",
+      "Before joining the executive search industry held distinguish roles in both government and the private sector that included leadership roles on Capitol Hill, in the Administration, and with the U.S. Chamber of Commerce, among others.",
+      "He is active in community affairs through his work with non-profit organizations. Lonnie currently serves on the board of International Social Service-USA, a group dedicated to reuniting families across international borders, and is the former Chairman of the Board of Youth Service America and the Washington Area Council on Alcohol and Drug Abuse.",
+      "Lonnie holds a Juris Doctorate from the Georgetown University Law Center and a Bachelor’s degree in Business Administration from the George Washington University. He lives in the Washington, DC area."
+    ]
+  },
+*/
