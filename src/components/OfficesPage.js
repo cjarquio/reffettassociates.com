@@ -1,6 +1,6 @@
 import React from 'react';
 import {isBrowser} from 'react-device-detect';
-import { Card, CardImg, CardHeader, CardText, NavLink } from 'reactstrap';
+import { Card, CardImg, CardHeader, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import locations from '../assets/data/locations';
@@ -53,7 +53,6 @@ export default function OfficesPage() {
                   <Card className={classes.officeCards} key={office.id}>
                     <CardHeader className={classes.cardTitle}>{office.location}</CardHeader>
                     <CardImg top className={classes.cardImage} src={office.image} alt={office.location} />
-                    <CardText className={classes.cardText}>{office.address}</CardText>
                   </Card>
                 </NavLink>
               </div>
