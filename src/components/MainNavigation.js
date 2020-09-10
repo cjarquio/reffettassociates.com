@@ -5,19 +5,19 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() =>
   createStyles({
-    root: {
-      //borderBottom: '1px solid #0f2f5b'
-    },
     logo: {
       width: '100%',
       height: 'auto'
     },
     navOptions: {
-      fontSize: '1.2em',
+      fontSize: '1.1em',
       fontWeight: 'bold'
     },
     activeLink: {
       textDecoration: 'underline'
+    },
+    logoButton:{
+      margin: 0
     }
   })
 );
@@ -30,9 +30,9 @@ export default function MainNavigation() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className={classes.root}>
+    <div className='container' style={{padding: 0}}>
       <Navbar color="faded" light expand='md'>
-        <NavbarBrand style={location.pathname === '/'?{width:'100px'}:{width:'250px'}} tag={Link} to="/"><img className={classes.logo} src={location.pathname === '/'? '/images/Logo/Logo.png':'/images/Logo/ReffettAssociatesLogov2.png'} alt='Reffett Associates' /></NavbarBrand>
+        <NavbarBrand className={classes.logoButton} style={location.pathname === '/'?{width:'100px'}:{width:'200px'}} tag={Link} to="/"><img className={classes.logo} src={location.pathname === '/'? '/images/Logo/Logo.png':'/images/Logo/ReffettAssociatesLogov2.png'} alt='Reffett Associates' /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className={classes.navOptions} navbar>
