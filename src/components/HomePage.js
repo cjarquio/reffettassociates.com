@@ -14,9 +14,6 @@ import { isBrowser } from 'react-device-detect';
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
-      "& .d-none": {
-        display: 'flex'
-      }
     },
     officeCards: {
       height: 300,
@@ -39,14 +36,17 @@ const useStyles = makeStyles(() =>
     },
     caption: {
       color: 'white',
-    textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
+      textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
       position: 'absolute',
       top: '85%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      fontSize: isBrowser? '1.55em': '1em',
+      fontSize: isBrowser ? '1.55em' : '1em',
       fontFamily: 'Georgia'
     },
+    controls: {
+      backgroundColor: 'rgba(0,0,0,0.1)'
+    }
   })
 );
 
@@ -110,8 +110,8 @@ export default function HomePage() {
       >
         <CarouselIndicators items={homeSlides} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        <CarouselControl className={classes.controls} direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl className={classes.controls} direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
       <h4 className={classes.locations} onClick={handleClick}>Seattle | Washington D.C. | New York | Dallas | Greensboro</h4>
     </div>
