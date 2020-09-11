@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { isBrowser } from 'react-device-detect';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Box, Typography, Card, CardContent } from '@material-ui/core';
 import PageTitle from './PageTitle';
 import contacts from '../assets/data/contacts.json';
 import members from '../assets/data/team.json';
@@ -24,6 +25,9 @@ const useStyles = makeStyles(() =>
     contactInfo: {
       display: (null || "") ? 'none' : '',
       margin: 0
+    },
+    directContact: {
+      textAlign: 'center'
     }
   })
 );
@@ -105,7 +109,7 @@ export default function ContactPage(props) {
         <Tabs
           value={value}
           onChange={handleChange}
-          variant="scrollable"
+          variant={isBrowser ? "fullWidth" : "scrollable"}
           scrollButtons="on"
           indicatorColor="primary"
           textColor="primary"
@@ -121,6 +125,13 @@ export default function ContactPage(props) {
         </Tabs>
       </AppBar>
       <ContactInformation />
+      <div className={classes.directContact}>
+        <Card elevation={5}>
+          <CardContent>
+            <Typography variant='h6'>Contact Reffett Associates directly at <a href='tel:4256372993'>425.637.2993</a> or <a href='tel:7033515662'>703.351.5662</a></Typography>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
