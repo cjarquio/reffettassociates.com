@@ -25,7 +25,7 @@ export default function ETAPage() {
       <li>Practice interview skills</li>
       <li>And more.</li>
       </ul>
-      <p>On average it takes executives 9 months to make a career transition. Are you ready for your next step?</p>
+      <p>On average it takes executives 9 months to make a career transition. Are you ready for your next step? Our team of experienced professionals is ready to help you find your next job faster.</p>
       <p><a href='mailto:tom.young@reffettassociates.com'>Contact Tom Young</a> for an introductory meeting to find out more.</p>
       <p>We are committed to serving Veterans and helping them achieve their career goals. <Link to='/veterans'>Learn More.</Link></p>
     </div>

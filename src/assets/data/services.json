@@ -78,12 +78,12 @@
     "description": "With experience ranging from holding senior level positions in the Office of Personnel Management, Department of Defense, and Capitol Hill, they are experienced in the issues that you confront and the government hiring process...",
     "clients": [
       {
-        "name": "Army and Air Force Exchange Service",
-        "image": "/images/Services/Public Sector/Army and Air Force Exchange Service.jpg"
+        "name": "AFRL",
+        "image": "/images/Services/Public Sector/AFRL.jpg"
       },
       {
-        "name": "US Department of Agriculture",
-        "image": "/images/Services/Public Sector/USDA.jpg"
+        "name": "US Food and Drug Administration",
+        "image": "/images/Services/Public Sector/FDA.png"
       },
       {
         "name": "US Department of Defense",
@@ -94,24 +94,17 @@
         "image": "/images/Services/Public Sector/DOT.png"
       },
       {
-        "name": "US Department of Veteran Affairs",
-        "image": "/images/Services/Public Sector/VA.png"
+        "name": "FirstNet",
+        "image": "/images/Services/Public Sector/FirstNet.png"
       },
-      {
-        "name": "US Food and Drug Administration",
-        "image": "/images/Services/Public Sector/FDA.png"
-      },
+      
       {
         "name": "US Merchant Maritime Administration",
         "image": "/images/Services/Public Sector/US Maritime.png"
       },
       {
-        "name": "US Merchant Marine Academy",
-        "image": "/images/Services/Public Sector/US Merchant Marine.png"
-      },
-      {
-        "name": "AFRL",
-        "image": "/images/Services/Public Sector/AFRL.jpg"
+        "name": "Army and Air Force Exchange Service",
+        "image": "/images/Services/Public Sector/Army and Air Force Exchange Service.jpg"
       },
       {
         "name": "City of Charlotte",
@@ -126,8 +119,12 @@
         "image": "/images/Services/Public Sector/Community Transit.jpg"
       },
       {
-        "name": "FirstNet",
-        "image": "/images/Services/Public Sector/FirstNet.png"
+        "name": "US Department of Agriculture",
+        "image": "/images/Services/Public Sector/USDA.jpg"
+      },
+      {
+        "name": "US Department of Veteran Affairs",
+        "image": "/images/Services/Public Sector/VA.png"
       },
       {
         "name": "Naval Postgraduate School",
@@ -140,9 +137,13 @@
       {
         "name": "Sound Transit",
         "image": "/images/Services/Public Sector/Sound Transit.png"
+      },
+      {
+        "name": "PGBC",
+        "image": "/images/Services/Public Sector/PGBC.png"
       }
     ],
-    "subtitle": "As a leading provider of retained executive search services to the federal government, we possess a unique understanding of your needs. Our group of Managing Directors bring with them unparalleled experience in the public sector. With experience ranging from holding senior level positions in the Office of Personnel Management, Department of Defense, on Capitol Hill, they are experienced in the government hiring process and the issues that you confront. \n\n Reffett Associates is a veteran-owned business and maintains a GSA contract (GS-02F-0194W). We are one of the few executive search firms to be awarded this prestigious qualification after completing their extensive qualification process. In addition, we are members of the National Defense Industrial Association, the Professional Services Council, and the Pacific Northwest Defense Coalition.",
+    "subtitle": "As a leading provider of retained executive search services across all levels of government, including federal, state and local governments and agencies, we possess a unique understanding of your needs. Our group of Managing Directors bring with them unparalleled experience in the public sector. With experience ranging from holding senior level positions in the Department of Defense, on Capitol Hill, and working with State and Local officials our team is experienced in the government hiring process and the issues that you confront finding a diverse and qualified talent pool. \n\n Reffett Associates is a veteran-owned business and maintains a GSA contract (GS-02F-0194W). We are one of the few executive search firms to be awarded this prestigious qualification after completing their extensive qualification process.",
     "subtitleList": []
   },
   {
