@@ -212,8 +212,8 @@
         "image": "/images/Services/Private Sector/ACON Investments.png"
       },
       {
-        "name": "BECU",
-        "image": "/images/Services/Private Sector/BECU.jpg"
+        "name": "The Food Partners",
+        "image": "/images/Services/Private Sector/Food Partners.png"
       },
       {
         "name": "General Atlantic",
@@ -238,6 +238,22 @@
       {
         "name": "Traveler's Insurance",
         "image": "/images/Services/Private Sector/Travelers Insurance.png"
+      },
+      {
+        "name": "BECU",
+        "image": "/images/Services/Private Sector/BECU.jpg"
+      },
+      {
+        "name": "Liberty Ridge Advisors",
+        "image": "/images/Services/Private Sector/Liberty Ridge.png"
+      },
+      {
+        "name": "Stone Creek Capital",
+        "image": "/images/Services/Private Sector/Stone Creek.jpg"
+      },
+      {
+        "name": "Alvarez & Marsal",
+        "image": "/images/Services/Private Sector/Alvarez.png"
       }
     ],
     "subtitle": "As market conditions have changed, Private Equity has become a greater part of our firm’s practice. We understand the talents and skills required to lead companies through all the stages of the life cycle, from the earliest stage start-up, to upgrading the management team of a portfolio company. \n\n Our firm has assisted major Private Equity firms in all stages of their evaluation process:",
