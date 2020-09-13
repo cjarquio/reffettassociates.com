@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import PageTemplate from './components/PageTemplate';
 import HomePage from './components/HomePage';
 import TeamPage from './components/TeamPage';
@@ -17,7 +17,7 @@ import Services from './components/Services';
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <>
         <PageTemplate>
           <Switch>
@@ -36,6 +36,6 @@ export default function Routes() {
           </Switch>
         </PageTemplate>
       </>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
