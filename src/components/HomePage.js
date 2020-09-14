@@ -99,7 +99,7 @@ export default function HomePage() {
         onExited={() => setAnimating(false)}
         key={item.altText}
       >
-        {item === homeSlides[0]? <Typography variant='h5' className={classes.caption}>{item.serviceArea}</Typography>: <Typography variant='h5' className={classes.caption}>{item.serviceArea} Clients Served</Typography>}
+        {item === homeSlides[0]? <Typography variant='h5' className={classes.caption}>{item.serviceArea}</Typography>: <Typography variant='h5' className={classes.caption} style={{cursor: 'pointer'}} onClick={()=>handleClickService(item.url)}>{item.serviceArea} Clients Served</Typography>}
         {item === homeSlides[0]?<img src={item.srcImg} alt={item.altText} className={classes.banner} />:<img src={item.srcImg} alt={item.altText} className={classes.banner} style={{cursor: 'pointer'}} onClick={()=>handleClickService(item.url)} />}
       </CarouselItem>
     );
