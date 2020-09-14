@@ -84,7 +84,7 @@ export default function ContactPage(props) {
               <div className='col-12 col-md-3'>
                 <img className={classes.picture} src={contactImage} alt={location.contactName} />
               </div>
-              <div className='col-12 col-md-3'>
+              <div className='col-12 col-md-5'>
                 <h5 style={{ fontWeight: 'bold' }}>{location.office} Office</h5>
                 <p className={classes.contactInfo}>{location.contactName}</p>
                 <p className={classes.contactInfo}>{location.addressLineOne}</p>

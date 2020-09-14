@@ -30,8 +30,8 @@
     "id": 3,
     "office": "New York",
     "contactName": "Gen. Glenn Lesniak (Ret.)",
-    "addressLineOne": "100 Pearl St, 14th Floor",
-    "addressLineTwo": "Hartford, CT 06103",
+    "addressLineOne": "",
+    "addressLineTwo": "",
     "contactMethod": "glenn.lesniak@reffettassociates.com",
     "altContactMethod": ""
   },
