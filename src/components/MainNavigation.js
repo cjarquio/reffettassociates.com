@@ -30,7 +30,7 @@ export default function MainNavigation() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className='container' style={{padding: 0}}>
+    <div className={classes.root}>
       <Navbar color="faded" light expand='md'>
         <NavbarBrand className={classes.logoButton} style={location.pathname === '/'?{width:'100px'}:{width:'200px'}} tag={Link} to="/"><img className={classes.logo} src={location.pathname === '/'? '/images/Logo/Logo.png':'/images/Logo/ReffettAssociatesLogov2.png'} alt='Reffett Associates' /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
