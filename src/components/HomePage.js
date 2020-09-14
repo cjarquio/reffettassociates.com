@@ -37,11 +37,12 @@ const useStyles = makeStyles(() =>
       color: 'white',
       textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
       position: 'absolute',
-      top: '85%',
+      top: '80%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      fontSize: isBrowser ? '1.55em' : '1em',
-      fontFamily: 'Georgia'
+      fontSize: isBrowser ? '2em' : '1.5em',
+      fontFamily: 'Georgia',
+      textAlign: 'center'
     },
     controls: {
       backgroundColor: 'rgba(0,0,0,0.1)'
@@ -66,8 +67,12 @@ export default function HomePage() {
   };
   const homeSlides = [initialSlide].concat(practiceAreas);
 
-  const handleClick = () => {
+  const handleClickContact = () => {
     history.push("/contact");
+  }
+
+  const handleClickService = (serviceArea) => {
+    history.push("/about/"+serviceArea);
   }
 
   const next = () => {
@@ -94,8 +99,8 @@ export default function HomePage() {
         onExited={() => setAnimating(false)}
         key={item.altText}
       >
-        <Typography variant='h5' className={classes.caption}>{item.serviceArea}</Typography>
-        <img src={item.srcImg} alt={item.altText} className={classes.banner} />
+        {item === homeSlides[0]? <Typography variant='h5' className={classes.caption}>{item.serviceArea}</Typography>: <Typography variant='h5' className={classes.caption}>{item.serviceArea} Clients</Typography>}
+        {item === homeSlides[0]?<img src={item.srcImg} alt={item.altText} className={classes.banner} />:<img src={item.srcImg} alt={item.altText} className={classes.banner} style={{cursor: 'pointer'}} onClick={()=>handleClickService(item.url)} />}
       </CarouselItem>
     );
   });
@@ -112,7 +117,7 @@ export default function HomePage() {
         <CarouselControl className={classes.controls} direction="prev" directionText="Previous" onClickHandler={previous} />
         <CarouselControl className={classes.controls} direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
-      <h4 className={classes.locations} onClick={handleClick}>Seattle | Washington D.C. | New York | Dallas | Greensboro</h4>
+      <h4 className={classes.locations} onClick={handleClickContact}>Seattle | Washington D.C. | New York | Dallas | Greensboro</h4>
     </div>
   );
 }
