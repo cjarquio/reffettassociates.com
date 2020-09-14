@@ -128,7 +128,7 @@ export default function ContactPage(props) {
       <div className={classes.directContact}>
         <Card elevation={5}>
           <CardContent>
-            <Typography variant='h6'>Contact Reffett Associates directly at <a href='tel:4256372993'>425.637.2993</a> or <a href='tel:7033515662'>703.351.5662</a></Typography>
+            <Typography variant='h6'>Contact Reffett Associates directly at <a href='tel:4256372993'>425.637.2993</a> or <a href='tel:7033515062'>703.351.5062</a></Typography>
           </CardContent>
         </Card>
       </div>
