@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot } from '@material-ui/lab';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import { Paper, Typography } from '@material-ui/core';
@@ -47,7 +46,7 @@ export default function NewsPage() {
                     <Typography variant="h6" component="h1">
                       {announcement.title}
                     </Typography>
-                    <Link to={announcement.link}>{announcement.link}</Link>
+                    <a href={announcement.link}>{announcement.link}</a>
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
