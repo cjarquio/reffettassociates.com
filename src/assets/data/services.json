@@ -131,68 +131,68 @@
     "clients": [
       {
         "name": "AFRL",
-        "image": "/images/Services/Public Sector/AFRL.jpg"
+        "image": "/images/Services/PublicSector/AFRL.jpg"
       },
       {
         "name": "US Food and Drug Administration",
-        "image": "/images/Services/Public Sector/FDA.png"
+        "image": "/images/Services/PublicSector/FDA.png"
       },
       {
         "name": "US Department of Defense",
-        "image": "/images/Services/Public Sector/DOD.png"
+        "image": "/images/Services/PublicSector/DOD.png"
       },
       {
         "name": "US Department of Transportation",
-        "image": "/images/Services/Public Sector/DOT.png"
+        "image": "/images/Services/PublicSector/DOT.png"
       },
       {
         "name": "FirstNet",
-        "image": "/images/Services/Public Sector/FirstNet.png"
+        "image": "/images/Services/PublicSector/FirstNet.png"
       },
       
       {
         "name": "US Merchant Maritime Administration",
-        "image": "/images/Services/Public Sector/US Maritime.png"
+        "image": "/images/Services/PublicSector/US Maritime.png"
       },
       {
         "name": "Army and Air Force Exchange Service",
-        "image": "/images/Services/Public Sector/Army and Air Force Exchange Service.jpg"
+        "image": "/images/Services/PublicSector/Army and Air Force Exchange Service.jpg"
       },
       {
         "name": "City of Charlotte",
-        "image": "/images/Services/Public Sector/City of Charlotte.png"
+        "image": "/images/Services/PublicSector/City of Charlotte.png"
       },
       {
         "name": "City of Seattle",
-        "image": "/images/Services/Public Sector/City of Seattle.jpg"
+        "image": "/images/Services/PublicSector/City of Seattle.jpg"
       },
       {
         "name": "Community Transit",
-        "image": "/images/Services/Public Sector/Community Transit.jpg"
+        "image": "/images/Services/PublicSector/Community Transit.jpg"
       },
       {
         "name": "US Department of Agriculture",
-        "image": "/images/Services/Public Sector/USDA.jpg"
+        "image": "/images/Services/PublicSector/USDA.jpg"
       },
       {
         "name": "US Department of Veteran Affairs",
-        "image": "/images/Services/Public Sector/VA.png"
+        "image": "/images/Services/PublicSector/VA.png"
       },
       {
         "name": "Naval Postgraduate School",
-        "image": "/images/Services/Public Sector/Naval Postgraduate School.png"
+        "image": "/images/Services/PublicSector/Naval Postgraduate School.png"
       },
       {
         "name": "Northwest Seaport Alliance",
-        "image": "/images/Services/Public Sector/Northwest Seaport.png"
+        "image": "/images/Services/PublicSector/Northwest Seaport.png"
       },
       {
         "name": "Sound Transit",
-        "image": "/images/Services/Public Sector/Sound Transit.png"
+        "image": "/images/Services/PublicSector/Sound Transit.png"
       },
       {
         "name": "PGBC",
-        "image": "/images/Services/Public Sector/PGBC.png"
+        "image": "/images/Services/PublicSector/PGBC.png"
       }
     ],
     "subtitle": "As a leading provider of retained executive search services across all levels of government, including federal, state and local governments and agencies, we possess a unique understanding of your needs. Our group of Managing Directors bring with them unparalleled experience in the public sector. With experience ranging from holding senior level positions in the Department of Defense, on Capitol Hill, and working with State and Local officials our team is experienced in the government hiring process and the issues that you confront finding a diverse and qualified talent pool. \n\n Reffett Associates is a veteran-owned business and maintains a GSA contract (GS-02F-0194W). We are one of the few executive search firms to be awarded this prestigious qualification after completing their extensive qualification process.",
@@ -268,51 +268,51 @@
     "clients": [
       {
         "name": "ACON",
-        "image": "/images/Services/Private Sector/ACON Investments.png"
+        "image": "/images/Services/PrivateSector/ACON Investments.png"
       },
       {
         "name": "The Food Partners",
-        "image": "/images/Services/Private Sector/Food Partners.png"
+        "image": "/images/Services/PrivateSector/Food Partners.png"
       },
       {
         "name": "General Atlantic",
-        "image": "/images/Services/Private Sector/General Atlantic.png"
+        "image": "/images/Services/PrivateSector/General Atlantic.png"
       },
       {
         "name": "Golden Gate Capital",
-        "image": "/images/Services/Private Sector/Golden Gate Capital.png"
+        "image": "/images/Services/PrivateSector/Golden Gate Capital.png"
       },
       {
         "name": "Leonard Green and Partners",
-        "image": "/images/Services/Private Sector/Leonard Green and Partners.png"
+        "image": "/images/Services/PrivateSector/Leonard Green and Partners.png"
       },
       {
         "name": "Morgan-Stanley",
-        "image": "/images/Services/Private Sector/Morgan-Stanley.jpg"
+        "image": "/images/Services/PrivateSector/Morgan-Stanley.jpg"
       },
       {
         "name": "Sun Capital Partners",
-        "image": "/images/Services/Private Sector/Sun Capital Partners.png"
+        "image": "/images/Services/PrivateSector/Sun Capital Partners.png"
       },
       {
         "name": "Traveler's Insurance",
-        "image": "/images/Services/Private Sector/Travelers Insurance.png"
+        "image": "/images/Services/PrivateSector/Travelers Insurance.png"
       },
       {
         "name": "BECU",
-        "image": "/images/Services/Private Sector/BECU.jpg"
+        "image": "/images/Services/PrivateSector/BECU.jpg"
       },
       {
         "name": "Liberty Ridge Advisors",
-        "image": "/images/Services/Private Sector/Liberty Ridge.png"
+        "image": "/images/Services/PrivateSector/Liberty Ridge.png"
       },
       {
         "name": "Stone Creek Capital",
-        "image": "/images/Services/Private Sector/Stone Creek.jpg"
+        "image": "/images/Services/PrivateSector/Stone Creek.jpg"
       },
       {
         "name": "Alvarez & Marsal",
-        "image": "/images/Services/Private Sector/Alvarez.png"
+        "image": "/images/Services/PrivateSector/Alvarez.png"
       }
     ],
     "subtitle": "As market conditions have changed, Private Equity has become a greater part of our firm’s practice. We understand the talents and skills required to lead companies through all the stages of the life cycle, from the earliest stage start-up, to upgrading the management team of a portfolio company. \n\n Our firm has assisted major Private Equity firms in all stages of their evaluation process:",
