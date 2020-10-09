@@ -3,18 +3,28 @@
     "id": 0,
     "title": "The One Thing You Need to Find the Perfect Job",
     "date": "06/02/2014",
-    "link":"https://www.diversityinc.com/one-thing-need-perfect-job/"
+    "link":"https://www.diversityinc.com/one-thing-need-perfect-job/",
+    "external": true
   },
   {
     "id": 1,
     "title": "Reffett Associates Inks Recruiting Deal With Department of Veterans Affairs",
     "date": "08/01/2017",
-    "link":"https://huntscanlon.com/reffett-associates-recruiting-deal-department-veterans-affairs/"
+    "link":"https://huntscanlon.com/reffett-associates-recruiting-deal-department-veterans-affairs/",
+    "external": true
   },
   {
     "id": 2,
     "title": "Reffett Associates Adds Supply Chain Veteran",
     "date": "07/22/2020",
-    "link":"https://huntscanlon.com/reffett-associates-adds-supply-chain-veteran/"
+    "link":"https://huntscanlon.com/reffett-associates-adds-supply-chain-veteran/",
+    "external": true
+  },
+  {
+    "id": 3,
+    "title": "Reffett Associates Assists the Air Force Research Laboratory with Successful Placement of Senior Scientist for High Fidelity Weapons Modeling and Simulation",
+    "date": "10/12/2020",
+    "link":"reffett-associates-assists-afrl",
+    "external": false
   }
 ]

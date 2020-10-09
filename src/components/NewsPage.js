@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot } from '@material-ui/lab';
+import { useRouteMatch } from 'react-router-dom';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import { Paper, Typography } from '@material-ui/core';
 import PageTitle from './PageTitle';
@@ -18,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NewsPage() {
   const classes = useStyles();
+  let match = useRouteMatch();
 
   return (
     <div>
@@ -46,7 +48,7 @@ export default function NewsPage() {
                     <Typography variant="h6" component="h1">
                       {announcement.title}
                     </Typography>
-                    <a href={announcement.link}>{announcement.link}</a>
+                    <a href={announcement.external? announcement.link:`#${match.url}/${announcement.link}`}>{announcement.external? announcement.link:`${match.url}/${announcement.link}`}</a>
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
