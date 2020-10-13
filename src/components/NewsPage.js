@@ -48,7 +48,7 @@ export default function NewsPage() {
                     <Typography variant="h6" component="h1">
                       {announcement.title}
                     </Typography>
-                    <a href={announcement.external? announcement.link:`#${match.url}/${announcement.link}`}>{announcement.external? announcement.link:`${match.url}/${announcement.link}`}</a>
+                    <a href={announcement.external? announcement.link:`#${match.url}/${announcement.link}`}>{announcement.external? announcement.link:`http://reffettassociates.com/#${match.url}/${announcement.link}`}</a>
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
