@@ -275,8 +275,8 @@
         "image": "/images/Services/PrivateSector/Food Partners.png"
       },
       {
-        "name": "General Atlantic",
-        "image": "/images/Services/PrivateSector/General Atlantic.png"
+        "name": "Core Scientific",
+        "image": "/images/Services/PrivateSector/Core Scientific.jpg"
       },
       {
         "name": "Golden Gate Capital",
@@ -313,6 +313,10 @@
       {
         "name": "Alvarez & Marsal",
         "image": "/images/Services/PrivateSector/Alvarez.png"
+      },
+      {
+        "name": "General Atlantic",
+        "image": "/images/Services/PrivateSector/General Atlantic.png"
       }
     ],
     "subtitle": "As market conditions have changed, Private Equity has become a greater part of our firm’s practice. We understand the talents and skills required to lead companies through all the stages of the life cycle, from the earliest stage start-up, to upgrading the management team of a portfolio company. \n\n Our firm has assisted major Private Equity firms in all stages of their evaluation process:",
