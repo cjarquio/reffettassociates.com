@@ -7,6 +7,9 @@ const useStyles = makeStyles(() =>
   createStyles({
     root: {
       
+    },
+    paragraph: {
+      fontSize: '1.1em'
     }
   })
 );
@@ -17,29 +20,23 @@ export default function InternalNews() {
 
   const article = news.find(topic => topic.link === topicId);
 
-  const Section = () => {
+  const Article = () => {
     const section = article.article.section;
-
+    
     return (
       section.map((item) => {
         return (
-        <p>{item}</p>
+          <>
+            <h5>{item.sectionTitle}</h5>
+            {
+              item.paragraphs.map((paragraph)=>{
+                return (
+                  <p className={classes.paragraph}>{paragraph}</p>
+                )
+              })
+            }
+          </>
         )
-      })
-    );
-  }
-
-  const Article = () => {
-    const sectionTitle = article.article.subtitle;
-    
-    return (
-      sectionTitle.map((item) => {
-        return (
-          <div>
-            <h5>{item}</h5>
-            <Section />
-          </div>
-        );
       })
     );
   }
