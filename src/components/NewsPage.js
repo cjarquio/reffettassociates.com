@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot } from '@material-ui/lab';
 import { useRouteMatch } from 'react-router-dom';
@@ -19,7 +19,27 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NewsPage() {
   const classes = useStyles();
+  const [news , setNews] = useState([]);
   let match = useRouteMatch();
+
+  useEffect(()=>{
+     let mounted = true;
+
+     if(mounted){
+          const sortedNews = announcements.sort(function (a, b) {
+               // Turn your strings into dates, and then subtract them
+               // to get a value that is either negative, positive, or zero.
+               return new Date(b.date) - new Date(a.date);
+          });
+          
+          
+          setNews(sortedNews)
+     }
+
+     return ()=>{
+          mounted = false;
+     }
+  },[])
 
   return (
     <div>
@@ -29,7 +49,7 @@ export default function NewsPage() {
       />
       <Timeline align="alternate">
         {
-          announcements.reverse().map((announcement) => {
+          news.map((announcement) => {
             return (
               <TimelineItem>
                 <TimelineOppositeContent>

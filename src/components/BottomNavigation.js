@@ -64,7 +64,7 @@ export default function BottomNavigation() {
           </NavItem>
         </Nav>
         <NavbarBrand style={{ width: '200px' }} tag={Link} to="/"><img className={classes.logo} src='/images/Logo/BottomNavLogo.png' alt='Logo' /></NavbarBrand>
-        <NavbarText className={classes.bottomNavText}>&copy;2020 All Rights Reserved.</NavbarText>
+        <NavbarText className={classes.bottomNavText}>&copy;2021 All Rights Reserved.</NavbarText>
       </div>
     </div>
   );
