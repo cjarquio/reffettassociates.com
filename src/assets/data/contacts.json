@@ -9,15 +9,6 @@
     "altContactMethod": "(425) 637-2993"
   },
   {
-    "id": 1,
-    "office": "Dallas",
-    "contactName": "Angel Rodriguez",
-    "addressLineOne": "4514 Cole Avenue, Suite 600",
-    "addressLineTwo": "Dallas, TX 75205",
-    "contactMethod": "angel@reffettassociates.com",
-    "altContactMethod": ""
-  },
-  {
     "id": 2,
     "office": "Washington DC",
     "contactName": "Eric Reffett",

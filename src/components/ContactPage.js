@@ -135,3 +135,15 @@ export default function ContactPage(props) {
     </div>
   );
 }
+
+/**
+ * {
+    "id": 1,
+    "office": "Dallas",
+    "contactName": "Angel Rodriguez",
+    "addressLineOne": "4514 Cole Avenue, Suite 600",
+    "addressLineTwo": "Dallas, TX 75205",
+    "contactMethod": "angel@reffettassociates.com",
+    "altContactMethod": ""
+  },
+ */

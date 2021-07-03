@@ -160,4 +160,19 @@ export default function TeamPage() {
       "Lonnie holds a Juris Doctorate from the Georgetown University Law Center and a Bachelor’s degree in Business Administration from the George Washington University. He lives in the Washington, DC area."
     ]
   },
+  {
+    "id": 3,
+    "name": "Angel Rodriguez",
+    "image": "/images/Team/AngelRodriguez.jpg",
+    "title": "Managing Director",
+    "location": "Dallas, TX",
+    "email": "",
+    "phoneNumber": "",
+    "bio": [
+      "Angel has over 20 years of corporate executive experience as a respected senior business and human resources leader.  Most recently, he served the business community as the Chief HR Officer for WorldVentures, a travel and direct selling company, with over 250,000 representatives and HQ staff.",
+      "Prior to this, Angel served as the Senior HR Leader for Kellogg International business, specifically Asia, Latin America, and Europe. In addition, Angel was a key leader in the integration of the Pringles acquisition by Kellogg.",
+      "Before joining Kellogg, Angel was the Senior Vice President of Human Resources for United Surgical Partners International, a leader in the ambulatory surgery industry, and preceding that was a Senior HR Executive at Frito Lay, where he was accountable for 43,000 field employees, led a team of 175 HR professionals, led the North American Staffing efforts, and was a key business and culture enabler.",
+      "Angel has served on several non-profit boards, including the Corporate Advisory Board for the National Society of Hispanic MBAs, the Harvard/Hispanic Association on Corporate Responsibility Alumni Network, the Texas Lyceum, and the National Board for the Girl Scouts of the USA. In addition, Angel is an Eagle Scout and a member of the INROADS Alumni Hall of Fame, and is actively involved in the movement to find solutions for the challenge of Autism. He holds a Bachelor of Arts from The University of Connecticut, a Master of Business Administration from The University of Texas at Dallas, and a Governance certificate from Harvard Business School."
+    ]
+  },
 */
