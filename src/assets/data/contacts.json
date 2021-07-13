@@ -9,7 +9,7 @@
     "altContactMethod": "(425) 637-2993"
   },
   {
-    "id": 2,
+    "id": 1,
     "office": "Washington DC",
     "contactName": "Eric Reffett",
     "addressLineOne": "2111 Wilson Boulevard, Suite 700",
@@ -18,7 +18,7 @@
     "altContactMethod": "(703) 351-5062"
   },
   {
-    "id": 3,
+    "id": 2,
     "office": "New York",
     "contactName": "Gen. Glenn Lesniak (Ret.)",
     "addressLineOne": "",
@@ -27,7 +27,7 @@
     "altContactMethod": ""
   },
   {
-    "id": 4,
+    "id": 3,
     "office": "Greensboro",
     "contactName": "Nancy Hoffmann",
     "addressLineOne": "",
