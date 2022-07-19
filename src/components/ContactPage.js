@@ -76,16 +76,18 @@ export default function ContactPage(props) {
   const ContactInformation = () => {
     return (
       contacts.map((location) => {
-        let contactImage = members.find(member => member.name === location.contactName).image;
+        const contactImage = members.find(member => member.name === location.contactName)?.image;
         return (
           <TabPanel value={value} index={location.id}>
             <div style={{ paddingTop: 10 }} className='row' key={location.id}>
               <div className='col-12 col-md-1' />
               <div className='col-12 col-md-3'>
-                <img className={classes.picture} src={contactImage} alt={location.contactName} />
+                {
+                            contactImage ? <img className={classes.picture} src={contactImage} alt={location.contactName} />:<></>
+                }
               </div>
               <div className='col-12 col-md-5'>
-                <h5 style={{ fontWeight: 'bold' }}>{location.office} Office</h5>
+                {contactImage ? <h5 style={{ fontWeight: 'bold' }}>{location.office} Office</h5> : <></>}
                 <p className={classes.contactInfo}>{location.contactName}</p>
                 <p className={classes.contactInfo}>{location.addressLineOne}</p>
                 <p className={classes.contactInfo}>{location.addressLineTwo}</p>

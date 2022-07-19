@@ -17,8 +17,17 @@
     "contactMethod": "eareffett@reffettasociates.com",
     "altContactMethod": "(703) 351-5062"
   },
-  {
+{
     "id": 2,
+    "office": "Dallas",
+    "contactName": "",
+    "addressLineOne": "",
+    "addressLineTwo": "",
+    "contactMethod": "",
+    "altContactMethod": ""
+},
+  {
+    "id": 3,
     "office": "New York",
     "contactName": "Gen. Glenn Lesniak (Ret.)",
     "addressLineOne": "",
@@ -27,7 +36,7 @@
     "altContactMethod": ""
   },
   {
-    "id": 3,
+    "id": 4,
     "office": "Greensboro",
     "contactName": "Nancy Hoffmann",
     "addressLineOne": "",

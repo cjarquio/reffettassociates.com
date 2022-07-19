@@ -7,15 +7,15 @@
   },
   {
     "id": 1,
-    "location": "Dallas",
-    "image": "/images/Locations/Dallas.jpg",
-    "address": ""
-  },
-  {
-    "id": 2,
     "location": "Washington DC",
     "image": "/images/Locations/DC.jpg",
     "address": "2111 Wilson Boulevard, Suite 700 Arlington, VA 22201"
+},
+  {
+    "id": 2,
+    "location": "Dallas",
+    "image": "/images/Locations/Dallas.jpg",
+    "address": ""
   },
   {
     "id": 3,
