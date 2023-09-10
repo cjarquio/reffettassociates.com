@@ -2,7 +2,7 @@
      {
           "id": 0,
           "name": "William Reffett",
-          "image": "/images/Team/BillReffett.jpg",
+          "image": "images/Team/BillReffett.jpg",
           "title": "Founder, Managing Partner",
           "location": "Seattle, Washington",
           "email": "",
@@ -16,7 +16,7 @@
      {
           "id": 1,
           "name": "Nancy Hoffmann",
-          "image": "/images/Team/NancyHoffman.jpg",
+          "image": "images/Team/NancyHoffman.jpg",
           "title": "Managing Director",
           "location": "Greensboro, North Carolina",
           "email": "",
@@ -33,7 +33,7 @@
      {
           "id": 2,
           "name": "Sam Mayberry",
-          "image": "/images/Team/SamMayberry.jpg",
+          "image": "images/Team/SamMayberry.jpg",
           "title": "Principal",
           "location": "Seattle, Washington",
           "email": "",
@@ -48,7 +48,7 @@
      {
           "id": 3,
           "name": "Tim Geriak",
-          "image": "/images/Team/TimGeriak.jpg",
+          "image": "images/Team/TimGeriak.jpg",
           "title": "Managing Director",
           "location": "Sacramento, California",
           "email": "",
@@ -63,7 +63,7 @@
      {
           "id": 4,
           "name": "Tom Young",
-          "image": "/images/Team/TomYoung1.png",
+          "image": "images/Team/TomYoung1.png",
           "title": "Director of Operations And Sustainability Manager",
           "location": "Seattle, Washington",
           "email": "",
@@ -80,7 +80,7 @@
      {
           "id": 5,
           "name": "Eric Reffett",
-          "image": "/images/Team/EricReffett.jpg",
+          "image": "images/Team/EricReffett.jpg",
           "title": "Managing Director",
           "location": "Metro DC",
           "bio": [
@@ -92,7 +92,7 @@
      {
           "id": 6,
           "name": "Margaret Gottlieb",
-          "image": "/images/Team/MargaretGottlieb.png",
+          "image": "images/Team/MargaretGottlieb.png",
           "title": "Managing Director",
           "location": "Metro DC",
           "bio": [
@@ -104,7 +104,7 @@
      {
           "id": 7,
           "name": "Marshall Reffett",
-          "image": "/images/Team/MarshallReffett.jpg",
+          "image": "images/Team/MarshallReffett.jpg",
           "title": "Managing Director",
           "location": "Seattle, Washington",
           "email": "",
@@ -118,7 +118,7 @@
      {
           "id": 8,
           "name": "Gen. Glenn Lesniak (Ret.)",
-          "image": "/images/Team/GlennLesniak.jpg",
+          "image": "images/Team/GlennLesniak.jpg",
           "title": "Senior Advisor",
           "location": "New York",
           "email": "",
@@ -135,7 +135,7 @@
      {
           "id": 9,
           "name": "Mindee Prichard",
-          "image": "/images/Team/MindeePrichard1.png",
+          "image": "images/Team/MindeePrichard1.png",
           "title": "Office Manager",
           "location": "Seattle, Washington",
           "email": "",

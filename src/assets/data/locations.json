@@ -2,37 +2,37 @@
     {
         "id": 0,
         "location": "Seattle",
-        "image": "/images/Locations/Seattle.jpg",
+        "image": "images/Locations/Seattle.jpg",
         "address": "11900 NE 1st St, Suite 300 Bellevue, WA 98005"
     },
     {
         "id": 1,
         "location": "Washington DC",
-        "image": "/images/Locations/DC.jpg",
+        "image": "images/Locations/DC.jpg",
         "address": "2111 Wilson Boulevard, Suite 700 Arlington, VA 22201"
     },
     {
         "id": 2,
         "location": "Dallas",
-        "image": "/images/Locations/Dallas.jpg",
+        "image": "images/Locations/Dallas.jpg",
         "address": ""
     },
     {
         "id": 3,
         "location": "New York",
-        "image": "/images/Locations/NewYork.jpg",
+        "image": "images/Locations/NewYork.jpg",
         "address": ""
     },
     {
         "id": 4,
         "location": "Greensboro",
-        "image": "/images/Locations/Greensboro.jpg",
+        "image": "images/Locations/Greensboro.jpg",
         "address": ""
     },
     {
         "id": 5,
         "location": "Sacramento",
-        "image": "/images/Locations/Sacramento.jpg",
+        "image": "images/Locations/Sacramento.jpg",
         "address": ""
     }
 ]

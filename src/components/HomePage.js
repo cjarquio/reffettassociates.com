@@ -56,7 +56,7 @@ export default function HomePage() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
   const initialSlide = {
-    "srcImg": "/images/Home/ReffettAssociatesHome.jpg",
+    "srcImg": "images/Home/ReffettAssociatesHome.jpg",
     "altText": "",
     "serviceArea": "",
     "url": "",

@@ -63,7 +63,7 @@ export default function BottomNavigation() {
             <NavLink style={{textDecoration: location.pathname === '/news'? '':'underline'}} className={classes.navLink} tag={Link} to="/news">News</NavLink>
           </NavItem>
         </Nav>
-        <NavbarBrand style={{ width: '200px' }} tag={Link} to="/"><img className={classes.logo} src='/images/Logo/BottomNavLogo.png' alt='Logo' /></NavbarBrand>
+        <NavbarBrand style={{ width: '200px' }} tag={Link} to="/"><img className={classes.logo} src='images/Logo/BottomNavLogo.png' alt='Logo' /></NavbarBrand>
         <NavbarText className={classes.bottomNavText}>&copy;2022 All Rights Reserved.</NavbarText>
       </div>
     </div>

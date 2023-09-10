@@ -147,7 +147,7 @@ export default function TeamPage() {
 {
     "id": 7,
     "name": "Lonnie P. Taylor",
-    "image": "/images/Team/LonnieTaylor.jpg",
+    "image": "images/Team/LonnieTaylor.jpg",
     "title": "Senior Advisor",
     "location": "Metro DC",
     "email": "",
@@ -163,7 +163,7 @@ export default function TeamPage() {
   {
     "id": 3,
     "name": "Angel Rodriguez",
-    "image": "/images/Team/AngelRodriguez.jpg",
+    "image": "images/Team/AngelRodriguez.jpg",
     "title": "Managing Director",
     "location": "Dallas, TX",
     "email": "",

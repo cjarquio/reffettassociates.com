@@ -1,6 +1,6 @@
 [
   {
-    "srcImg": "/images/About/retailbig.jpg",
+    "srcImg": "images/About/retailbig.jpg",
     "altText": "Retail",
     "serviceArea": "Retail",
     "url": "retail",
@@ -8,122 +8,122 @@
     "clients": [
       {
         "name": "Bass Pro Shops",
-        "image": "/images/Services/Retail/Bass Pro Shops.jpg"
+        "image": "images/Services/Retail/Bass Pro Shops.jpg"
       },
       {
         "name": "Bartell Drugs",
-        "image": "/images/Services/Retail/Bartell Drugs.png"
+        "image": "images/Services/Retail/Bartell Drugs.png"
       },
       {
         "name": "Bi-Lo",
-        "image": "/images/Services/Retail/BI-LO Logo.jpg"
+        "image": "images/Services/Retail/BI-LO Logo.jpg"
       },
       {
         "name": "Burlington",
-        "image": "/images/Services/Retail/Burlington.jpg"
+        "image": "images/Services/Retail/Burlington.jpg"
       },
       {
         "name": "Cabelas",
-        "image": "/images/Services/Retail/Cabelas.png"
+        "image": "images/Services/Retail/Cabelas.png"
       },
       {
         "name": "Dean Foods",
-        "image": "/images/Services/Retail/Dean Foods.png"
+        "image": "images/Services/Retail/Dean Foods.png"
       },
       {
         "name": "Dymatize",
-        "image": "/images/Services/Retail/Dymatize.jpg"
+        "image": "images/Services/Retail/Dymatize.jpg"
       },
       {
         "name": "Hershey's",
-        "image": "/images/Services/Retail/Hershey.png"
+        "image": "images/Services/Retail/Hershey.png"
       },
       {
         "name": "King's Food Market",
-        "image": "/images/Services/Retail/Kings Food Market.jpg"
+        "image": "images/Services/Retail/Kings Food Market.jpg"
       },
       {
         "name": "Petco",
-        "image": "/images/Services/Retail/Petco.png"
+        "image": "images/Services/Retail/Petco.png"
       },
       {
         "name": "Schwans",
-        "image": "/images/Services/Retail/Schwans.jpg"
+        "image": "images/Services/Retail/Schwans.jpg"
       },
       {
         "name": "Seattle Mariners",
-        "image": "/images/Services/Retail/Seattle Mariners.png"
+        "image": "images/Services/Retail/Seattle Mariners.png"
       },
       {
         "name": "Army Air Force Exchange",
-        "image": "/images/Services/Retail/Army Air Force Exhange.jpg"
+        "image": "images/Services/Retail/Army Air Force Exhange.jpg"
       },
       {
         "name": "Sports Authority",
-        "image": "/images/Services/Retail/Sports Authority.jpg"
+        "image": "images/Services/Retail/Sports Authority.jpg"
       },
       {
         "name": "Strack",
-        "image": "/images/Services/Retail/Strack.png"
+        "image": "images/Services/Retail/Strack.png"
       },
       {
         "name": "The Fresh Market",
-        "image": "/images/Services/Retail/The Fresh Market.png"
+        "image": "images/Services/Retail/The Fresh Market.png"
       },
       {
         "name": "Ahold USA",
-        "image": "/images/Services/Retail/Ahold.jpg"
+        "image": "images/Services/Retail/Ahold.jpg"
       },
       {
         "name": "Dean Foods",
-        "image": "/images/Services/Retail/Dean Foods.jpg"
+        "image": "images/Services/Retail/Dean Foods.jpg"
       },
       {
         "name": "Giant",
-        "image": "/images/Services/Retail/Giant.png"
+        "image": "images/Services/Retail/Giant.png"
       },
       {
         "name": "Homeland",
-        "image": "/images/Services/Retail/Homeland.jpg"
+        "image": "images/Services/Retail/Homeland.jpg"
       },
       {
         "name": "KVAT",
-        "image": "/images/Services/Retail/KVAT.png"
+        "image": "images/Services/Retail/KVAT.png"
       },
       {
         "name": "Metropolitan Market",
-        "image": "/images/Services/Retail/Metropolitan Market.png"
+        "image": "images/Services/Retail/Metropolitan Market.png"
       },
       {
         "name": "Northgate Market",
-        "image": "/images/Services/Retail/Northgate Market.png"
+        "image": "images/Services/Retail/Northgate Market.png"
       },
       {
         "name": "OTG",
-        "image": "/images/Services/Retail/OTG.jpg"
+        "image": "images/Services/Retail/OTG.jpg"
       },
       {
         "name": "Peekay",
-        "image": "/images/Services/Retail/Peekay.jpg"
+        "image": "images/Services/Retail/Peekay.jpg"
       },
       {
         "name": "POST",
-        "image": "/images/Services/Retail/Post.jpg"
+        "image": "images/Services/Retail/Post.jpg"
       },
       {
         "name": "VF",
-        "image": "/images/Services/Retail/VF.png"
+        "image": "images/Services/Retail/VF.png"
       },
       {
         "name": "Xochitl",
-        "image": "/images/Services/Retail/Xochitl.png"
+        "image": "images/Services/Retail/Xochitl.png"
       }
     ],
     "subtitle": "We understand the challenges that you face, and what is needed to drive success. In today’s omni-channel retail world, leaders must be knowledgeable and versatile. This is not an environment for the timid. \n\n Our Managing Directors were selected based on their expertise in key leadership roles in the industries they serve. Our Retail / Consumer team is composed of senior executives who have been on “your side” of the desk. They understand the importance of identifying superior leaders and recruiting them to the organization. The search firm you select must have the same sense of urgency displayed by your organization – timeliness is essential to effective candidate placement. \n\n We have assisted companies in all areas of the Retail / Consumer world, such as traditional department stores, specialty retail companies, business to consumer, and on-line retailing. Each search engagement is specifically tailored to the needs of the client and is personally conducted by a Managing Director – from the beginning to its successful conclusion.",
     "subtitleList": []
   },
   {
-    "srcImg": "/images/About/publicsectorbig.jpg",
+    "srcImg": "images/About/publicsectorbig.jpg",
     "altText": "Public Sector",
     "serviceArea": "Public Sector",
     "url": "public-sector",
@@ -131,75 +131,75 @@
     "clients": [
       {
         "name": "AFRL",
-        "image": "/images/Services/PublicSector/AFRL.jpg"
+        "image": "images/Services/PublicSector/AFRL.jpg"
       },
       {
         "name": "US Food and Drug Administration",
-        "image": "/images/Services/PublicSector/FDA.png"
+        "image": "images/Services/PublicSector/FDA.png"
       },
       {
         "name": "US Department of Defense",
-        "image": "/images/Services/PublicSector/DOD.png"
+        "image": "images/Services/PublicSector/DOD.png"
       },
       {
         "name": "US Department of Transportation",
-        "image": "/images/Services/PublicSector/DOT.png"
+        "image": "images/Services/PublicSector/DOT.png"
       },
       {
         "name": "FirstNet",
-        "image": "/images/Services/PublicSector/FirstNet.png"
+        "image": "images/Services/PublicSector/FirstNet.png"
       },
       
       {
         "name": "US Merchant Maritime Administration",
-        "image": "/images/Services/PublicSector/US Maritime.png"
+        "image": "images/Services/PublicSector/US Maritime.png"
       },
       {
         "name": "Army and Air Force Exchange Service",
-        "image": "/images/Services/PublicSector/Army and Air Force Exchange Service.jpg"
+        "image": "images/Services/PublicSector/Army and Air Force Exchange Service.jpg"
       },
       {
         "name": "City of Charlotte",
-        "image": "/images/Services/PublicSector/City of Charlotte.png"
+        "image": "images/Services/PublicSector/City of Charlotte.png"
       },
       {
         "name": "City of Seattle",
-        "image": "/images/Services/PublicSector/City of Seattle.jpg"
+        "image": "images/Services/PublicSector/City of Seattle.jpg"
       },
       {
         "name": "Community Transit",
-        "image": "/images/Services/PublicSector/Community Transit.jpg"
+        "image": "images/Services/PublicSector/Community Transit.jpg"
       },
       {
         "name": "US Department of Agriculture",
-        "image": "/images/Services/PublicSector/USDA.jpg"
+        "image": "images/Services/PublicSector/USDA.jpg"
       },
       {
         "name": "US Department of Veteran Affairs",
-        "image": "/images/Services/PublicSector/VA.png"
+        "image": "images/Services/PublicSector/VA.png"
       },
       {
         "name": "Naval Postgraduate School",
-        "image": "/images/Services/PublicSector/Naval Postgraduate School.png"
+        "image": "images/Services/PublicSector/Naval Postgraduate School.png"
       },
       {
         "name": "Northwest Seaport Alliance",
-        "image": "/images/Services/PublicSector/Northwest Seaport.png"
+        "image": "images/Services/PublicSector/Northwest Seaport.png"
       },
       {
         "name": "Sound Transit",
-        "image": "/images/Services/PublicSector/Sound Transit.png"
+        "image": "images/Services/PublicSector/Sound Transit.png"
       },
       {
         "name": "PGBC",
-        "image": "/images/Services/PublicSector/PGBC.png"
+        "image": "images/Services/PublicSector/PGBC.png"
       }
     ],
     "subtitle": "As a leading provider of retained executive search services across all levels of government, including federal, state and local governments and agencies, we possess a unique understanding of your needs. Our group of Managing Directors bring with them unparalleled experience in the public sector. With experience ranging from holding senior level positions in the Department of Defense, on Capitol Hill, and working with State and Local officials our team is experienced in the government hiring process and the issues that you confront finding a diverse and qualified talent pool. \n\n Reffett Associates is a veteran-owned business and maintains a GSA contract (GS-02F-0194W). We are one of the few executive search firms to be awarded this prestigious qualification after completing their extensive qualification process.",
     "subtitleList": []
   },
   {
-    "srcImg": "/images/About/nonprofitbigpuz.jpg",
+    "srcImg": "images/About/nonprofitbigpuz.jpg",
     "altText": "Associations & Nonprofits",
     "serviceArea": "Associations & Nonprofits",
     "url": "associations-nonprofit",
@@ -207,60 +207,60 @@
     "clients": [
       {
         "name": "Touchstone Energy",
-        "image": "/images/Services/Associations/Touchstone Energy.png"
+        "image": "images/Services/Associations/Touchstone Energy.png"
       },
       {
         "name": "United Way of King County",
-        "image": "/images/Services/Associations/United Way of King County.png"
+        "image": "images/Services/Associations/United Way of King County.png"
       },
       {
         "name": "Diversity Inc",
-        "image": "/images/Services/Associations/DiversityInc.jpg"
+        "image": "images/Services/Associations/DiversityInc.jpg"
       },
       {
         "name": "NRECA",
-        "image": "/images/Services/Associations/NRECA.jpg"
+        "image": "images/Services/Associations/NRECA.jpg"
       },
       {
         "name": "National Bureau of Asian Research",
-        "image": "/images/Services/Associations/NBR.png"
+        "image": "images/Services/Associations/NBR.png"
       },
       {
         "name": "National Association of Black Accountants",
-        "image": "/images/Services/Associations/Naba.jpg"
+        "image": "images/Services/Associations/Naba.jpg"
       },
       {
         "name": "National Association of Manufucturers",
-        "image": "/images/Services/Associations/NAM.jpg"
+        "image": "images/Services/Associations/NAM.jpg"
       },
       
       {
         "name": "National Society of Hispanic MBAs",
-        "image": "/images/Services/Associations/NSH.jpg"
+        "image": "images/Services/Associations/NSH.jpg"
       },
       {
         "name": "Pioneer Human Services",
-        "image": "/images/Services/Associations/Pioneer.jpg"
+        "image": "images/Services/Associations/Pioneer.jpg"
       },
       {
         "name": "American Council on Education",
-        "image": "/images/Services/Associations/ACE.png"
+        "image": "images/Services/Associations/ACE.png"
       },
       
       {
         "name": "Clifford Beers Clinic",
-        "image": "/images/Services/Associations/Clifford Beers.jpg"
+        "image": "images/Services/Associations/Clifford Beers.jpg"
       },
       {
         "name": "Internation Council of Shopping Centers",
-        "image": "/images/Services/Associations/ICSC.jpg"
+        "image": "images/Services/Associations/ICSC.jpg"
       }
     ],
     "subtitle": "Outstanding leadership skills are developed over a lifetime of great opportunities and experiences.  We are intimately familiar with association and not-for-profit organizations and the challenges they face every day. \n\n We are especially well qualified to identify that unique person to fit your organization’s needs.  As not-for-profit organizations begin operating more like businesses and implementing best practices and governance structures, effective leadership at the top is imperative.  Reffett Associates will find the individuals who best fit your organization and will work towards the achievement of your organization’s mission. \n\n Our experience encompasses the entire Federal Government, and a majority of the top 100 Federal contractors.",
     "subtitleList": []
   },
   {
-    "srcImg": "/images/About/privateequitybig.jpg",
+    "srcImg": "images/About/privateequitybig.jpg",
     "altText": "Private Equity & Financial Services",
     "serviceArea": "Private Equity & Financial Services",
     "url": "private-equity",
@@ -268,62 +268,62 @@
     "clients": [
       {
         "name": "ACON",
-        "image": "/images/Services/PrivateSector/ACON Investments.png"
+        "image": "images/Services/PrivateSector/ACON Investments.png"
       },
       {
         "name": "The Food Partners",
-        "image": "/images/Services/PrivateSector/Food Partners.png"
+        "image": "images/Services/PrivateSector/Food Partners.png"
       },
       {
         "name": "Core Scientific",
-        "image": "/images/Services/PrivateSector/Core Scientific.jpg"
+        "image": "images/Services/PrivateSector/Core Scientific.jpg"
       },
       {
         "name": "Golden Gate Capital",
-        "image": "/images/Services/PrivateSector/Golden Gate Capital.png"
+        "image": "images/Services/PrivateSector/Golden Gate Capital.png"
       },
       {
         "name": "Leonard Green and Partners",
-        "image": "/images/Services/PrivateSector/Leonard Green and Partners.png"
+        "image": "images/Services/PrivateSector/Leonard Green and Partners.png"
       },
       {
         "name": "Morgan-Stanley",
-        "image": "/images/Services/PrivateSector/Morgan-Stanley.jpg"
+        "image": "images/Services/PrivateSector/Morgan-Stanley.jpg"
       },
       {
         "name": "Sun Capital Partners",
-        "image": "/images/Services/PrivateSector/Sun Capital Partners.png"
+        "image": "images/Services/PrivateSector/Sun Capital Partners.png"
       },
       {
         "name": "Traveler's Insurance",
-        "image": "/images/Services/PrivateSector/Travelers Insurance.png"
+        "image": "images/Services/PrivateSector/Travelers Insurance.png"
       },
       {
         "name": "BECU",
-        "image": "/images/Services/PrivateSector/BECU.jpg"
+        "image": "images/Services/PrivateSector/BECU.jpg"
       },
       {
         "name": "Liberty Ridge Advisors",
-        "image": "/images/Services/PrivateSector/Liberty Ridge.png"
+        "image": "images/Services/PrivateSector/Liberty Ridge.png"
       },
       {
         "name": "Stone Creek Capital",
-        "image": "/images/Services/PrivateSector/Stone Creek.jpg"
+        "image": "images/Services/PrivateSector/Stone Creek.jpg"
       },
       {
         "name": "Alvarez & Marsal",
-        "image": "/images/Services/PrivateSector/Alvarez.png"
+        "image": "images/Services/PrivateSector/Alvarez.png"
       },
       {
         "name": "General Atlantic",
-        "image": "/images/Services/PrivateSector/General Atlantic.png"
+        "image": "images/Services/PrivateSector/General Atlantic.png"
       }
     ],
     "subtitle": "As market conditions have changed, Private Equity has become a greater part of our firm’s practice. We understand the talents and skills required to lead companies through all the stages of the life cycle, from the earliest stage start-up, to upgrading the management team of a portfolio company. \n\n Our firm has assisted major Private Equity firms in all stages of their evaluation process:",
     "subtitleList": ["On a consulting basis, using our extensive network to help provide overall market intelligence, current talent evaluation, and company position", "Performing pre-investment evaluation on a company’s existing human capital, their leadership, and overall culture", "Identifying and recruiting executives at all company levels, who can quickly provide the value added to transform the portfolio company performance", "Determining long range talent resources, both internal and external to the company."]
   },
   {
-    "srcImg": "/images/About/manufactoringbig.jpg",
+    "srcImg": "images/About/manufactoringbig.jpg",
     "altText": "Manufacturing & Industrials",
     "serviceArea": "Manufacturing & Industrials",
     "url": "manufacturing-industrials",
@@ -331,54 +331,54 @@
     "clients": [
       {
         "name": "Castor & Pollux",
-        "image": "/images/Services/Manufacturing/Castor and Pollux.jpg"
+        "image": "images/Services/Manufacturing/Castor and Pollux.jpg"
       },
       {
         "name": "Cutter & Buck",
-        "image": "/images/Services/Manufacturing/Cutter and Buck.jpg"
+        "image": "images/Services/Manufacturing/Cutter and Buck.jpg"
       },
       {
         "name": "Emerald Performance Materials",
-        "image": "/images/Services/Manufacturing/Emerald.png"
+        "image": "images/Services/Manufacturing/Emerald.png"
       },
       {
         "name": "Kaman",
-        "image": "/images/Services/Manufacturing/Kaman.png"
+        "image": "images/Services/Manufacturing/Kaman.png"
       },
       {
         "name": "Lorillard",
-        "image": "/images/Services/Manufacturing/Lorillard.png"
+        "image": "images/Services/Manufacturing/Lorillard.png"
       },
       {
         "name": "POST",
-        "image": "/images/Services/Manufacturing/Post.png"
+        "image": "images/Services/Manufacturing/Post.png"
       },
       {
         "name": "Schwans",
-        "image": "/images/Services/Manufacturing/Schwans.jpg"
+        "image": "images/Services/Manufacturing/Schwans.jpg"
       },
       {
         "name": "Xochitl",
-        "image": "/images/Services/Manufacturing/Xochitl.png"
+        "image": "images/Services/Manufacturing/Xochitl.png"
       },
       {
         "name": "vf Outlets",
-        "image": "/images/Services/Manufacturing/VF.png"
+        "image": "images/Services/Manufacturing/VF.png"
       },
       {
         "name": "itgBrands",
-        "image": "/images/Services/Manufacturing/itgBrands.png"
+        "image": "images/Services/Manufacturing/itgBrands.png"
       },
       {
         "name": "Core Scientific",
-        "image": "/images/Services/Manufacturing/Core Scientific.jpg"
+        "image": "images/Services/Manufacturing/Core Scientific.jpg"
       }
     ],
     "subtitle": "Success in today’s market requires leaders and executives who understand the nature of its rapidly changing landscape.  Often this means leveraging external partners such as Reffett Associates to identify and attract exceptional talent that can make a significant business impact. \n\n The Reffett Associates team is uniquely positioned to understand our clients’ needs.  Having served as senior executives in major professional services and Fortune 500 companies, we possess deep expertise in providing business solutions to commercial and government clients.  Our insight and consultative approach, combined with access to the best talent, ensures that the results we deliver to clients exceed their expectations.",
     "subtitleList": []
   },
   {
-    "srcImg": "/images/About/government.jpg",
+    "srcImg": "images/About/government.jpg",
     "altText": "Government Contracting & Professional Services",
     "serviceArea": "Government Contracting & Professional Services",
     "url": "government-professional-services",
@@ -386,35 +386,35 @@
     "clients": [
       {
         "name": "Battelle",
-        "image": "/images/Services/Government/Battelle.png"
+        "image": "images/Services/Government/Battelle.png"
       },
       {
         "name": "Fluor",
-        "image": "/images/Services/Government/Fluor.png"
+        "image": "images/Services/Government/Fluor.png"
       },
       {
         "name": "Hitachi Consulting",
-        "image": "/images/Services/Government/Hitachi.png"
+        "image": "images/Services/Government/Hitachi.png"
       },
       {
         "name": "Point Blank Enterprises",
-        "image": "/images/Services/Government/Point Blank.png"
+        "image": "images/Services/Government/Point Blank.png"
       },
       {
         "name": "TASC",
-        "image": "/images/Services/Government/TASC.png"
+        "image": "images/Services/Government/TASC.png"
       },
       {
         "name": "DynCorp International",
-        "image": "/images/Services/Government/DynCorp.png"
+        "image": "images/Services/Government/DynCorp.png"
       },
       {
         "name": "NRECA",
-        "image": "/images/Services/Government/NRECA.jpg"
+        "image": "images/Services/Government/NRECA.jpg"
       },
       {
         "name": "SOC",
-        "image": "/images/Services/Government/SOC.png"
+        "image": "images/Services/Government/SOC.png"
       }
     ],
     "subtitle": "Success in today's Federal, State and Local Government markets requires leaders and executives who understand this rapidly changing marketplace.  Our group of Managing Directors has a deep understanding of your needs, and how to navigate the intricacies of doing business with the government. \n\n With experience at all levels of Federal Government contracting and broad experience in working with the top Federal, State and Local Government service providers, we understand the unique requirements for senior leaders and executives with experience in government contracting and program management.  This includes contractors performing work overseas and in combat zones in support of US Forces. \n\n Our experience encompasses the entire Federal Government, and a majority of the top 100 Federal contractors.",
