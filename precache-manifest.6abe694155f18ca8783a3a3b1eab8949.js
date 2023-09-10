@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80316c686e564f192f8186b8ea05e101",
+    "revision": "24ab2f36a2110a99a26beb39c3d2f4c6",
     "url": "/reffettassociates.com/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reffettassociates.com/static/css/2.560b9325.chunk.css"
   },
   {
-    "revision": "352a7bd48db34c97839e",
+    "revision": "4862a2cf8710c2be6b89",
     "url": "/reffettassociates.com/static/css/main.69eda509.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reffettassociates.com/static/js/2.a7447260.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "352a7bd48db34c97839e",
-    "url": "/reffettassociates.com/static/js/main.fdbba195.chunk.js"
+    "revision": "4862a2cf8710c2be6b89",
+    "url": "/reffettassociates.com/static/js/main.803f32f5.chunk.js"
   },
   {
     "revision": "ae9b240bc6e999ac5afe",
