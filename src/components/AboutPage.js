@@ -1,13 +1,11 @@
 import React from 'react';
-import { ButtonBase, Typography } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { ButtonBase, Typography } from '@mui/material';
 import { Link, useRouteMatch } from "react-router-dom";
 import PageTitle from './PageTitle';
 import areas from '../assets/data/services.json'
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    serviceButton: {
+const styles = {
+  serviceButton: {
       border: ' 2px solid',
       borderColor: '#0f2f5b',
       boxShadow: '2px 2px 6px 1px rgba(0,0,0,0.15)',
@@ -40,8 +38,7 @@ const useStyles = makeStyles(() =>
       width: '100%',
       textAlign: 'center'
     }
-  })
-);
+}
 
 const subtitle = `Reffett Associates is a nationally recognized, fully retained executive search firm. As one of the premiere boutique firms in the executive search industry, we work with you to build a stronger organization by finding diverse candidates that fit your organization’s cultures and values.
 \n\n
@@ -53,7 +50,6 @@ Our team is comprised of former executives with tangible industry experience, po
 `;
 
 function AboutPage() {
-  const classes = useStyles();
   let match = useRouteMatch();
 
   const ServiceArea = () => {
@@ -63,14 +59,14 @@ function AboutPage() {
           <Link style={{ textDecoration: 'none' }} to={`${match.url}/${item.url}`}>
             <ButtonBase
               focusRipple
-              className={classes.serviceButton}
+              sx={styles.serviceButton}
               key={item.serviceTitle}
             >
-              <div className={classes.link}>
-                <img className={classes.image} src={item.srcImg} alt={item.altText} />
-                <Typography className={classes.serviceTitle}>{item.serviceArea}</Typography>
+              <div sx={styles.link}>
+                <img sx={styles.image} src={item.srcImg} alt={item.altText} />
+                <Typography sx={styles.serviceTitle}>{item.serviceArea}</Typography>
                 <Typography>{item.description}</Typography>
-                <Typography className={classes.learnMore}>LEARN MORE</Typography>
+                <Typography sx={styles.learnMore}>LEARN MORE</Typography>
               </div>
             </ButtonBase>
           </Link >

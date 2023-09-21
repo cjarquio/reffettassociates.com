@@ -1,23 +1,22 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Collapse, List, ListItem, Typography, Paper } from '@material-ui/core';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
+import { Collapse, List, ListItem, Typography, Paper } from '@mui/material';
+import {ExpandLessIcon as ExpandLess} from '@mui/icons-material/ExpandLess';
+import {ExpandMoreIcon as ExpandMore}  from '@mui/icons-material/ExpandMore';
 import PageTitle from './PageTitle';
 
-const useStyles = makeStyles((theme) => ({
+const styles = {
   root: {
     width: '75%',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'white',
   },
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingLeft: '4rem',
     border: '1px black solid'
   },
   listitem: {
     justifyContent: 'space-between'
   }
-}));
+}
 
 const subtitle = `We believe that every search is a partnership with our client and we won’t stop working on your behalf until we find the right fit for your needs. Our goal as a boutique firm is to provide a high level of personal attention to create a search plan that is unique to your needs and then they will work with you until your position is successfully filled. 
 \n\n
@@ -57,7 +56,6 @@ const steps = [
 ]
 
 export default function ServicesPage() {
-  const classes = useStyles();
   const [selectedIndex, setSelectedIndex] = React.useState("");
 
   const handleClick = (index) => {
@@ -78,21 +76,21 @@ export default function ServicesPage() {
       <List
         component="nav"
         aria-labelledby="nested-list-subheader"
-        className={classes.root}
+        sx={styles.root}
       >
         {
           steps.map((item, index) => {
             return (
               <div>
                 <Paper elevation={3}>
-                  <ListItem className={classes.listitem} button onClick={()=>handleClick(index)}>
+                  <ListItem sx={styles.listitem} button onClick={()=>handleClick(index)}>
                     <Typography variant='h6'>{item.step}</Typography>
                     {index === selectedIndex ? <ExpandLess /> : <ExpandMore />}
                   </ListItem>
                 </Paper>
                 <Collapse in={index === selectedIndex} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
-                    <ListItem button className={classes.nested}>
+                    <ListItem button sx={styles.nested}>
                       <Typography>{item.explanation}</Typography>
                     </ListItem>
                   </List>

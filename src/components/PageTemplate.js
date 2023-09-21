@@ -12,7 +12,7 @@ export default function PageTemplate(props) {
       <div style={{ paddingBottom: 125 }} className='container'>
         {props.children}
       </div >
-      <BottomNavigation />
+      {/* <BottomNavigation /> */}
     </div>
   );
 }

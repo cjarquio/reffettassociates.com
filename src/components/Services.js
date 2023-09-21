@@ -1,12 +1,10 @@
 import React from 'react';
-import { ButtonBase, Typography } from '@material-ui/core';
+import { Box, ButtonBase, Typography } from '@mui/material';
 import { useParams } from "react-router-dom";
-import { createStyles, makeStyles } from '@material-ui/core/styles';
 import PageTitle from './PageTitle';
 import services from '../assets/data/services.json';
 
-const useStyles = makeStyles(() =>
-  createStyles({
+const styles = {
     banner: {
       width: '100%',
       transform: 'scaleY(0.7)'
@@ -40,11 +38,9 @@ const useStyles = makeStyles(() =>
       width: '100%',
       textAlign: 'center'
     }
-  })
-);
+  }
 
 export default function Services() {
-  const classes = useStyles();
   let { topicId } = useParams();
 
   const serviceArea = services.find(service => service.url === topicId);
@@ -56,13 +52,13 @@ export default function Services() {
       clients.map((item) => {
         return (
           <ButtonBase
-              className={classes.clientButton}
+              sx={styles.clientButton}
               key={item.serviceTitle}
             >
-              <div className={classes.link}>
-                <img className={classes.image} src={item.image} alt={item.name} />
-                <Typography className={classes.clientName}>{item.name}</Typography>
-              </div>
+              <Box sx={styles.link}>
+                <img className={styles.image} src={item.image} alt={item.name} />
+                <Typography sx={styles.clientName}>{item.name}</Typography>
+              </Box>
             </ButtonBase>
         );
       })
@@ -71,7 +67,7 @@ export default function Services() {
 
   return (
     <div>
-      <img src={serviceArea.srcImg} alt={serviceArea.altText} className={classes.banner} />
+      <img src={serviceArea.srcImg} alt={serviceArea.altText} sx={styles.banner} />
       <PageTitle
         title={serviceArea.altText}
         subtitle={serviceArea.subtitle}

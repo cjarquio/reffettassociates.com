@@ -6,14 +6,12 @@ import {
   CarouselControl,
   CarouselIndicators
 } from 'reactstrap';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
 import practiceAreas from '../assets/data/services.json';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import { isBrowser } from 'react-device-detect';
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    root: {
+const styles = {
+  root: {
     },
     officeCards: {
       height: 300,
@@ -47,11 +45,9 @@ const useStyles = makeStyles(() =>
     controls: {
       backgroundColor: 'rgba(0,0,0,0.1)'
     }
-  })
-);
+}
 
 export default function HomePage() {
-  const classes = useStyles();
   const history = useHistory();
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -99,14 +95,14 @@ export default function HomePage() {
         onExited={() => setAnimating(false)}
         key={item.altText}
       >
-        {item === homeSlides[0]? <Typography variant='h5' className={classes.caption}>{item.serviceArea}</Typography>: <Typography variant='h5' className={classes.caption} style={{cursor: 'pointer'}} onClick={()=>handleClickService(item.url)}>{item.serviceArea} Clients Served</Typography>}
-        {item === homeSlides[0]?<img src={item.srcImg} alt={item.altText} className={classes.banner} />:<img src={item.srcImg} alt={item.altText} className={classes.banner} style={{cursor: 'pointer'}} onClick={()=>handleClickService(item.url)} />}
+        {item === homeSlides[0]? <Typography variant='h5' className={styles.caption}>{item.serviceArea}</Typography>: <Typography variant='h5' className={styles.caption} style={{cursor: 'pointer'}} onClick={()=>handleClickService(item.url)}>{item.serviceArea} Clients Served</Typography>}
+        {item === homeSlides[0]?<img src={item.srcImg} alt={item.altText} className={styles.banner} />:<img src={item.srcImg} alt={item.altText} className={styles.banner} style={{cursor: 'pointer'}} onClick={()=>handleClickService(item.url)} />}
       </CarouselItem>
     );
   });
 
   return (
-    <div className={classes.root}>
+    <div className={styles.root}>
       <Carousel
         activeIndex={activeIndex}
         next={next}
@@ -114,10 +110,10 @@ export default function HomePage() {
       >
         <CarouselIndicators items={homeSlides} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
-        <CarouselControl className={classes.controls} direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl className={classes.controls} direction="next" directionText="Next" onClickHandler={next} />
+        <CarouselControl className={styles.controls} direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl className={styles.controls} direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
-      <h4 className={classes.locations} onClick={handleClickContact}>Seattle | Washington D.C. | New York | Dallas | Greensboro</h4>
+      <h4 className={styles.locations} onClick={handleClickContact}>Seattle | Washington D.C. | New York | Dallas | Greensboro</h4>
     </div>
   );
 }

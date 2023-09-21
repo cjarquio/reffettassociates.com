@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot } from '@material-ui/lab';
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot } from '@mui/lab';
 import { useRouteMatch } from 'react-router-dom';
-import AnnouncementIcon from '@material-ui/icons/Announcement';
-import { Paper, Typography } from '@material-ui/core';
+import AnnouncementIcon from '@mui/icons-material/Announcement';
+import { Paper, Typography } from '@mui/material';
 import PageTitle from './PageTitle';
 import announcements from '../assets/data/announcements.json'
 
-const useStyles = makeStyles((theme) => ({
-    paper: {
+const styles = {
+  paper: {
         padding: '6px 16px',
     },
     secondaryTail: {
-        backgroundColor: theme.palette.secondary.main,
-    },
-}));
-
+        backgroundColor: 'blue',
+    }
+}
 
 export default function NewsPage() {
-    const classes = useStyles();
     const [news, setNews] = useState([]);
     let match = useRouteMatch();
 
@@ -65,7 +62,7 @@ export default function NewsPage() {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <Paper elevation={3} className={classes.paper}>
+                                    <Paper elevation={3} className={styles.paper}>
                                         <Typography variant="h6" component="h1">
                                             {announcement.title}
                                         </Typography>

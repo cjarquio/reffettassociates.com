@@ -1,21 +1,18 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
-import { createStyles, makeStyles } from '@material-ui/core/styles';
 import news from '../assets/data/internalnews.json';
+import { Typography, Box } from '@mui/material';
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    root: {
+const styles = {
+  root: {
       
     },
     paragraph: {
       fontSize: '1.1em'
     }
-  })
-);
+}
 
 export default function InternalNews() {
-  const classes = useStyles();
   let { topicId } = useParams();
 
   const article = news.find(topic => topic.link === topicId);
@@ -31,7 +28,7 @@ export default function InternalNews() {
             {
               item.paragraphs.map((paragraph)=>{
                 return (
-                  <p className={classes.paragraph}>{paragraph}</p>
+                  <Typography sx={styles.paragraph}>{paragraph}</Typography>
                 )
               })
             }
@@ -42,9 +39,9 @@ export default function InternalNews() {
   }
 
   return (
-    <div className={classes.root}>
+    <Box sx={styles.root}>
       <h4>{article.article.title}</h4>
       <Article />
-    </div>
+    </Box>
   );
 }

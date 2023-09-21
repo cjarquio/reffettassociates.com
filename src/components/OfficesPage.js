@@ -2,11 +2,9 @@ import React from 'react';
 import {isBrowser} from 'react-device-detect';
 import { Card, CardImg, CardHeader, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
 import locations from '../assets/data/locations';
 
-const useStyles = makeStyles(() =>
-  createStyles({
+const styles = {
     root: {
       display: isBrowser? 'flex':'contents',
       flex:'0 0 50%',
@@ -36,11 +34,9 @@ const useStyles = makeStyles(() =>
       alignSelf: 'center',
       fontSize: '1em',
     }
-  })
-);
+  }
 
 export default function OfficesPage() {
-  const classes = useStyles();
 
   return (
     <div>
@@ -48,11 +44,11 @@ export default function OfficesPage() {
         {
           locations.map((office) => {
             return (
-              <div className={classes.root}>
+              <div className={styles.root}>
                 <NavLink style={{ height: 'inherit' }} tag={Link} to={{pathname:"/contact", contactId:office.id }}>
-                  <Card className={classes.officeCards} key={office.id}>
-                    <CardHeader className={classes.cardTitle}>{office.location}</CardHeader>
-                    <CardImg top className={classes.cardImage} src={office.image} alt={office.location} />
+                  <Card className={styles.officeCards} key={office.id}>
+                    <CardHeader className={styles.cardTitle}>{office.location}</CardHeader>
+                    <CardImg top className={styles.cardImage} src={office.image} alt={office.location} />
                   </Card>
                 </NavLink>
               </div>

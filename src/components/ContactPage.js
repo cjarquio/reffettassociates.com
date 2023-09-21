@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { isBrowser } from 'react-device-detect';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Box, Typography, Card, CardContent } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Box, Typography, Card, CardContent } from '@mui/material';
 import PageTitle from './PageTitle';
 import contacts from '../assets/data/contacts.json';
 import members from '../assets/data/team.json';
 
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    root: {
+const styles = {
+  root: {
       '& .MuiTab-textColorPrimary': {
         color: 'rgba(0,0,0,1)',
         fontWeight: 550
@@ -29,8 +27,7 @@ const useStyles = makeStyles(() =>
     directContact: {
       textAlign: 'center'
     }
-  })
-);
+}
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -66,7 +63,6 @@ function a11yProps(index) {
 }
 
 export default function ContactPage(props) {
-  const classes = useStyles();
   const [value, setValue] = React.useState(props.location.contactId ? props.location.contactId : 0);
 
   const handleChange = (event, newValue) => {
@@ -79,20 +75,20 @@ export default function ContactPage(props) {
         const contactImage = members.find(member => member.name === location.contactName)?.image;
         return (
           <TabPanel value={value} index={location.id}>
-            <div style={{ paddingTop: 10 }} className='row' key={location.id}>
-              <div className='col-12 col-md-1' />
-              <div className='col-12 col-md-3'>
+            <div style={{ paddingTop: 10 }} sx='row' key={location.id}>
+              <div sx='col-12 col-md-1' />
+              <div sx='col-12 col-md-3'>
                 {
-                            contactImage ? <img className={classes.picture} src={contactImage} alt={location.contactName} />:<></>
+                            contactImage ? <img sx={styles.picture} src={contactImage} alt={location.contactName} />:<></>
                 }
               </div>
-              <div className='col-12 col-md-5'>
+              <div sx='col-12 col-md-5'>
                 {contactImage ? <h5 style={{ fontWeight: 'bold' }}>{location.office} Office</h5> : <></>}
-                <p className={classes.contactInfo}>{location.contactName}</p>
-                <p className={classes.contactInfo}>{location.addressLineOne}</p>
-                <p className={classes.contactInfo}>{location.addressLineTwo}</p>
-                <p className={classes.contactInfo}>{location.contactMethod}</p>
-                <p className={classes.contactInfo}>{location.altContactMethod}</p>
+                <p sx={styles.contactInfo}>{location.contactName}</p>
+                <p sx={styles.contactInfo}>{location.addressLineOne}</p>
+                <p sx={styles.contactInfo}>{location.addressLineTwo}</p>
+                <p sx={styles.contactInfo}>{location.contactMethod}</p>
+                <p sx={styles.contactInfo}>{location.altContactMethod}</p>
               </div>
             </div>
           </TabPanel>
@@ -102,7 +98,7 @@ export default function ContactPage(props) {
   }
 
   return (
-    <div className={classes.root}>
+    <div sx={styles.root}>
       <PageTitle
         title='Contact Us'
         subtitle=''
@@ -127,7 +123,7 @@ export default function ContactPage(props) {
         </Tabs>
       </AppBar>
       <ContactInformation />
-      <div className={classes.directContact}>
+      <div sx={styles.directContact}>
         <Card elevation={5}>
           <CardContent>
             <Typography variant='h6'>Contact Reffett Associates directly at <a href='tel:4256372993'>425.637.2993</a> or <a href='tel:7033515062'>703.351.5062</a></Typography>
