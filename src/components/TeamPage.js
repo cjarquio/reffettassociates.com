@@ -95,6 +95,13 @@ export default function TeamPage() {
               </div>
               <div className='col-12 col-md-9'>
                 <RenderBio bio={member.bio} />
+                <ul>
+            {
+              member.affiliates.map(affiliate => (
+                <li>{affiliate}</li>
+              ))
+            }
+          </ul>
               </div>
             </div>
           </TabPanel>
