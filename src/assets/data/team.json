@@ -36,7 +36,7 @@
           "id": 2,
           "name": "Sam Mayberry",
           "image": "images/Team/SamMayberry.jpg",
-          "title": "Principal",
+          "title": "Senior Advisor",
           "location": "Seattle, Washington",
           "email": "",
           "phoneNumber": "",
@@ -145,7 +145,7 @@
           "image": "images/Team/LizzyShaw.jpg",
           "title": "Associate",
           "location": "Seattle, Washington",
-          "email": "",
+          "email": "lizzy.shaw@reffettassociates.com",
           "phoneNumber": "",
           "bio": [
                "Lizzy Shaw is an experienced executive with 18 years of leadership experience in non-profit, government, and the private sector.",
