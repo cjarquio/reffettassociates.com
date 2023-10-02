@@ -90,7 +90,8 @@ export default function TeamPage() {
                 <p className={classes.memberInfo}>
                   <span className={classes.name}>{member.name}</span><br />
                   {member.title}<br />
-                  {member.location}
+                  {member.location}<br />
+                  {member.email}
                 </p>
               </div>
               <div className='col-12 col-md-9'>
