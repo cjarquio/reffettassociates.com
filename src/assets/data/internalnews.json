@@ -75,5 +75,29 @@
                     }
                ]
           }
+     },
+     {
+          "id": 3,
+          "link": "appointment-of-commercialization-managers-for-the-PNNL",
+          "article": {
+               "title": "Appointment of Commercialization Managers for the Pacific Northwest National Laboratory",
+               "section": [
+                    {
+                         "sectionTitle": "Reffett Associates completes two recruitments for PNNL",
+                         "paragraphs": [
+                              "Reffett Associates announces the successful recruitment of two Commercialization Managers for the Pacific Northwest National Laboratory (PNNL). After a rigorous, nation-wide search PNNL has selected Dr. Heidi Medford, PhD, and Matt O’Neil as their next Commercialization Managers based on their expertise and broad level of experience. These roles work closely with PNNL scientists and researchers to manage high impact next generation technology, assisting with the growth of PNNL’s diverse portfolio estimated to exceed $1B in the next ten years.",
+                              "PNNL is a national research laboratory with an international outreach, laying a foundation for innovations in technology and national security. Home to many special programs and research centers PNNL has initiated research on technologies with global impact including reduction of global warming and using AI to aid disaster response. PNNL has received 95 “FLC Excellence in Technology” awards since 1984 and employs more than 5,500 scientists, engineers, and professional staff.",
+                              "O’Neil earned his MA from the University of Maryland and his MBA from the Quantic School of Business and Technology. He brings more than 15 year’s experience as a business development leader in the science and technology sectors to the role of Commercialization Manager. Both Dr. Medford and Mr. O’Neil will be a central part of developing a full range of technology and serve as liaison for laboratory research, licensing, and intellectual property protection. Mr. O’Neil fills a role working with technology related to national security matters and holds a security clearance",
+                              "Speaking about this recruitment Reffett Associates Director of Operations, Tom Young said, “It was a privilege to work with PNNL to help fill these roles that assist in bringing new technologies forward for the public.”."
+                         ]
+                    },
+                    {
+                         "sectionTitle": "Reffett Associates",
+                         "paragraphs": [
+                              "Reffett Associates, based in Bellevue, WA, is a nationally recognized executive search firm. The boutique talent provider has extensive experience in retail and consumer packaged goods, private equity, commercial & federal services, government sectors, and associations and non-profits. Its team is made up of executives with tangible industry experience, possessing real world, relatable knowledge about the challenges executives face in managing talent in a competitive marketplace."
+                         ]
+                    }
+               ]
+          }
      }
 ]
