@@ -140,9 +140,16 @@
         "external": true
     },
     {
-        "id": 20,
+      "id": 20,
+      "title": "Reffett Associates Announces Recruitment Partnership with the Library of Congress, Oldest Federal Cultural Institution in the Nation",
+      "date": "10/09/2023",
+      "link": "partnership-with-Liberty-of-Congress",
+      "external": false
+    },
+    {
+        "id": 21,
         "title": "Appointment of Commercialization Managers for the Pacific Northwest National Laboratory",
-        "date": "10/09/2023",
+        "date": "06/05/2023",
         "link": "appointment-of-commercialization-managers-for-the-PNNL",
         "external": false
     }
