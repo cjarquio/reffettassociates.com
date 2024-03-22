@@ -63,6 +63,9 @@ export default function MainNavigation() {
             <NavItem onClick={toggle}>
               <NavLink style={{color: location.pathname === '/news'? 'rgba(207,32,47,1)':'rgba(207,32,47,0.7)'}} tag={Link} to="/news">News</NavLink>
             </NavItem>
+            <NavItem onClick={toggle}>
+              <NavLink style={{color: location.pathname === '/featuredrecruitments'? 'rgba(207,32,47,1)':'rgba(207,32,47,0.7)'}} tag={Link} to="/featuredrecruitments">Featured Recruitments</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

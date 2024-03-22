@@ -14,6 +14,7 @@ import InternalNews from './components/InternalNewsPage';
 import NewsPage from './components/NewsPage';
 import PageNotFound from './components/PageNotFound';
 import Services from './components/Services';
+import FeaturedJobsPage from './components/FeaturedJobs';
 
 
 export default function Routes() {
@@ -34,6 +35,7 @@ export default function Routes() {
             <Route path='/contact' component={ContactPage} />
             <Route path='/news/:topicId' component={InternalNews} />
             <Route path='/news' component={NewsPage} />
+            <Route path='/featuredrecruitments' component={FeaturedJobsPage} />
             <Route component={PageNotFound} />
           </Switch>
         </PageTemplate>

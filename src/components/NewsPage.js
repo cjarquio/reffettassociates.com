@@ -6,7 +6,6 @@ import AnnouncementIcon from '@material-ui/icons/Announcement';
 import { Paper, Typography } from '@material-ui/core';
 import PageTitle from './PageTitle';
 import announcements from '../assets/data/announcements.json'
-import Pdf from '../assets/PDFs/AOCPD.pdf';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -51,11 +50,6 @@ export default function NewsPage() {
             />
             <p>Reffett Associates is pleased to be able to share the following stories and articles about our successful executive recruiting accomplishments. These articles showcase the wide range of clients that we work with and the wide variety of roles that we can fill.
                 The following links represent only a portion of the recruitments that our team has completed recently.</p>
-            <h5>Openings</h5>
-            <p style={{lineHeight: 0}}>
-              <h6><a href={Pdf} target="_blank" rel="noopener noreferrer">Architect of the Capitol</a></h6>
-              Washington D.C.
-            </p>
             <Timeline align="alternate">
                 {
                     news.map((announcement) => {
