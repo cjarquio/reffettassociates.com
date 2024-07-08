@@ -6,7 +6,7 @@ import news from '../assets/data/internalnews.json';
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
-      
+
     },
     paragraph: {
       fontSize: '1.1em'
@@ -22,14 +22,21 @@ export default function InternalNews() {
 
   const Article = () => {
     const section = article.article.section;
-    
+
     return (
       section.map((item) => {
         return (
           <>
             <h5>{item.sectionTitle}</h5>
             {
-              item.paragraphs.map((paragraph)=>{
+              item.additionalLinks && (
+                <ul>
+                  {item.additionalLinks.map(link => (<li><a href={link} target='_blank' rel="noopener noreferrer">{link}</a></li>))}
+                </ul>
+              )
+            }
+            {
+              item.paragraphs && item.paragraphs.map((paragraph) => {
                 return (
                   <p className={classes.paragraph}>{paragraph}</p>
                 )
