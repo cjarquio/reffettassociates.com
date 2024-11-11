@@ -1,4 +1,12 @@
-import { Box, Center, Container, Group, Menu, rem } from "@mantine/core";
+import {
+  Box,
+  Center,
+  Container,
+  Group,
+  Menu,
+  rem,
+  UnstyledButton,
+} from "@mantine/core";
 import { IconChevronDown } from "@tabler/icons-react";
 import classes from "./HeaderNavigation.module.css";
 import { Logo } from "../../Logo/ReffettAssociatesLogo";
@@ -83,9 +91,11 @@ export const HeaderNavigation: React.FC = () => {
   });
 
   return (
-    <Container size={"xl"}>
+    <Container size={"lg"}>
       <Box className={classes.inner}>
-        <Logo style={{ height: rem(60) }} />
+        <UnstyledButton>
+          <Logo style={{ height: rem(50) }} />
+        </UnstyledButton>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
