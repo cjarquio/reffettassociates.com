@@ -4,7 +4,6 @@ import {
   Container,
   Group,
   Menu,
-  rem,
   UnstyledButton,
 } from "@mantine/core";
 import { IconChevronDown } from "@tabler/icons-react";
@@ -94,7 +93,7 @@ export const HeaderNavigation: React.FC = () => {
     <Container size={"lg"}>
       <Box className={classes.inner}>
         <UnstyledButton>
-          <Logo style={{ height: rem(50) }} />
+          <Logo style={{ height: "3.5rem" }} />
         </UnstyledButton>
         <Group gap={5} visibleFrom="xs">
           {items}

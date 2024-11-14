@@ -1,5 +1,5 @@
 import "@mantine/core/styles.css";
-import { AppShell, MantineProvider, rem } from "@mantine/core";
+import { AppShell, Container, MantineProvider, rem } from "@mantine/core";
 import { HeaderNavigation, FooterNavigation } from "../Navigation";
 import classes from "./App.module.css";
 import { RouterProvider } from "react-router-dom";
@@ -15,9 +15,9 @@ function App() {
         <AppShell.Main>
           <RouterProvider router={router} />
         </AppShell.Main>
-        <AppShell.Footer>
+        <Container fluid id="footer" className={classes.footer}>
           <FooterNavigation />
-        </AppShell.Footer>
+        </Container>
       </AppShell>
     </MantineProvider>
   );

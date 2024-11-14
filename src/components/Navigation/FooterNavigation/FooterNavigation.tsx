@@ -61,19 +61,21 @@ export const FooterNavigation: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <Image
-          radius="xl"
-          className={classes.vsobImage}
-          h={200}
-          w="auto"
-          fit="contain"
-          src="src\assets\images\VOSB.png"
-        />
+        <Container>
+          <Image
+            radius="xl"
+            className={classes.vsobImage}
+            h={200}
+            w="auto"
+            fit="contain"
+            src="src\assets\images\VOSB.png"
+          />
+        </Container>
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2020 mantine.dev. All rights reserved.
+          © 2024 Reffett Associates All rights reserved.
         </Text>
 
         <Group
