@@ -1,4 +1,4 @@
-import { Text, Container, ActionIcon, Group, rem } from "@mantine/core";
+import { Text, Container, ActionIcon, Group, Image, rem } from "@mantine/core";
 import {
   IconBrandTwitter,
   IconBrandYoutube,
@@ -61,11 +61,14 @@ export const FooterNavigation: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <div className={classes.logo}>
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
-          </Text>
-        </div>
+        <Image
+          radius="xl"
+          className={classes.vsobImage}
+          h={200}
+          w="auto"
+          fit="contain"
+          src="src\assets\images\VOSB.png"
+        />
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
@@ -101,6 +104,6 @@ export const FooterNavigation: React.FC = () => {
       </Container>
     </footer>
   );
-}
+};
 
 export default FooterNavigation;
