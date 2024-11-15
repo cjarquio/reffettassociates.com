@@ -1,0 +1,88 @@
+import { Text, Container, ActionIcon, Image, Anchor } from "@mantine/core";
+import { IconBrandLinkedinFilled } from "@tabler/icons-react";
+import classes from "./FooterNavigation.module.css";
+
+const footerLinks = [
+  {
+    title: "About",
+    links: [
+      { label: "About Reffett Associates", link: "#" },
+      { label: "Our Team", link: "#" },
+      { label: "Locations", link: "#" },
+      { label: "Veterans", link: "#" },
+    ],
+  },
+  {
+    title: "Expertise",
+    links: [
+      { label: "Services", link: "#" },
+      { label: "Process", link: "#" },
+    ],
+  },
+  {
+    title: "Industries",
+    links: [
+      { label: "Retail", link: "#" },
+      { label: "Public Sector", link: "#" },
+      { label: "Private Equity and Financial Services", link: "#" },
+      { label: "Associations and Nonprofits", link: "#" },
+      { label: "Manufacturing and Industrials", link: "#" },
+    ],
+  },
+  {
+    title: "Insights",
+    links: [{ label: "News + Insights", link: "#" }],
+  },
+];
+
+export const FooterNavigation: React.FC = () => {
+  const groups = footerLinks.map((group) => {
+    const links = group.links.map((link, index) => (
+      <Anchor
+        underline="never"
+        key={index}
+        className={classes.link}
+        href={link.link}
+      >
+        {link.label}
+      </Anchor>
+    ));
+
+    return (
+      <div className={classes.wrapper} key={group.title}>
+        <Text className={classes.title}>{group.title}</Text>
+        {links}
+      </div>
+    );
+  });
+
+  return (
+    <footer className={classes.footer}>
+      <Container className={classes.inner}>
+        <Image
+          radius="xl"
+          className={classes.vsobImage}
+          h={200}
+          w="auto"
+          fit="contain"
+          src="src\assets\images\VOSB.png"
+        />
+        <div className={classes.groups}>{groups}</div>
+      </Container>
+      <Container className={classes.afterFooter}>
+        <Text c="dimmed" size="sm">
+          © 2024 Reffett Associates All rights reserved.
+        </Text>
+
+        <ActionIcon size="xl" color="white" variant="subtle">
+          <IconBrandLinkedinFilled
+            style={{ width: "3rem", height: "3rem" }}
+            stroke={1.5}
+          />
+        </ActionIcon>
+      </Container>
+    </footer>
+  );
+};
+
+export default FooterNavigation;
