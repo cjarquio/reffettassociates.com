@@ -6,7 +6,7 @@ import {
   Menu,
   UnstyledButton,
 } from "@mantine/core";
-import { IconChevronDown } from "@tabler/icons-react";
+import { IconPlus } from "@tabler/icons-react";
 import classes from "./HeaderNavigation.module.css";
 import { Logo } from "../../Logo/ReffettAssociatesLogo";
 
@@ -61,16 +61,18 @@ export const HeaderNavigation: React.FC = () => {
           withinPortal
         >
           <Menu.Target>
-            <a
-              href={link.link}
-              className={classes.link}
-              onClick={(event) => event.preventDefault()}
-            >
-              <Center>
-                <span className={classes.linkLabel}>{link.label}</span>
-                <IconChevronDown size="0.9rem" stroke={1.5} />
-              </Center>
-            </a>
+            <Container className={classes.hoverUnderlineAnimation}>
+              <a
+                href={link.link}
+                className={classes.link}
+                onClick={(event) => event.preventDefault()}
+              >
+                <Center>
+                  <span className={classes.linkLabel}>{link.label}</span>
+                  <IconPlus size="0.9rem" stroke={1.5} />
+                </Center>
+              </a>
+            </Container>
           </Menu.Target>
           <Menu.Dropdown>{menuItems}</Menu.Dropdown>
         </Menu>
@@ -78,14 +80,16 @@ export const HeaderNavigation: React.FC = () => {
     }
 
     return (
-      <a
-        key={link.label}
-        href={link.link}
-        className={classes.link}
-        onClick={(event) => event.preventDefault()}
-      >
-        {link.label}
-      </a>
+      <Container className={classes.hoverUnderlineAnimation}>
+        <a
+          key={link.label}
+          href={link.link}
+          className={classes.link}
+          onClick={(event) => event.preventDefault()}
+        >
+          {link.label}
+        </a>
+      </Container>
     );
   });
 
