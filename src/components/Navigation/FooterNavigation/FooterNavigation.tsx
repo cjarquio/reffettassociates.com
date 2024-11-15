@@ -1,53 +1,51 @@
-import { Text, Container, ActionIcon, Group, Image, rem } from "@mantine/core";
-import {
-  IconBrandTwitter,
-  IconBrandYoutube,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
+import { Text, Container, ActionIcon, Image, Anchor } from "@mantine/core";
+import { IconBrandLinkedinFilled } from "@tabler/icons-react";
 import classes from "./FooterNavigation.module.css";
 
-const data = [
+const footerLinks = [
   {
     title: "About",
     links: [
-      { label: "Features", link: "#" },
-      { label: "Pricing", link: "#" },
-      { label: "Support", link: "#" },
-      { label: "Forums", link: "#" },
+      { label: "About Reffett Associates", link: "#" },
+      { label: "Our Team", link: "#" },
+      { label: "Locations", link: "#" },
+      { label: "Veterans", link: "#" },
     ],
   },
   {
-    title: "Project",
+    title: "Expertise",
     links: [
-      { label: "Contribute", link: "#" },
-      { label: "Media assets", link: "#" },
-      { label: "Changelog", link: "#" },
-      { label: "Releases", link: "#" },
+      { label: "Services", link: "#" },
+      { label: "Process", link: "#" },
     ],
   },
   {
-    title: "Community",
+    title: "Industries",
     links: [
-      { label: "Join Discord", link: "#" },
-      { label: "Follow on Twitter", link: "#" },
-      { label: "Email newsletter", link: "#" },
-      { label: "GitHub discussions", link: "#" },
+      { label: "Retail", link: "#" },
+      { label: "Public Sector", link: "#" },
+      { label: "Private Equity and Financial Services", link: "#" },
+      { label: "Associations and Nonprofits", link: "#" },
+      { label: "Manufacturing and Industrials", link: "#" },
     ],
+  },
+  {
+    title: "Insights",
+    links: [{ label: "News + Insights", link: "#" }],
   },
 ];
 
 export const FooterNavigation: React.FC = () => {
-  const groups = data.map((group) => {
+  const groups = footerLinks.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text<"a">
+      <Anchor
+        underline="never"
         key={index}
         className={classes.link}
-        component="a"
         href={link.link}
-        onClick={(event) => event.preventDefault()}
       >
         {link.label}
-      </Text>
+      </Anchor>
     ));
 
     return (
@@ -61,16 +59,14 @@ export const FooterNavigation: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <Container>
-          <Image
-            radius="xl"
-            className={classes.vsobImage}
-            h={200}
-            w="auto"
-            fit="contain"
-            src="src\assets\images\VOSB.png"
-          />
-        </Container>
+        <Image
+          radius="xl"
+          className={classes.vsobImage}
+          h={200}
+          w="auto"
+          fit="contain"
+          src="src\assets\images\VOSB.png"
+        />
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
@@ -78,31 +74,12 @@ export const FooterNavigation: React.FC = () => {
           © 2024 Reffett Associates All rights reserved.
         </Text>
 
-        <Group
-          gap={0}
-          className={classes.social}
-          justify="flex-end"
-          wrap="nowrap"
-        >
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-        </Group>
+        <ActionIcon size="xl" color="white" variant="subtle">
+          <IconBrandLinkedinFilled
+            style={{ width: "3rem", height: "3rem" }}
+            stroke={1.5}
+          />
+        </ActionIcon>
       </Container>
     </footer>
   );
