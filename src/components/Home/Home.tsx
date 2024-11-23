@@ -2,9 +2,10 @@ import "@mantine/core/styles.css";
 import { Box, Container, Group, rem, Title } from "@mantine/core";
 import StockVideo from "../../../src/assets/videos/executiveStockVideo.mp4";
 import classes from "./Home.module.css";
-import { IconSearch } from "@tabler/icons-react";
+import { IconMilitaryRankFilled, IconSearch } from "@tabler/icons-react";
 
 export const Home: React.FC = () => {
+
   return (
     <Box className={classes.root}>
       <video width={"100%"} autoPlay muted loop>
@@ -57,6 +58,11 @@ export const Home: React.FC = () => {
             <Title c={"#0f2f5b"} order={1}>
               Committed to our Veterans
             </Title>
+            <IconMilitaryRankFilled
+              style={{ width: rem(132), height: rem(132) }}
+              stroke={3}
+              color={"#0f2f5b"}
+            />
           </Box>
         </Group>
       </Container>
@@ -68,3 +74,4 @@ export const Home: React.FC = () => {
 };
 
 export default Home;
+

@@ -10,6 +10,7 @@
 
 .executiveSearchTitle {
   display: flex;
+  align-items: center;
   padding: 0rem 5rem 0 15rem;
 }
 
@@ -33,6 +34,7 @@
 
 .veteransTitle {
   display: flex;
+  align-items: center;
   padding: 0rem 15rem 0 5rem;
 }
 
