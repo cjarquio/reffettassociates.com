@@ -4,23 +4,52 @@
   width: 100%;
 }
 
+.raAboutContainer {
+  padding: 0;
+}
+
 .executiveSearchTitle {
   display: flex;
   padding: 0rem 5rem 0 15rem;
 }
 
 .executiveSearchDescription {
+  padding: 0 15rem 0 5rem;
+}
+.executiveSearchDescriptionBox {
+  display: flex;
+  align-items: center;
   background-color: #0f2f5b;
-  padding: 4rem 10rem 4rem 10rem;
+  height: 13rem;
+}
+.executiveSearchDescriptionBox:before {
+  background: white;
+  height: 13rem;
+  width: 5rem;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  display: inline-block;
+  content: "";
 }
 
 .veteransTitle {
   display: flex;
-  border-radius: 0px 50% 50% 0px;
   padding: 0rem 15rem 0 5rem;
 }
 
 .veteransDescription {
+  padding: 0 5rem 0 15rem;
+}
+.veteransDescriptionBox {
+  display: flex;
+  align-items: center;
   background-color: #bb2a2c;
-  padding: 4rem 10rem 4rem 10rem;
+  height: 13rem;
+}
+.veteransDescriptionBox:after {
+  background: white;
+  height: 13rem;
+  width: 5rem;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  display: inline-block;
+  content: "";
 }
