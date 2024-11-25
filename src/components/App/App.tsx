@@ -1,4 +1,5 @@
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import { AppShell, Box, Container, MantineProvider, rem } from "@mantine/core";
 import { HeaderNavigation, FooterNavigation } from "../Navigation";
 import classes from "./App.module.css";

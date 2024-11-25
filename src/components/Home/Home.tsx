@@ -1,11 +1,24 @@
 import "@mantine/core/styles.css";
-import { Box, Container, Group, rem, Title } from "@mantine/core";
+import { Box, Container, Group, rem, Title, Image } from "@mantine/core";
 import StockVideo from "../../../src/assets/videos/executiveStockVideo.mp4";
 import classes from "./Home.module.css";
 import { IconMilitaryRankFilled, IconSearch } from "@tabler/icons-react";
+import { Carousel } from "@mantine/carousel";
+
+const images = [
+  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png",
+  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
+  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
+  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png",
+  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png",
+];
 
 export const Home: React.FC = () => {
-
+  const slides = images.map((url) => (
+    <Carousel.Slide key={url}>
+      <Image src={url} />
+    </Carousel.Slide>
+  ));
   return (
     <Box className={classes.root}>
       <video width={"100%"} autoPlay muted loop>
@@ -66,12 +79,12 @@ export const Home: React.FC = () => {
           </Box>
         </Group>
       </Container>
-      <Container size={"xl"} className={classes.clients}>
+      <Container size={"xs"} className={classes.clients}>
         <Title order={3}>Featured Clients</Title>
+        <Carousel withIndicators>{slides}</Carousel>
       </Container>
     </Box>
   );
 };
 
 export default Home;
-
