@@ -1,5 +1,14 @@
 import "@mantine/core/styles.css";
-import { Box, Container, Group, rem, Title, Image } from "@mantine/core";
+import {
+  Box,
+  Container,
+  Group,
+  rem,
+  Title,
+  Image,
+  Button,
+  Text,
+} from "@mantine/core";
 import StockVideo from "../../../src/assets/videos/executiveStockVideo.mp4";
 import classes from "./Home.module.css";
 import { IconMilitaryRankFilled, IconSearch } from "@tabler/icons-react";
@@ -80,7 +89,7 @@ export const Home: React.FC = () => {
         </Group>
       </Container>
       <Container size={"lg"} className={classes.clientsContainer}>
-        <Title order={2} style={{ textAlign: "center" }}>
+        <Title order={2} style={{ textAlign: "center", padding: "2rem" }}>
           Featured Clients
         </Title>
         <Carousel
@@ -93,6 +102,23 @@ export const Home: React.FC = () => {
         >
           {slides}
         </Carousel>
+      </Container>
+      <Container size={"lg"} className={classes.contactContainer}>
+        <Title order={2} style={{ textAlign: "center" }}>
+          Let's Work Together
+        </Title>
+        <Text size="lg" ta={"center"} style={{ padding: "2rem 4rem" }}>
+          Our team is comprised of former executives with tangible industry
+          experience, possessing real world, relatable knowledge about the
+          challenges executives face in managing talent in a competitive
+          marketplace.
+        </Text>
+        <Button
+          variant="gradient"
+          gradient={{ from: "#0f2f5b", to: "cyan", deg: 90 }}
+        >
+          Contact Us
+        </Button>
       </Container>
     </Box>
   );
