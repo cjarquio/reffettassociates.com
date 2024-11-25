@@ -79,9 +79,20 @@ export const Home: React.FC = () => {
           </Box>
         </Group>
       </Container>
-      <Container size={"xs"} className={classes.clients}>
-        <Title order={3}>Featured Clients</Title>
-        <Carousel withIndicators>{slides}</Carousel>
+      <Container size={"lg"} className={classes.clientsContainer}>
+        <Title order={2} style={{ textAlign: "center" }}>
+          Featured Clients
+        </Title>
+        <Carousel
+          withIndicators
+          slideSize="40%"
+          slideGap="lg"
+          loop
+          align="start"
+          slidesToScroll={2}
+        >
+          {slides}
+        </Carousel>
       </Container>
     </Box>
   );
