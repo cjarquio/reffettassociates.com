@@ -13,13 +13,24 @@ import StockVideo from "../../../src/assets/videos/executiveStockVideo.mp4";
 import classes from "./Home.module.css";
 import { IconMilitaryRankFilled, IconSearch } from "@tabler/icons-react";
 import { Carousel } from "@mantine/carousel";
+import {
+  AmericanCouncilonEducation,
+  BartellDrugs,
+  BECU,
+  CoreScientific,
+  NRECA,
+  SeattleMariners,
+  VA,
+} from "../../assets/images";
 
 const images = [
-  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png",
-  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
-  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
-  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png",
-  "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png",
+  AmericanCouncilonEducation,
+  BartellDrugs,
+  BECU,
+  CoreScientific,
+  NRECA,
+  SeattleMariners,
+  VA,
 ];
 
 export const Home: React.FC = () => {
@@ -88,7 +99,7 @@ export const Home: React.FC = () => {
           </Box>
         </Group>
       </Container>
-      <Container size={"lg"} className={classes.clientsContainer}>
+      <Container size={"xl"} className={classes.clientsContainer}>
         <Title order={2} style={{ textAlign: "center", padding: "2rem" }}>
           Featured Clients
         </Title>
@@ -103,7 +114,7 @@ export const Home: React.FC = () => {
           {slides}
         </Carousel>
       </Container>
-      <Container size={"lg"} className={classes.contactContainer}>
+      <Container size={"md"} className={classes.contactContainer}>
         <Title order={2} style={{ textAlign: "center" }}>
           Let's Work Together
         </Title>
@@ -116,6 +127,7 @@ export const Home: React.FC = () => {
         <Button
           variant="gradient"
           gradient={{ from: "#0f2f5b", to: "cyan", deg: 90 }}
+          size="xl"
         >
           Contact Us
         </Button>
