@@ -1,4 +1,6 @@
 import "@mantine/core/styles.css";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Box,
   Container,
@@ -34,11 +36,14 @@ const images = [
 ];
 
 export const Home: React.FC = () => {
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
+
   const slides = images.map((url) => (
-    <Carousel.Slide key={url}>
-      <Image src={url} />
+    <Carousel.Slide style={{ display: "flex" }} key={url}>
+      <Image style={{ objectFit: "contain" }} src={url} />
     </Carousel.Slide>
   ));
+
   return (
     <Box className={classes.root}>
       <video width={"100%"} autoPlay muted loop>
@@ -99,17 +104,20 @@ export const Home: React.FC = () => {
           </Box>
         </Group>
       </Container>
-      <Container size={"xl"} className={classes.clientsContainer}>
+      <Container size={"md"} className={classes.clientsContainer}>
         <Title order={2} style={{ textAlign: "center", padding: "2rem" }}>
           Featured Clients
         </Title>
         <Carousel
           withIndicators
-          slideSize="40%"
+          slideSize="25%"
           slideGap="lg"
           loop
           align="start"
-          slidesToScroll={2}
+          slidesToScroll={4}
+          plugins={[autoplay.current]}
+          onMouseEnter={autoplay.current.stop}
+          onMouseLeave={autoplay.current.reset}
         >
           {slides}
         </Carousel>
