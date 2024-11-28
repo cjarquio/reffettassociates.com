@@ -1,6 +1,7 @@
 import { Text, Container, ActionIcon, Image, Anchor } from "@mantine/core";
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
 import classes from "./FooterNavigation.module.css";
+import VOSB from '../../../assets/images/VOSB.png'
 
 const footerLinks = [
   {
@@ -65,7 +66,7 @@ export const FooterNavigation: React.FC = () => {
           h={200}
           w="auto"
           fit="contain"
-          src="src\assets\images\VOSB.png"
+          src={VOSB}
         />
         <div className={classes.groups}>{groups}</div>
       </Container>

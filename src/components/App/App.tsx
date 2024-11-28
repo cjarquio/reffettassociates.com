@@ -1,5 +1,6 @@
 import "@mantine/core/styles.css";
-import { AppShell, Container, MantineProvider, rem } from "@mantine/core";
+import "@mantine/carousel/styles.css";
+import { AppShell, Box, Container, MantineProvider, rem } from "@mantine/core";
 import { HeaderNavigation, FooterNavigation } from "../Navigation";
 import classes from "./App.module.css";
 import { RouterProvider } from "react-router-dom";
@@ -8,13 +9,13 @@ import { router } from "../Navigation/Router/Router";
 function App() {
   return (
     <MantineProvider>
-      <AppShell header={{ height: rem(96) }} padding="md">
+      <AppShell header={{ height: rem(96) }}>
         <AppShell.Header className={classes.header}>
           <HeaderNavigation />
         </AppShell.Header>
-        <AppShell.Main>
+        <Box className={classes.appMain}>
           <RouterProvider router={router} />
-        </AppShell.Main>
+        </Box>
         <Container fluid id="footer" className={classes.footer}>
           <FooterNavigation />
         </Container>
