@@ -9,6 +9,7 @@ import {
 import { IconPlus } from "@tabler/icons-react";
 import classes from "./HeaderNavigation.module.css";
 import { Logo } from "../../Logo/ReffettAssociatesLogo";
+import { Link, useNavigate } from "react-router-dom";
 
 const links = [
   {
@@ -48,9 +49,12 @@ const links = [
 ];
 
 export const HeaderNavigation: React.FC = () => {
+  const navigate = useNavigate();
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
-      <Menu.Item key={item.link}>{item.label}</Menu.Item>
+      <Link to={item.link} key={item.link}>
+        <Menu.Item>{item.label}</Menu.Item>
+      </Link>
     ));
 
     if (menuItems) {
@@ -97,7 +101,7 @@ export const HeaderNavigation: React.FC = () => {
   return (
     <Container size={"lg"}>
       <Box className={classes.inner}>
-        <UnstyledButton>
+        <UnstyledButton onClick={() => navigate("/")}>
           <Logo style={{ height: "3.5rem" }} />
         </UnstyledButton>
         <Group gap={5} visibleFrom="xs">

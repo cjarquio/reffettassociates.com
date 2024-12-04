@@ -1,0 +1,64 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.raAboutContainer {
+  padding: 0;
+}
+
+.executiveSearchTitle {
+  display: flex;
+  align-items: center;
+  padding: 0rem 5rem 0 15rem;
+}
+
+.executiveSearchDescription {
+  padding: 0 15rem 0 5rem;
+}
+.executiveSearchDescriptionBox {
+  display: flex;
+  align-items: center;
+  background-color: #0f2f5b;
+  height: 13rem;
+}
+.executiveSearchDescriptionBox:before {
+  background: white;
+  height: 13rem;
+  width: 5rem;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  display: inline-block;
+  content: "";
+}
+
+.veteransTitle {
+  display: flex;
+  align-items: center;
+  padding: 0rem 15rem 0 5rem;
+}
+
+.veteransDescription {
+  padding: 0 5rem 0 15rem;
+}
+.veteransDescriptionBox {
+  display: flex;
+  align-items: center;
+  background-color: #bb2a2c;
+  height: 13rem;
+}
+.veteransDescriptionBox:after {
+  background: white;
+  height: 13rem;
+  width: 5rem;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  display: inline-block;
+  content: "";
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
