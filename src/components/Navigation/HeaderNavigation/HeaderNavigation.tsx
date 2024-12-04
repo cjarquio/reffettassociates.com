@@ -19,6 +19,7 @@ const links = [
       { link: "/team", label: "Our Team" },
       { link: "/locations", label: "Locations" },
       { link: "/veterans", label: "Veterans" },
+      { link: "/recruitments", label: " Featured Recruitments" },
     ],
   },
   {
@@ -33,11 +34,11 @@ const links = [
     link: "industries",
     label: "Industries",
     links: [
-      { link: "/docs", label: "Retail" },
-      { link: "/resources", label: "Public Sector" },
-      { link: "/community", label: "Private Equity and Financial Services" },
-      { link: "/blog", label: "Associations and Nonprofits" },
-      { link: "/blog", label: "Manufacturing and Industrials" },
+      { link: "/retail", label: "Retail" },
+      { link: "/public", label: "Public Sector" },
+      { link: "/private", label: "Private Equity and Financial Services" },
+      { link: "/nonprofits", label: "Associations and Nonprofits" },
+      { link: "/manufacturing", label: "Manufacturing and Industrials" },
     ],
   },
   {
