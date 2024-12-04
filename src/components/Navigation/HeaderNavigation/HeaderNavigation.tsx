@@ -19,7 +19,7 @@ const links = [
       { link: "/team", label: "Our Team" },
       { link: "/locations", label: "Locations" },
       { link: "/veterans", label: "Veterans" },
-      { link: "/recruitments", label: " Featured Recruitments" },
+      { link: "/recruitments", label: "Featured Recruitments" },
     ],
   },
   {
