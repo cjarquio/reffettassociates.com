@@ -19,7 +19,6 @@ import {
   AmericanCouncilonEducation,
   BartellDrugs,
   BECU,
-  CoreScientific,
   NRECA,
   SeattleMariners,
   VA,
@@ -29,7 +28,6 @@ const images = [
   AmericanCouncilonEducation,
   BartellDrugs,
   BECU,
-  CoreScientific,
   NRECA,
   SeattleMariners,
   VA,
@@ -39,7 +37,7 @@ export const Home: React.FC = () => {
   const autoplay = useRef(Autoplay({ delay: 4000 }));
 
   const slides = images.map((url) => (
-    <Carousel.Slide style={{ display: "flex" }} key={url}>
+    <Carousel.Slide style={{ display: "flex", width: "100%" }} key={url}>
       <Image style={{ objectFit: "contain" }} src={url} />
     </Carousel.Slide>
   ));
@@ -109,12 +107,12 @@ export const Home: React.FC = () => {
           Featured Clients
         </Title>
         <Carousel
-          withIndicators
-          slideSize="25%"
+          withControls={false}
+          slideSize="33.3333333%"
           slideGap="lg"
-          loop
           align="start"
-          slidesToScroll={4}
+          slidesToScroll={3}
+          loop
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
