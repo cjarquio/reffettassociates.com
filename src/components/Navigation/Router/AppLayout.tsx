@@ -13,7 +13,7 @@ export const AppLayout: React.FC = () => {
       <Box className={classes.appMain}>
         <Outlet />
       </Box>
-      <Container fluid id="footer" className={classes.footer}>
+      <Container fluid className={classes.footerContainer}>
         <FooterNavigation />
       </Container>
     </AppShell>

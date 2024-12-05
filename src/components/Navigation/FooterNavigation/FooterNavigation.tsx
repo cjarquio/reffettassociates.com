@@ -1,7 +1,7 @@
 import { Text, Container, ActionIcon, Image, Anchor } from "@mantine/core";
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
 import classes from "./FooterNavigation.module.css";
-import VOSB from '../../../assets/images/VOSB.png'
+import VOSB from "../../../assets/images/veterans/VOSB.png";
 
 const footerLinks = [
   {
