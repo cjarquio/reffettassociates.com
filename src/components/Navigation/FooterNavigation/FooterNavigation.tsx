@@ -9,7 +9,7 @@ const footerLinks = [
     title: "About",
     links: [
       { label: "About Reffett Associates", link: "#" },
-      { label: "Our Team", link: "#" },
+      { label: "Our Team", link: "/team" },
       { label: "Locations", link: "#" },
       { label: "Veterans", link: "/veterans" },
     ],
