@@ -2,6 +2,7 @@ import { Text, Container, ActionIcon, Image, Anchor } from "@mantine/core";
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
 import classes from "./FooterNavigation.module.css";
 import VOSB from "../../../assets/images/veterans/VOSB.png";
+import { Link, useNavigate } from "react-router-dom";
 
 const footerLinks = [
   {
@@ -37,6 +38,10 @@ const footerLinks = [
 ];
 
 export const FooterNavigation: React.FC = () => {
+  const nav = useNavigate();
+  const handleLinkedInClick = () => {
+    nav("https://www.linkedin.com/company/reffett-associates/");
+  };
   const groups = footerLinks.map((group) => {
     const links = group.links.map((link, index) => (
       <Anchor
@@ -75,12 +80,17 @@ export const FooterNavigation: React.FC = () => {
           © 2024 Reffett Associates All rights reserved.
         </Text>
 
-        <ActionIcon size="xl" color="white" variant="subtle">
-          <IconBrandLinkedinFilled
-            style={{ width: "3rem", height: "3rem" }}
-            stroke={1.5}
-          />
-        </ActionIcon>
+        <Link
+          to={"https://www.linkedin.com/company/reffett-associates/"}
+          target="_blank"
+        >
+          <ActionIcon size="xl" color="white" variant="subtle">
+            <IconBrandLinkedinFilled
+              style={{ width: "3rem", height: "3rem" }}
+              stroke={1.5}
+            />
+          </ActionIcon>
+        </Link>
       </Container>
     </footer>
   );
