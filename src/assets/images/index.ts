@@ -7,3 +7,4 @@ export {default as SeattleMariners} from '../images/companies/Seattle Mariners.p
 export {default as VA} from '../images/companies/VA.png'
 export {default as VOSB} from '../images/veterans/VOSB.png'
 export {default as Veteran} from '../images/veterans/Veterans.jpg'
+export {default as StockExecutive} from '../images/about/StockExecutive.jpg'
