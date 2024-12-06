@@ -2,7 +2,7 @@ import { Text, Container, ActionIcon, Image, Anchor } from "@mantine/core";
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
 import classes from "./FooterNavigation.module.css";
 import VOSB from "../../../assets/images/veterans/VOSB.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const footerLinks = [
   {
@@ -38,7 +38,6 @@ const footerLinks = [
 ];
 
 export const FooterNavigation: React.FC = () => {
-  const nav = useNavigate();
   const groups = footerLinks.map((group) => {
     const links = group.links.map((link, index) => (
       <Anchor
