@@ -39,9 +39,6 @@ const footerLinks = [
 
 export const FooterNavigation: React.FC = () => {
   const nav = useNavigate();
-  const handleLinkedInClick = () => {
-    nav("https://www.linkedin.com/company/reffett-associates/");
-  };
   const groups = footerLinks.map((group) => {
     const links = group.links.map((link, index) => (
       <Anchor
