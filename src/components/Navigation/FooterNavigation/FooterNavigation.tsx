@@ -1,4 +1,4 @@
-import { Text, Container, ActionIcon, Image, Anchor } from "@mantine/core";
+import { Text, Container, ActionIcon, Image } from "@mantine/core";
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
 import classes from "./FooterNavigation.module.css";
 import VOSB from "../../../assets/images/veterans/VOSB.png";
@@ -11,7 +11,7 @@ const footerLinks = [
       { label: "About Reffett Associates", link: "#" },
       { label: "Our Team", link: "#" },
       { label: "Locations", link: "#" },
-      { label: "Veterans", link: "#" },
+      { label: "Veterans", link: "/veterans" },
     ],
   },
   {
@@ -40,14 +40,9 @@ const footerLinks = [
 export const FooterNavigation: React.FC = () => {
   const groups = footerLinks.map((group) => {
     const links = group.links.map((link, index) => (
-      <Anchor
-        underline="never"
-        key={index}
-        className={classes.link}
-        href={link.link}
-      >
+      <Link key={index} className={classes.link} to={link.link}>
         {link.label}
-      </Anchor>
+      </Link>
     ));
 
     return (
