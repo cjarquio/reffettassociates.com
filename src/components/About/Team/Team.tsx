@@ -8,15 +8,16 @@ import {
   Group,
   Title,
   Grid,
-  rem,
 } from "@mantine/core";
 import { raTeam } from "./teamHelperFunctions";
+import { Link } from "react-router-dom";
 
 export interface RaTeamInfo {
   name: string;
   title: string;
   location: string;
   image: string;
+  link: string;
   email?: string;
   description: string[];
 }
@@ -61,9 +62,11 @@ export const Team: React.FC = () => {
                   </Text>
                 )}
               </Group>
-              <Button color="blue" fullWidth mt="md" radius="md">
-                Learn More
-              </Button>
+              <Link to={teamMember.link}>
+                <Button color="blue" fullWidth mt="md" radius="md">
+                  Learn More
+                </Button>
+              </Link>
             </Card>
           </Grid.Col>
         ))}

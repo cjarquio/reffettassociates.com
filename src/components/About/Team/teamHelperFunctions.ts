@@ -15,6 +15,7 @@ import {
 export const raTeam = [
   {
     name: 'William Reffett',
+    link: 'william-reffett',
     image: BillReffett,
     title: 'Founder, Managing Partner',
     location: 'Seattle, Washington',
@@ -23,6 +24,7 @@ export const raTeam = [
   },
   {
     name: 'Nancy Hoffman',
+    link: 'nancy-hoffman',
     image: NancyHoffman,
     title: 'Managing Director',
     location: 'Greensboro, North Carolina',
@@ -31,6 +33,7 @@ export const raTeam = [
   },
   {
     name: 'Sam Mayberry',
+    link: 'sam-mayberry',
     image: SamMayberry,
     title: 'Senior Advisor',
     location: 'Seattle, Washington',
@@ -38,6 +41,7 @@ export const raTeam = [
   },
   {
     name: 'Tim Geriak',
+    link: 'tim-geriak',
     image: TimGeriak,
     title: 'Managing Director',
     location: 'Sacramento, California',
@@ -46,6 +50,7 @@ export const raTeam = [
   },
   {
     name: 'Tom Young',
+    link: 'tom-young',
     image: TomYoung,
     title: 'Director of Operations And Sustainability Manager',
     location: 'Seattle, Washington',
@@ -53,6 +58,7 @@ export const raTeam = [
   },
   {
     name: 'Eric Reffett',
+    link: 'eric-reffett',
     image: EricReffett,
     title: 'Managing Director',
     location: 'Metro DC',
@@ -61,6 +67,7 @@ export const raTeam = [
   },
   {
     name: 'Margaret Gottlieb',
+    link: 'margaret-gottlieb',
     image: MargaretGottlieb,
     title: 'Managing Director',
     location: 'Metro DC',
@@ -68,6 +75,7 @@ export const raTeam = [
   },
   {
     name: 'Kern Gillette',
+    link: 'kern-gillette',
     image: KernGilette,
     title: 'Managing Director',
     location: 'Seattle, Washington',
@@ -75,6 +83,7 @@ export const raTeam = [
   },
   {
     name: 'Marshall Reffett',
+    link: 'marshall-reffett',
     image: MarshallReffett,
     title: 'Managing Director',
     location: 'Seattle, Washington',
@@ -82,6 +91,7 @@ export const raTeam = [
   },
   {
     name: 'Lizzy Shaw',
+    link: 'lizzy-shaw',
     image: LizzyShaw,
     title: 'Associate',
     location: 'Seattle, Washington',
@@ -90,6 +100,7 @@ export const raTeam = [
   },
   {
     name: 'Gen. Glenn Lesniak (Ret.)',
+    link: 'glenn-lesniak',
     image: GlennLesniak,
     title: 'Senior Advisor',
     location: 'New York',
@@ -98,6 +109,7 @@ export const raTeam = [
   },
   {
     name: 'Mindee Prichard',
+    link: 'mindee-prichard',
     image: MindeePrichard,
     title: 'Office Manager',
     location: 'Seattle, Washington',
