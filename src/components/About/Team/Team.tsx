@@ -3,19 +3,29 @@ import {
   Image,
   Text,
   Container,
-  Badge,
   Button,
   Card,
   Group,
   Title,
   Grid,
+  rem,
 } from "@mantine/core";
+import { raTeam } from "./teamHelperFunctions";
+
+export interface RaTeamInfo {
+  name: string;
+  title: string;
+  location: string;
+  image: string;
+  email?: string;
+  description: string[];
+}
 
 export const Team: React.FC = () => {
   return (
     <Container size={"45%"}>
       <Title order={2} style={{ textAlign: "center" }}>
-        Serving Those That Served
+        Experienced, Professional, & Invested In Your Goals
       </Title>
       <Text pt={"1rem"} size="lg">
         Our team of experienced and trusted executive search experts are
@@ -24,32 +34,39 @@ export const Team: React.FC = () => {
         relationships through integrity, communication and hard work.
       </Text>
       <Grid>
-        <Grid.Col span={3}>
-          <Card padding="lg">
-            <Card.Section>
-              <Image
-                src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
-                height={160}
-                alt="Norway"
-              />
-            </Card.Section>
-
-            <Group justify="space-between" mt="md" mb="xs">
-              <Text fw={500}>Norway Fjord Adventures</Text>
-              <Badge color="pink">On Sale</Badge>
-            </Group>
-
-            <Text size="sm" c="dimmed">
-              With Fjord Tours you can explore more of the magical fjord
-              landscapes with tours and activities on and around the fjords of
-              Norway
-            </Text>
-
-            <Button color="blue" fullWidth mt="md" radius="md">
-              Book classic tour now
-            </Button>
-          </Card>
-        </Grid.Col>
+        {raTeam.map((teamMember: RaTeamInfo) => (
+          <Grid.Col span={4} key={teamMember.name}>
+            <Card padding="lg">
+              <Card.Section>
+                <Image
+                  src={teamMember.image}
+                  fit="fill"
+                  height={320}
+                  alt={teamMember.name}
+                />
+              </Card.Section>
+              <Group
+                mt="md"
+                gap={0}
+                style={{ flexDirection: "column", alignItems: "start" }}
+              >
+                <Text fw={700}>{teamMember.name}</Text>
+                <Text fw={500}>{teamMember.title}</Text>
+                <Text size="sm" c="dimmed">
+                  {teamMember.location}
+                </Text>
+                {teamMember.email && (
+                  <Text size="sm" c="dimmed">
+                    {teamMember.email}
+                  </Text>
+                )}
+              </Group>
+              <Button color="blue" fullWidth mt="md" radius="md">
+                Learn More
+              </Button>
+            </Card>
+          </Grid.Col>
+        ))}
       </Grid>
     </Container>
   );
