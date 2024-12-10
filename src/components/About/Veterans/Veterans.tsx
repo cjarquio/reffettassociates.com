@@ -5,7 +5,7 @@ import { Veteran } from "../../../assets/images";
 export const Veterans: React.FC = () => {
   return (
     <Container size={"60%"}>
-      <Flex gap="xl" justify="center" align="center">
+      <Flex gap="xl">
         <Image fit="contain" src={Veteran} />
         <Box>
           <Title order={2} style={{ textAlign: "center" }}>
