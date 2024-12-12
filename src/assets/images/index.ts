@@ -21,3 +21,5 @@ export {default as NancyHoffman} from '../images/team/NancyHoffman.jpg'
 export {default as SamMayberry} from '../images/team/SamMayberry.jpg'
 export {default as TimGeriak} from '../images/team/TimGeriak.jpg'
 export {default as TomYoung} from '../images/team/TomYoung.png'
+
+export {default as BartellRecruitment} from '../images/recruitments/Bartell Drugs.png'
