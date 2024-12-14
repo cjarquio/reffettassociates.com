@@ -1,15 +1,5 @@
 import "@mantine/core/styles.css";
-import {
-  Box,
-  Image,
-  Title,
-  Text,
-  Flex,
-  Container,
-  Group,
-  Stack,
-  Grid,
-} from "@mantine/core";
+import { Image, Title, Text, Container, Grid } from "@mantine/core";
 import { getTeamMember } from "./teamHelperFunctions";
 import { useParams } from "react-router-dom";
 import { RaTeamInfo } from "./Team";

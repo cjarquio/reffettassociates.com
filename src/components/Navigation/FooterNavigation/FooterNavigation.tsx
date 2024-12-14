@@ -8,10 +8,10 @@ const footerLinks = [
   {
     title: "About",
     links: [
-      { label: "About Reffett Associates", link: "#" },
+      { label: "About Reffett Associates", link: "/about" },
       { label: "Our Team", link: "/team" },
-      { label: "Locations", link: "#" },
       { label: "Veterans", link: "/veterans" },
+      { label: "Featured Recruitments", link: "/recruitments" },
     ],
   },
   {

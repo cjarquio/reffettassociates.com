@@ -18,7 +18,6 @@ const links = [
     links: [
       { link: "/about", label: "About Reffett Associates" },
       { link: "/team", label: "Our Team" },
-      { link: "/locations", label: "Locations" },
       { link: "/veterans", label: "Veterans" },
       { link: "/recruitments", label: "Featured Recruitments" },
     ],
@@ -45,6 +44,10 @@ const links = [
   {
     link: "/insights",
     label: "Insights",
+  },
+  {
+    link: "/contact",
+    label: "Contact Us",
   },
 ];
 

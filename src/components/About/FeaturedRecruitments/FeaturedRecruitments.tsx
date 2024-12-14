@@ -1,5 +1,5 @@
 import "@mantine/core/styles.css";
-import { Image, Text, Container, Grid } from "@mantine/core";
+import { Image, Text, Container, Grid, Title } from "@mantine/core";
 import { BartellRecruitment } from "../../../assets/images";
 
 export interface PostingProps {
@@ -22,8 +22,21 @@ const Posting: React.FC<PostingProps> = (props: PostingProps) => {
   };
 
   return (
-    <Container size={"md"} fluid display={"flex"}>
-      <Grid>
+    <Container
+      size={"md"}
+      fluid
+      display={"flex"}
+      style={{
+        width: "100vw",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <Title order={2} style={{ textAlign: "center" }}>
+        Current Opportunities
+      </Title>
+      <Grid align="center" w={"60%"}>
         <Grid.Col span={3}>
           <Image fit="contain" src={image} />
         </Grid.Col>
