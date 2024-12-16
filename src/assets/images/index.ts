@@ -29,3 +29,4 @@ export {default as BartellRecruitment} from '../images/recruitments/Bartell Drug
 
 // EXPERTISE
 export {default as ExecutiveSearchStock} from '../images/expertise/ExecutiveSearchStock.jpg'
+export {default as HandshakeStock} from '../images/expertise/HandshakeStock.jpg'
