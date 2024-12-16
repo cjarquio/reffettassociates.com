@@ -3,7 +3,7 @@ import AppLayout from "./AppLayout";
 import { Home } from "../../Home";
 import { Veterans, About, Team, FeaturedRecruitments } from "../../About";
 import TeamMember from "../../About/Team/TeamMember";
-import { Services } from "../../Expertise";
+import { Process, Services } from "../../Expertise";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/process",
+        element: <Process />,
       },
     ],
   },
