@@ -1,10 +1,65 @@
 import "@mantine/core/styles.css";
-import { Box, Image, Title, Text, Flex, Container } from "@mantine/core";
+import {
+  Box,
+  Image,
+  Title,
+  Text,
+  Flex,
+  Container,
+  Grid,
+  Card,
+} from "@mantine/core";
 import { ExecutiveSearchStock } from "../../../assets/images";
+import { IconArrowBigRightFilled } from "@tabler/icons-react";
+
+const successfulCandidateSteps = [
+  {
+    title: "Getting to Know Your Organization",
+    icon: <></>,
+    description:
+      "Meet with key executives and selected stakeholders to gain an understanding of your organization’s history, structure, operations, and values. We will design a unique recruitment strategy that will help you attain your organizational goals.",
+  },
+  {
+    title: "Defining the Position",
+    icon: <></>,
+    description:
+      "Develop a position specification including title, reporting relationships, education requirements, work experience, descriptions of basic responsibilities, and compensation.",
+  },
+  {
+    title: "Recruiting Qualifying Candidates",
+    icon: <></>,
+    description:
+      "Reffett Associate senior staff will directly contact candidates through original research, drawing on the resources of our extensive database, and targeted recruitment efforts to find you top talent that match your needs and culture.",
+  },
+  {
+    title: "Defining Strengths and Weaknesses",
+    icon: <></>,
+    description:
+      "Our team will personally interview only the best suited candidates to ensure their fit for your critical role. We have extensive experience evaluating executive talent and a process in please to minimize bias in our process.",
+  },
+  {
+    title: "Meeting with Leadership and Communication",
+    icon: <></>,
+    description:
+      "Provide detailed weekly status reports on our search progress and regular communication with your team. Only the top candidates are presented for individual meetings with management. The client always makes the final selection and offer of employment.",
+  },
+  {
+    title: "Selecting the Executive and Checking References",
+    icon: <></>,
+    description:
+      "Protect a candidate's confidentiality by performing reference and other checks only after you have expressed a strong interest in an individual. Reffett Associate will provide customized briefing materials on all final candidates.",
+  },
+  {
+    title: "Negotiating Compensation",
+    icon: <></>,
+    description:
+      "Assist your organization with understanding the current market for your position, making an employment offer and negotiating a competitive compensation package.",
+  },
+];
 
 export const Services: React.FC = () => {
   return (
-    <Container size={"60%"}>
+    <Container size={"80%"}>
       <Flex gap="xl">
         <Image
           fit="cover"
@@ -43,6 +98,30 @@ export const Services: React.FC = () => {
       <Title order={2} style={{ textAlign: "center" }}>
         The Seven Steps to Finding Your Successful Candidate
       </Title>
+      <Grid display={"flex"} columns={16} align="center" justify="center">
+        {successfulCandidateSteps.map((step, index) => {
+          return (
+            <>
+              <Grid.Col span={2} key={step.title}>
+                <Card shadow="sm" padding="md">
+                  <Card.Section>{step.icon}</Card.Section>
+
+                  <Text fw={500} size="lg" mt="md">
+                    {step.title}
+                  </Text>
+
+                  <Text mt="xs" c="dimmed" size="sm">
+                    {step.description}
+                  </Text>
+                </Card>
+              </Grid.Col>
+              {index !== successfulCandidateSteps.length - 1 && (
+                <IconArrowBigRightFilled />
+              )}
+            </>
+          );
+        })}
+      </Grid>
     </Container>
   );
 };
