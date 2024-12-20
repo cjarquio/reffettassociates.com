@@ -89,14 +89,9 @@ export const HeaderNavigation: React.FC = () => {
 
     return (
       <Container className={classes.hoverUnderlineAnimation}>
-        <a
-          key={link.label}
-          href={link.link}
-          className={classes.link}
-          onClick={(event) => event.preventDefault()}
-        >
+        <Link key={link.label} to={link.link} className={classes.link}>
           {link.label}
-        </a>
+        </Link>
       </Container>
     );
   });
