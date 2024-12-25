@@ -4,6 +4,11 @@ import { Home } from "../../Home";
 import { Veterans, About, Team, FeaturedRecruitments } from "../../About";
 import TeamMember from "../../About/Team/TeamMember";
 import { Contact } from "../../Contact";
+import {
+  ExecutiveTransferAssistance,
+  Process,
+  Services,
+} from "../../Expertise";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +37,18 @@ export const router = createBrowserRouter([
       {
         path: "/veterans",
         element: <Veterans />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/process",
+        element: <Process />,
+      },
+      {
+        path: "/executive-transfer-assistance",
+        element: <ExecutiveTransferAssistance />,
       },
       {
         path: "/contact",

@@ -1,3 +1,4 @@
+// COMPANIES
 export {default as AmericanCouncilonEducation} from '../images/companies/ACE.png'
 export {default as BartellDrugs} from '../images/companies/Bartell Drugs.png'
 export {default as BECU} from '../images/companies/BECU.jpg'
@@ -9,6 +10,7 @@ export {default as VOSB} from '../images/veterans/VOSB.png'
 export {default as Veteran} from '../images/veterans/Veterans.jpg'
 export {default as StockExecutive} from '../images/about/StockExecutive.jpg'
 
+// TEAM
 export {default as BillReffett} from '../images/team/BillReffett.jpg'
 export {default as EricReffett} from '../images/team/EricReffett.jpg'
 export {default as GlennLesniak} from '../images/team/GlennLesniak.jpg'
@@ -22,4 +24,9 @@ export {default as SamMayberry} from '../images/team/SamMayberry.jpg'
 export {default as TimGeriak} from '../images/team/TimGeriak.jpg'
 export {default as TomYoung} from '../images/team/TomYoung.png'
 
+// RECRUITMENTS
 export {default as BartellRecruitment} from '../images/recruitments/Bartell Drugs.png'
+
+// EXPERTISE
+export {default as ExecutiveSearchStock} from '../images/expertise/ExecutiveSearchStock.jpg'
+export {default as HandshakeStock} from '../images/expertise/HandshakeStock.jpg'

@@ -23,7 +23,7 @@ export const About: React.FC = () => {
             Owned Small Business (VOSB). In addition, Reffett Associates is on
             the GSA Schedule and maintains a GSA contract (GS-02F-0194W). We are
             one of very few executive search firms to be awarded this
-            prestigious qualification after having completed the GSA’s extensive
+            prestigious qualification after having completed the GSA's extensive
             qualifications process.
           </Text>
           <Text pt={"1rem"} size="lg">

@@ -17,8 +17,12 @@ const footerLinks = [
   {
     title: "Expertise",
     links: [
-      { label: "Services", link: "#" },
-      { label: "Process", link: "#" },
+      { label: "Services", link: "/services" },
+      { label: "Process", link: "/process" },
+      {
+        link: "/executive-transfer-assistance",
+        label: "Executive Transfer Assistance",
+      },
     ],
   },
   {
