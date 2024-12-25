@@ -19,6 +19,7 @@ export interface RaTeamInfo {
   image: string;
   link: string;
   email?: string;
+  ph?: string;
   description: string[];
 }
 

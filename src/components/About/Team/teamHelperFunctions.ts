@@ -21,6 +21,7 @@ export const raTeam: RaTeamInfo[] = [
     title: 'Founder, Managing Partner',
     location: 'Seattle, Washington',
     email: 'wreffett@reffettassociates.com',
+    ph: '(425) 637-2993',
     description: [
       "Bill Reffett has successfully identified and placed key executive leaders for major companies across the United States. Prior to establishing Reffett & Associates, Bill was a Vice President and Partner with Korn/Ferry International, where he was responsible for initiating the firm's national supermarket practice. Additionally, he was a member of the firm's national specialty retail practice, where he focused on companies along the west coast.",
       "Before entering the executive search industry, he served as the Senior Vice President, Chief Administrative Officer for Cavenham (USA), the US-based investment arm of the late Sir James Goldsmith. Bill also served as a Board Member and Senior Vice President for the organization's operating company, Grand Union, where he was responsible for areas such as human resources, legal, labor relations, and communications. Prior to joining Sir James' organization, he served as a Senior Vice President of a major department store company. Bill has 27 years of combined active and reserve military experience, retiring as a Colonel.",
@@ -34,6 +35,7 @@ export const raTeam: RaTeamInfo[] = [
     title: 'Managing Director',
     location: 'Greensboro, North Carolina',
     email: 'nancy.hoffmann@reffettassociates.com',
+    ph: '(336) 856-8128',
     description: [
       "Nancy Hoffmann joined Reffett Associates in 1998 as a Managing Director. This followed a 22-year corporate executive management career in textiles, apparel, home furnishings, and financial services. She held line positions with P&L responsibility for sales, marketing, merchandising, and operations in several consumer products companies.",
       "She served as Director of Marketing for Graphic Dimensions Ltd. where she had marketing responsibility for the company's B to B mail order, retail, wholesale, and fulfillment business. Catalog Age nominated the Graphic Dimensions catalog for best in category in 1997 and 1998 during her tenure.",
@@ -63,6 +65,7 @@ export const raTeam: RaTeamInfo[] = [
     title: 'Managing Director',
     location: 'Sacramento, California',
     email: 'Tim@reffettassociates.com',
+    ph: '(408) 896-0547',
     description: [
       "Tim joins Reffett Associates having most recently served as the Senior Managing Director for Robert Half Executive Search. Tim brings a plethora of experience in identifying key executive hires organization wide. Known for his astute judgement of talent and his consultative style, Tim is often referred to as a business partner and a trusted confidant.",
       "The vast majority of Tim's career has been dedicated to supporting pre-revenue startups through fortune 500 companies that are looking for game-changing leadership hires to shape and actualize their strategic visions. Tim is well-versed in a multitude of industries with deep knowledge in trends, drivers, and success indicators.",
@@ -92,6 +95,7 @@ export const raTeam: RaTeamInfo[] = [
     title: 'Managing Director',
     location: 'Metro DC',
     email: 'eareffett@reffettasociates.com',
+    ph: '(703) 351-5062',
     description: [
       "Dr. Eric Reffett joins Reffett Associates having spent 19 years at Booz Allen Hamilton where he led a variety of efforts for US Government clients, most recently leading many of Booz Allen's efforts in the Chemical, Biological, Radiological, and Nuclear arena. Eric joins us having served as a Principal for Booz Allen Hamilton based in Washington, DC, his focus at Booz Allen has been leading highly technical delivery for clients throughout the Government. Dr. Reffett joins Reffett Associates as a Managing Director focusing on the Public Sector, Government Contracting & Professional Services, and Associations & Nonprofits practices and leads our Washington DC office.",
       "Capitalizing on his expertise developed leading highly technical delivery, Dr. Reffett focuses on identifying and recruiting technical talent for Government and industry. His relationships within the research and development community, academia, and industry allow him to reach out to a broad variety of potential candidates with diverse skills to serve the technical staffing needs of our clients. His expertise is identifying those one of a kind candidates for difficult to fill positions.",
