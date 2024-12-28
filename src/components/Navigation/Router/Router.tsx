@@ -9,6 +9,7 @@ import {
   Process,
   Services,
 } from "../../Expertise";
+import { GovernmentContracting, Manufacturing, NonProfits, PrivateSector, PublicSector, Retail } from "../../Industries";
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +50,30 @@ export const router = createBrowserRouter([
       {
         path: "/executive-transfer-assistance",
         element: <ExecutiveTransferAssistance />,
+      },
+      {
+        path: "/retail",
+        element: <Retail />,
+      },
+      {
+        path: "/public-sector",
+        element: <PublicSector />,
+      },
+      {
+        path: "/private-sector",
+        element: <PrivateSector />,
+      },
+      {
+        path: "/nonprofits",
+        element: <NonProfits />,
+      },
+      {
+        path: "/manufacturing-and-industrials",
+        element: <Manufacturing />,
+      },
+      {
+        path: "/government-contracting",
+        element: <GovernmentContracting />,
       },
       {
         path: "/contact",

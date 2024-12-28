@@ -30,3 +30,11 @@ export {default as BartellRecruitment} from '../images/recruitments/Bartell Drug
 // EXPERTISE
 export {default as ExecutiveSearchStock} from '../images/expertise/ExecutiveSearchStock.jpg'
 export {default as HandshakeStock} from '../images/expertise/HandshakeStock.jpg'
+
+// INDUSTRY BANNER
+export {default as GovernmentContractingBanner} from '../images/companies/Government/government.jpg'
+export {default as ManufacturingBanner} from '../images/companies/Manufacturing/manufactoringbig.jpg'
+export {default as NonProfitBanner} from '../images/companies/NonProfits/nonprofitbigpuz.jpg'
+export {default as PrivateSectorBanner} from '../images/companies/PrivateSector/privateequitybig.jpg'
+export {default as PublicSectorBanner} from '../images/companies/PublicSector/publicsectorbig.jpg'
+export {default as RetailBanner} from '../images/companies/Retail/retailbig.jpg'
