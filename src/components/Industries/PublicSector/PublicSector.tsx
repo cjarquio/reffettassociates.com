@@ -90,7 +90,7 @@ export const PublicSector: React.FC = () => {
     <>
       <Image src={PublicSectorBanner} fit="fill" h={"15rem"} />
       <Container fluid w="60%" display={"flex"}>
-        <Container>
+        <Container w={"80%"}>
           <Box id="retailDescription">
             <Title order={3}>Public Sector</Title>
             <Text>

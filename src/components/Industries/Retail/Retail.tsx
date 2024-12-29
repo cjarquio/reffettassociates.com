@@ -1,12 +1,4 @@
-import {
-  Container,
-  Title,
-  Image,
-  Box,
-  Text,
-  Card,
-  Grid,
-} from "@mantine/core";
+import { Container, Title, Image, Box, Text, Card, Grid } from "@mantine/core";
 import { RetailBanner } from "../../../assets/images";
 import {
   BassProShops,
@@ -157,7 +149,7 @@ export const Retail: React.FC = () => {
     <>
       <Image src={RetailBanner} fit="fill" h={"15rem"} />
       <Container fluid w="60%" display={"flex"}>
-        <Container>
+        <Container w={"80%"}>
           <Box id="retailDescription">
             <Title order={3}>Retail</Title>
             <Text>
