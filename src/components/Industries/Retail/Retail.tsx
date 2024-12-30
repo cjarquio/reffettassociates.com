@@ -149,7 +149,7 @@ export const Retail: React.FC = () => {
     <>
       <Image src={RetailBanner} fit="fill" h={"15rem"} />
       <Container fluid w="60%" display={"flex"}>
-        <Container w={"80%"}>
+        <Container>
           <Box id="retailDescription">
             <Title order={3}>Retail</Title>
             <Text>

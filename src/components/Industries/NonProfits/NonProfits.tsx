@@ -74,28 +74,19 @@ export const NonProfits: React.FC = () => {
           <Box id="retailDescription">
             <Title order={3}>Nonprofit</Title>
             <Text>
-              We understand the challenges that you face, and what is needed to
-              drive success. In today's omni-channel retail world, leaders must
-              be knowledgeable and versatile. This is not an environment for the
-              timid.
+              Outstanding leadership skills are developed over a lifetime of
+              great opportunities and experiences. We are intimately familiar
+              with association and not-for-profit organizations and the
+              challenges they face every day.
             </Text>
             <Text>
-              Our Managing Directors were selected based on their expertise in
-              key leadership roles in the industries they serve. Our Retail /
-              Consumer team is composed of senior executives who have been on
-              “your side” of the desk. They understand the importance of
-              identifying superior leaders and recruiting them to the
-              organization. The search firm you select must have the same sense
-              of urgency displayed by your organization - timeliness is
-              essential to effective candidate placement.
-            </Text>
-            <Text>
-              We have assisted companies in all areas of the Retail / Consumer
-              world, such as traditional department stores, specialty retail
-              companies, business to consumer, and on-line retailing. Each
-              search engagement is specifically tailored to the needs of the
-              client and is personally conducted by a Managing Director - from
-              the beginning to its successful conclusion.
+              We are especially well qualified to identify that unique person to
+              fit your organization's needs. As not-for-profit organizations
+              begin operating more like businesses and implementing best
+              practices and governance structures, effective leadership at the
+              top is imperative. Reffett Associates will find the individuals
+              who best fit your organization and will work towards the
+              achievement of your organization's mission.
             </Text>
           </Box>
         </Container>

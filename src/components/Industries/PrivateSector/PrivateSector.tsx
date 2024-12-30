@@ -1,4 +1,13 @@
-import { Container, Title, Image, Box, Card, Grid, Text } from "@mantine/core";
+import {
+  Container,
+  Title,
+  Image,
+  Box,
+  Card,
+  Grid,
+  Text,
+  List,
+} from "@mantine/core";
 import {
   AconInvestments,
   AlvarezAndMarsal,
@@ -79,28 +88,35 @@ export const PrivateSector: React.FC = () => {
           <Box id="retailDescription">
             <Title order={3}>Private Sector</Title>
             <Text>
-              We understand the challenges that you face, and what is needed to
-              drive success. In today's omni-channel retail world, leaders must
-              be knowledgeable and versatile. This is not an environment for the
-              timid.
+              As market conditions have changed, Private Equity has become a
+              greater part of our firm’s practice. We understand the talents and
+              skills required to lead companies through all the stages of the
+              life cycle, from the earliest stage start-up, to upgrading the
+              management team of a portfolio company.
             </Text>
             <Text>
-              Our Managing Directors were selected based on their expertise in
-              key leadership roles in the industries they serve. Our Retail /
-              Consumer team is composed of senior executives who have been on
-              “your side” of the desk. They understand the importance of
-              identifying superior leaders and recruiting them to the
-              organization. The search firm you select must have the same sense
-              of urgency displayed by your organization - timeliness is
-              essential to effective candidate placement.
-            </Text>
-            <Text>
-              We have assisted companies in all areas of the Retail / Consumer
-              world, such as traditional department stores, specialty retail
-              companies, business to consumer, and on-line retailing. Each
-              search engagement is specifically tailored to the needs of the
-              client and is personally conducted by a Managing Director - from
-              the beginning to its successful conclusion.
+              Our firm has assisted major Private Equity firms in all stages of
+              their evaluation process:
+              <List size="sm" withPadding>
+                <List.Item>
+                  On a consulting basis, using our extensive network to help
+                  provide overall market intelligence, current talent
+                  evaluation, and company position.
+                </List.Item>
+                <List.Item>
+                  Performing pre-investment evaluation on a company's existing
+                  human capital, their leadership, and overall culture.
+                </List.Item>
+                <List.Item>
+                  Identifying and recruiting executives at all company levels,
+                  who can quickly provide the value added to transform the
+                  portfolio company performance.
+                </List.Item>
+                <List.Item>
+                  Determining long range talent resources, both internal and
+                  external to the company.
+                </List.Item>
+              </List>
             </Text>
           </Box>
         </Container>

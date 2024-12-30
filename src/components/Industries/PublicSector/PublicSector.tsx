@@ -94,28 +94,22 @@ export const PublicSector: React.FC = () => {
           <Box id="retailDescription">
             <Title order={3}>Public Sector</Title>
             <Text>
-              We understand the challenges that you face, and what is needed to
-              drive success. In today's omni-channel retail world, leaders must
-              be knowledgeable and versatile. This is not an environment for the
-              timid.
+              As a leading provider of retained executive search services across
+              all levels of government, including federal, state and local
+              governments and agencies, we possess a unique understanding of
+              your needs. Our group of Managing Directors bring with them
+              unparalleled experience in the public sector. With experience
+              ranging from holding senior level positions in the Department of
+              Defense, on Capitol Hill, and working with State and Local
+              officials our team is experienced in the government hiring process
+              and the issues that you confront finding a diverse and qualified
+              talent pool.
             </Text>
             <Text>
-              Our Managing Directors were selected based on their expertise in
-              key leadership roles in the industries they serve. Our Retail /
-              Consumer team is composed of senior executives who have been on
-              “your side” of the desk. They understand the importance of
-              identifying superior leaders and recruiting them to the
-              organization. The search firm you select must have the same sense
-              of urgency displayed by your organization - timeliness is
-              essential to effective candidate placement.
-            </Text>
-            <Text>
-              We have assisted companies in all areas of the Retail / Consumer
-              world, such as traditional department stores, specialty retail
-              companies, business to consumer, and on-line retailing. Each
-              search engagement is specifically tailored to the needs of the
-              client and is personally conducted by a Managing Director - from
-              the beginning to its successful conclusion.
+              Reffett Associates is a veteran-owned business and maintains a GSA
+              contract (GS-02F-0194W). We are one of the few executive search
+              firms to be awarded this prestigious qualification after
+              completing their extensive qualification process.
             </Text>
           </Box>
         </Container>

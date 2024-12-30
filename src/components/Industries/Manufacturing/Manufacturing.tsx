@@ -69,28 +69,20 @@ export const Manufacturing: React.FC = () => {
           <Box id="retailDescription">
             <Title order={3}>Manufacturing</Title>
             <Text>
-              We understand the challenges that you face, and what is needed to
-              drive success. In today's omni-channel retail world, leaders must
-              be knowledgeable and versatile. This is not an environment for the
-              timid.
+              Success in today's market requires leaders and executives who
+              understand the nature of its rapidly changing landscape. Often
+              this means leveraging external partners such as Reffett Associates
+              to identify and attract exceptional talent that can make a
+              significant business impact.
             </Text>
             <Text>
-              Our Managing Directors were selected based on their expertise in
-              key leadership roles in the industries they serve. Our Retail /
-              Consumer team is composed of senior executives who have been on
-              “your side” of the desk. They understand the importance of
-              identifying superior leaders and recruiting them to the
-              organization. The search firm you select must have the same sense
-              of urgency displayed by your organization - timeliness is
-              essential to effective candidate placement.
-            </Text>
-            <Text>
-              We have assisted companies in all areas of the Retail / Consumer
-              world, such as traditional department stores, specialty retail
-              companies, business to consumer, and on-line retailing. Each
-              search engagement is specifically tailored to the needs of the
-              client and is personally conducted by a Managing Director - from
-              the beginning to its successful conclusion.
+              The Reffett Associates team is uniquely positioned to understand
+              our clients' needs. Having served as senior executives in major
+              professional services and Fortune 500 companies, we possess deep
+              expertise in providing business solutions to commercial and
+              government clients. Our insight and consultative approach,
+              combined with access to the best talent, ensures that the results
+              we deliver to clients exceed their expectations.
             </Text>
           </Box>
         </Container>

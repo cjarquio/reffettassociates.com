@@ -1,33 +1,6 @@
 import { Container, Title, Image, Text, Box, Card, Grid } from "@mantine/core";
 import { GovernmentContractingBanner } from "../../../assets/images";
 import {
-  BassProShops,
-  BiLo,
-  Burlington,
-  Cabelas,
-  DeanFoods,
-  Dymatize,
-  Hershey,
-  KingsFoodMarket,
-  Petco,
-  Schwans,
-  AAFEX,
-  SportsAuthority,
-  Strack,
-  TheFreshMarket,
-  Ahold,
-  Giant,
-  Homeland,
-  KVAT,
-  MetropolitanMarket,
-  NorthgateMarket,
-  OTG,
-  Peekay,
-  Post,
-  VF,
-  Xochitl,
-} from "../../../assets/images/companies/Retail";
-import {
   Battelle,
   DynCorp,
   Fluor,
@@ -81,28 +54,24 @@ export const GovernmentContracting: React.FC = () => {
           <Box id="retailDescription">
             <Title order={3}>Government Contracting</Title>
             <Text>
-              We understand the challenges that you face, and what is needed to
-              drive success. In today's omni-channel retail world, leaders must
-              be knowledgeable and versatile. This is not an environment for the
-              timid.
+              Success in today's Federal, State and Local Government markets
+              requires leaders and executives who understand this rapidly
+              changing marketplace. Our group of Managing Directors has a deep
+              understanding of your needs, and how to navigate the intricacies
+              of doing business with the government.
             </Text>
             <Text>
-              Our Managing Directors were selected based on their expertise in
-              key leadership roles in the industries they serve. Our Retail /
-              Consumer team is composed of senior executives who have been on
-              “your side” of the desk. They understand the importance of
-              identifying superior leaders and recruiting them to the
-              organization. The search firm you select must have the same sense
-              of urgency displayed by your organization - timeliness is
-              essential to effective candidate placement.
+              With experience at all levels of Federal Government contracting
+              and broad experience in working with the top Federal, State and
+              Local Government service providers, we understand the unique
+              requirements for senior leaders and executives with experience in
+              government contracting and program management. This includes
+              contractors performing work overseas and in combat zones in
+              support of US Forces.
             </Text>
             <Text>
-              We have assisted companies in all areas of the Retail / Consumer
-              world, such as traditional department stores, specialty retail
-              companies, business to consumer, and on-line retailing. Each
-              search engagement is specifically tailored to the needs of the
-              client and is personally conducted by a Managing Director - from
-              the beginning to its successful conclusion.
+              Our experience encompasses the entire Federal Government, and a
+              majority of the top 100 Federal contractors.
             </Text>
           </Box>
         </Container>
