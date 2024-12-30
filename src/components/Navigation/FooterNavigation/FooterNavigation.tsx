@@ -28,11 +28,18 @@ const footerLinks = [
   {
     title: "Industries",
     links: [
-      { label: "Retail", link: "#" },
-      { label: "Public Sector", link: "#" },
-      { label: "Private Equity and Financial Services", link: "#" },
-      { label: "Associations and Nonprofits", link: "#" },
-      { label: "Manufacturing and Industrials", link: "#" },
+      { label: "Government", link: "/government" },
+      { label: "Retail", link: "/retail" },
+      { label: "Public Sector", link: "/public-sector" },
+      {
+        label: "Private Equity and Financial Services",
+        link: "/private-sector",
+      },
+      { label: "Associations and Nonprofits", link: "/nonprofits" },
+      {
+        label: "Manufacturing and Industrials",
+        link: "/manufacturing-and-industrials",
+      },
     ],
   },
   {

@@ -39,10 +39,11 @@ const links = [
     label: "Industries",
     links: [
       { link: "/retail", label: "Retail" },
-      { link: "/public", label: "Public Sector" },
-      { link: "/private", label: "Private Equity and Financial Services" },
+      { link: "/public-sector", label: "Public Sector" },
+      { link: "/private-sector", label: "Private Equity and Financial Services" },
       { link: "/nonprofits", label: "Associations and Nonprofits" },
-      { link: "/manufacturing", label: "Manufacturing and Industrials" },
+      { link: "/manufacturing-and-industrials", label: "Manufacturing and Industrials" },
+      { link: "/government-contracting", label: "Government Contracting" },
     ],
   },
   {
