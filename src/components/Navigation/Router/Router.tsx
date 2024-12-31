@@ -9,7 +9,15 @@ import {
   Process,
   Services,
 } from "../../Expertise";
-import { GovernmentContracting, Manufacturing, NonProfits, PrivateSector, PublicSector, Retail } from "../../Industries";
+import {
+  GovernmentContracting,
+  Manufacturing,
+  NonProfits,
+  PrivateSector,
+  PublicSector,
+  Retail,
+} from "../../Industries";
+import { News } from "../../News";
 
 export const router = createBrowserRouter([
   {
@@ -74,6 +82,10 @@ export const router = createBrowserRouter([
       {
         path: "/government-contracting",
         element: <GovernmentContracting />,
+      },
+      {
+        path: "/insights",
+        element: <News />,
       },
       {
         path: "/contact",

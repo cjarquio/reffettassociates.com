@@ -44,7 +44,7 @@ const footerLinks = [
   },
   {
     title: "Insights",
-    links: [{ label: "News + Insights", link: "#" }],
+    links: [{ label: "News + Insights", link: "/insights" }],
   },
 ];
 
