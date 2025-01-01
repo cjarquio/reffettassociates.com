@@ -38,3 +38,7 @@ export {default as NonProfitBanner} from '../images/companies/NonProfits/nonprof
 export {default as PrivateSectorBanner} from '../images/companies/PrivateSector/privateequitybig.jpg'
 export {default as PublicSectorBanner} from '../images/companies/PublicSector/publicsectorbig.jpg'
 export {default as RetailBanner} from '../images/companies/Retail/retailbig.jpg'
+
+// INSIGHTS
+export {default as ExternalNewsImage} from '../images/insights/externalNews.jpg'
+export {default as InternalNewsImage} from '../images/insights/internalNews.jpg'
