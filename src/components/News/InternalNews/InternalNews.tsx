@@ -42,6 +42,7 @@ export default function InternalNews() {
       <Container size={"60%"}>
         {article && <Title order={4}>{article.article.title}</Title>}
         <Article />
+        {/* TODO: Add Get in touch with our team to see how we can help you. section with large contact us button  */}
       </Container>
     </>
   );
