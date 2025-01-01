@@ -17,7 +17,7 @@ import {
   PublicSector,
   Retail,
 } from "../../Industries";
-import { News } from "../../News";
+import { InternalNews, News } from "../../News";
 
 export const router = createBrowserRouter([
   {
@@ -82,6 +82,10 @@ export const router = createBrowserRouter([
       {
         path: "/government-contracting",
         element: <GovernmentContracting />,
+      },
+      {
+        path: "/insights/:topicId",
+        element: <InternalNews />,
       },
       {
         path: "/insights",
