@@ -1,7 +1,9 @@
 import { Container, Title, Text, Button } from "@mantine/core";
 import classes from "./ContactButtonSection.module.css";
+import { useNavigate } from "react-router-dom";
 
 export const Contact: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <Container size={"md"} className={classes.contactContainer}>
       <Title order={2} style={{ textAlign: "center" }}>
@@ -17,6 +19,7 @@ export const Contact: React.FC = () => {
         variant="gradient"
         gradient={{ from: "#0f2f5b", to: "cyan", deg: 90 }}
         size="xl"
+        onClick={() => navigate("/contact")}
       >
         Contact Us
       </Button>

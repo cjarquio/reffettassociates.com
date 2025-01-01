@@ -1,6 +1,7 @@
 import "@mantine/core/styles.css";
 import { Image, Text, Container, Grid, Title } from "@mantine/core";
 import { BartellRecruitment } from "../../../assets/images";
+import { ContactButtonSection } from "../../Contact";
 
 export interface PostingProps {
   image: string;
@@ -50,6 +51,7 @@ const Posting: React.FC<PostingProps> = (props: PostingProps) => {
           <Text>{getPostingDate(postingDate)}</Text>
         </Grid.Col>
       </Grid>
+      <ContactButtonSection />
     </Container>
   );
 };

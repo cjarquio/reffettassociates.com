@@ -1,6 +1,7 @@
 import "@mantine/core/styles.css";
 import { Box, Image, Title, Text, Flex, Container } from "@mantine/core";
 import { StockExecutive } from "../../../assets/images";
+import { ContactButtonSection } from "../../Contact";
 
 export const About: React.FC = () => {
   return (
@@ -41,6 +42,7 @@ export const About: React.FC = () => {
           </Text>
         </Box>
       </Flex>
+      <ContactButtonSection />
     </Container>
   );
 };

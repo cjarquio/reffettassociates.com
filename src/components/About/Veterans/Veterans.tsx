@@ -1,6 +1,7 @@
 import "@mantine/core/styles.css";
 import { Box, Image, Title, Text, Flex, Container } from "@mantine/core";
 import { Veteran } from "../../../assets/images";
+import { ContactButtonSection } from "../../Contact";
 
 export const Veterans: React.FC = () => {
   return (
@@ -32,6 +33,7 @@ export const Veterans: React.FC = () => {
           </Text>
         </Box>
       </Flex>
+      <ContactButtonSection />
     </Container>
   );
 };
