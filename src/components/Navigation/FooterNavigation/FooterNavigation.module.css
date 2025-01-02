@@ -39,11 +39,12 @@
 
 .wrapper {
   width: 25%;
+  padding-left: 5rem;
 }
 
 .link {
   display: block;
-  color: light-dark(var(--mantine-color-red-5), var(--mantine-color-dark-1));
+  color: light-dark(var(--mantine-color-red-6), var(--mantine-color-dark-1));
   font-weight: 500;
   font-size: var(--mantine-font-size-md);
   padding-top: rem(3px);
