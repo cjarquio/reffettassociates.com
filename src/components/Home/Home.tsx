@@ -6,24 +6,16 @@ import StockVideo from "../../../src/assets/videos/executiveStockVideo.mp4";
 import classes from "./Home.module.css";
 import { IconMilitaryRankFilled, IconSearch } from "@tabler/icons-react";
 import { Carousel } from "@mantine/carousel";
-import {
-  AmericanCouncilonEducation,
-  BartellDrugs,
-  BECU,
-  NRECA,
-  SeattleMariners,
-  VA,
-} from "../../assets/images";
 import { ContactButtonSection } from "../Contact";
-
-const images = [
-  AmericanCouncilonEducation,
+import { ACE, NRECA } from "../../assets/images/companies/NonProfits";
+import { BECU } from "../../assets/images/companies/PrivateSector";
+import {
   BartellDrugs,
-  BECU,
-  NRECA,
   SeattleMariners,
-  VA,
-];
+} from "../../assets/images/companies/Retail";
+import { VA } from "../../assets/images/companies/PublicSector";
+
+const images = [ACE, BartellDrugs, BECU, NRECA, SeattleMariners, VA];
 
 export const Home: React.FC = () => {
   const autoplay = useRef(Autoplay({ delay: 4000 }));

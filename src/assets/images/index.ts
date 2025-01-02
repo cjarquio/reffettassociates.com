@@ -1,11 +1,4 @@
 // COMPANIES
-export {default as AmericanCouncilonEducation} from '../images/companies/ACE.png'
-export {default as BartellDrugs} from '../images/companies/Bartell Drugs.png'
-export {default as BECU} from '../images/companies/BECU.jpg'
-export {default as CoreScientific} from '../images/companies/Core Scientific.jpg'
-export {default as NRECA} from '../images/companies/NRECA.jpg'
-export {default as SeattleMariners} from '../images/companies/Seattle Mariners.png'
-export {default as VA} from '../images/companies/VA.png'
 export {default as VOSB} from '../images/veterans/VOSB.png'
 export {default as Veteran} from '../images/veterans/Veterans.jpg'
 export {default as StockExecutive} from '../images/about/StockExecutive.jpg'
