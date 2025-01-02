@@ -72,7 +72,7 @@ export const ContactMap = () => {
       <Geographies geography={geoUrl}>
         {({ outline, borders }) => (
           <>
-            <Geography geography={outline} fill="#0f2f5b" />
+            <Geography geography={outline} fill="#008000" />
             <Geography geography={borders} fill="none" stroke="#FFF" />
           </>
         )}
@@ -98,7 +98,7 @@ export const ContactMap = () => {
                   onClick={() => handleClick(name)}
                 >
                   <circle
-                    r={15}
+                    r={10}
                     fill="#bb2a2c"
                     stroke="#fff"
                     strokeWidth={2}
