@@ -29,6 +29,7 @@ import {
   VF,
   Xochitl,
 } from "../../../assets/images/companies/Retail";
+import { Banner } from "../../Banner";
 
 export const Retail: React.FC = () => {
   const retailCompanies = [
@@ -147,7 +148,7 @@ export const Retail: React.FC = () => {
   ];
   return (
     <>
-      <Image src={RetailBanner} fit="fill" h={"15rem"} />
+      <Banner bannerImagePath={RetailBanner} page="Retail" />
       <Container fluid w="60%" display={"flex"}>
         <Container>
           <Box id="retailDescription">

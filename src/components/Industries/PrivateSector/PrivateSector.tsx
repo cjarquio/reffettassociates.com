@@ -24,6 +24,7 @@ import {
   TravelersInsurance,
 } from "../../../assets/images/companies/PrivateSector";
 import { PrivateSectorBanner } from "../../../assets/images";
+import { Banner } from "../../Banner";
 
 export const PrivateSector: React.FC = () => {
   const retailCompanies = [
@@ -82,7 +83,7 @@ export const PrivateSector: React.FC = () => {
   ];
   return (
     <>
-      <Image src={PrivateSectorBanner} fit="fill" h={"15rem"} />
+      <Banner bannerImagePath={PrivateSectorBanner} page="Private Sector" />
       <Container fluid w="60%" display={"flex"}>
         <Container w={"80%"}>
           <Box id="retailDescription">

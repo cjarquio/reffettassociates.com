@@ -10,6 +10,7 @@ import {
   NRECA,
   SOC,
 } from "../../../assets/images/companies/Government";
+import { Banner } from "../../Banner";
 
 export const GovernmentContracting: React.FC = () => {
   const retailCompanies = [
@@ -48,7 +49,10 @@ export const GovernmentContracting: React.FC = () => {
   ];
   return (
     <>
-      <Image src={GovernmentContractingBanner} fit="fill" h={"15rem"} />
+      <Banner
+        bannerImagePath={GovernmentContractingBanner}
+        page="Government Contracting"
+      />
       <Container fluid w="60%" display={"flex"}>
         <Container w={"80%"}>
           <Box id="retailDescription">

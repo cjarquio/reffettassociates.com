@@ -1,5 +1,5 @@
 import { Container, Title, Image, Box, Card, Grid, Text } from "@mantine/core";
-import { PublicSectorBanner } from "../../../assets/images";
+import { NonProfitBanner } from "../../../assets/images";
 import {
   DiversityInc,
   TouchstoneEnergy,
@@ -14,6 +14,7 @@ import {
   CliffordBeers,
   ICSC,
 } from "../../../assets/images/companies/NonProfits";
+import { Banner } from "../../Banner";
 
 export const NonProfits: React.FC = () => {
   const retailCompanies = [
@@ -68,7 +69,10 @@ export const NonProfits: React.FC = () => {
   ];
   return (
     <>
-      <Image src={PublicSectorBanner} fit="fill" h={"15rem"} />
+      <Banner
+        bannerImagePath={NonProfitBanner}
+        page="Associations and Nonprofits"
+      />
       <Container fluid w="60%" display={"flex"}>
         <Container w={"80%"}>
           <Box id="retailDescription">

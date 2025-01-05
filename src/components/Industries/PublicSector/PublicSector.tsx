@@ -18,6 +18,7 @@ import {
   UsMerchantMarine,
   VA,
 } from "../../../assets/images/companies/PublicSector";
+import { Banner } from "../../Banner";
 
 export const PublicSector: React.FC = () => {
   const retailCompanies = [
@@ -88,7 +89,7 @@ export const PublicSector: React.FC = () => {
   ];
   return (
     <>
-      <Image src={PublicSectorBanner} fit="fill" h={"15rem"} />
+      <Banner bannerImagePath={PublicSectorBanner} page="Public Sector" />
       <Container fluid w="60%" display={"flex"}>
         <Container w={"80%"}>
           <Box id="retailDescription">

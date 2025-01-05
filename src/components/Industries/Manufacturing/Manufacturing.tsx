@@ -13,6 +13,7 @@ import {
   ItgBrands,
   CoreScientific,
 } from "../../../assets/images/companies/Manufacturing";
+import { Banner } from "../../Banner";
 
 export const Manufacturing: React.FC = () => {
   const retailCompanies = [
@@ -63,7 +64,7 @@ export const Manufacturing: React.FC = () => {
   ];
   return (
     <>
-      <Image src={ManufacturingBanner} fit="fill" h={"15rem"} />
+      <Banner bannerImagePath={ManufacturingBanner} page="Manufacturing" />
       <Container fluid w="60%" display={"flex"}>
         <Container w={"80%"}>
           <Box id="retailDescription">
