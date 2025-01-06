@@ -1,7 +1,8 @@
 import "@mantine/core/styles.css";
 import { Box, Image, Title, Text, Flex, Container, Group } from "@mantine/core";
-import { HandshakeStock } from "../../../assets/images";
+import { ExpertiseBanner, HandshakeStock } from "../../../assets/images";
 import { IconCaretRight, IconPlus } from "@tabler/icons-react";
+import { Banner } from "../../Banner";
 
 export const ExecutiveTransferAssitance: React.FC = () => {
   const etaIntroQuestions = [
@@ -53,86 +54,93 @@ export const ExecutiveTransferAssitance: React.FC = () => {
     },
   ];
   return (
-    <Container size={"60%"}>
-      <Flex gap="xl">
-        <Image fit="cover" style={{ width: "50%" }} src={HandshakeStock} />
-        <Box>
-          <Title order={2} style={{ textAlign: "center" }}>
-            The Skills You Need To Find The Job You Deserve
-          </Title>
-          {etaIntroQuestions.map((question: string) => (
-            <Flex key={question}>
-              <IconCaretRight />
-              <Text pb={"1rem"} size="lg">
-                {question}
-              </Text>
-            </Flex>
-          ))}
-          <Text pt={"1rem"} size="lg">
-            In uncertain times or during a booming market you should always be
-            ready for what the next opportunity or necessity brings. Take
-            control of your career.
-          </Text>
-          <Text pt={"1rem"} size="lg">
-            Reffett Associates' team of experienced Managing Directors has been
-            placing executives of all types into top jobs across a variety of
-            private and public sector opportunities for years. We can help you
-            take the steps to be ready for your next career transition.
-          </Text>
-        </Box>
-      </Flex>
-      <Title order={3}>Career Refresh</Title>
-      <Text pt={"1rem"} size="lg">
-        With Career Refresh you will work with senior Reffett Associate
-        executive recruiters to learn how to effectively refresh your resume,
-        cover letter, job hunting skills and LinkedIn profile. You will have two
-        separate calls with Reffett staff and receive materials to help and
-        guide you with your job hunt.
-      </Text>
-
-      <Title order={3}>Career Boost</Title>
-      <Text pt={"1rem"} size="lg">
-        With Career Boost you will take a deeper dive into all aspects of your
-        job hunt. Build upon the skills learned in Career Refresh and take the
-        next step in using your network to master your job hunt. Your network is
-        the best tool to help you find your next job Reffett Associates will
-        teach you how to create and actionable and effective plan to leverage
-        your network.
-      </Text>
-
-      <Title order={3}>Mastering the Interview</Title>
-      <Text pt={"1rem"} size="lg">
-        The art of the interview is key to landing your next career. Work with
-        Reffett Associates to develop and actually practice the skills and
-        techniques needed to excel in an interview.
-      </Text>
-
-      <Title order={3}>Career Blast</Title>
-      <Text pt={"1rem"} size="lg">
-        Receive a price break by purchasing both Career Refresh and Mastering
-        the Interview packages together. Reffett staff will work with you to go
-        through their entire process in a timely way that works with your
-        schedule.
-      </Text>
-      <Title order={3}>Additional Services</Title>
-      <Text pt={"1rem"} size="lg">
-        Reffett Associates recognizes that there are other additional services
-        many of our clients' desire to help them with their career transition.
-        We offer the following services for those that want more. Contact
-        Reffett Associates to learn more about any of these services.
-      </Text>
-      {additionalServices.map((additionalService) => (
-        <Group>
-          <IconPlus />
-          <Box key={additionalService.service}>
-            <Text fw={700}>{additionalService.service}</Text>
-            <Text size="sm" c="dimmed">
-              {additionalService.description}
+    <>
+      <Banner
+        bannerImagePath={ExpertiseBanner}
+        page="Executive Transfer Assistance"
+      />
+      <Container size={"60%"}>
+        <Flex gap="xl">
+          <Image fit="cover" style={{ width: "50%" }} src={HandshakeStock} />
+          <Box>
+            <Title order={2} style={{ textAlign: "center" }}>
+              The Skills You Need To Find The Job You Deserve
+            </Title>
+            {etaIntroQuestions.map((question: string) => (
+              <Flex key={question}>
+                <IconCaretRight />
+                <Text pb={"1rem"} size="lg">
+                  {question}
+                </Text>
+              </Flex>
+            ))}
+            <Text pt={"1rem"} size="lg">
+              In uncertain times or during a booming market you should always be
+              ready for what the next opportunity or necessity brings. Take
+              control of your career.
+            </Text>
+            <Text pt={"1rem"} size="lg">
+              Reffett Associates' team of experienced Managing Directors has
+              been placing executives of all types into top jobs across a
+              variety of private and public sector opportunities for years. We
+              can help you take the steps to be ready for your next career
+              transition.
             </Text>
           </Box>
-        </Group>
-      ))}
-    </Container>
+        </Flex>
+        <Title order={3}>Career Refresh</Title>
+        <Text pt={"1rem"} size="lg">
+          With Career Refresh you will work with senior Reffett Associate
+          executive recruiters to learn how to effectively refresh your resume,
+          cover letter, job hunting skills and LinkedIn profile. You will have
+          two separate calls with Reffett staff and receive materials to help
+          and guide you with your job hunt.
+        </Text>
+
+        <Title order={3}>Career Boost</Title>
+        <Text pt={"1rem"} size="lg">
+          With Career Boost you will take a deeper dive into all aspects of your
+          job hunt. Build upon the skills learned in Career Refresh and take the
+          next step in using your network to master your job hunt. Your network
+          is the best tool to help you find your next job Reffett Associates
+          will teach you how to create and actionable and effective plan to
+          leverage your network.
+        </Text>
+
+        <Title order={3}>Mastering the Interview</Title>
+        <Text pt={"1rem"} size="lg">
+          The art of the interview is key to landing your next career. Work with
+          Reffett Associates to develop and actually practice the skills and
+          techniques needed to excel in an interview.
+        </Text>
+
+        <Title order={3}>Career Blast</Title>
+        <Text pt={"1rem"} size="lg">
+          Receive a price break by purchasing both Career Refresh and Mastering
+          the Interview packages together. Reffett staff will work with you to
+          go through their entire process in a timely way that works with your
+          schedule.
+        </Text>
+        <Title order={3}>Additional Services</Title>
+        <Text pt={"1rem"} size="lg">
+          Reffett Associates recognizes that there are other additional services
+          many of our clients' desire to help them with their career transition.
+          We offer the following services for those that want more. Contact
+          Reffett Associates to learn more about any of these services.
+        </Text>
+        {additionalServices.map((additionalService) => (
+          <Group>
+            <IconPlus />
+            <Box key={additionalService.service}>
+              <Text fw={700}>{additionalService.service}</Text>
+              <Text size="sm" c="dimmed">
+                {additionalService.description}
+              </Text>
+            </Box>
+          </Group>
+        ))}
+      </Container>
+    </>
   );
 };
 
