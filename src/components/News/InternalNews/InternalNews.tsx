@@ -1,6 +1,9 @@
 import { Text, Title, List, Container } from "@mantine/core";
 import { useParams } from "react-router-dom";
 import news from "../../../assets/news/internalnews.json";
+import { Banner } from "../../Banner";
+import { NewsBanner } from "../../../assets/images";
+import { ContactButtonSection } from "../../Contact";
 
 export default function InternalNews() {
   const { topicId } = useParams();
@@ -39,10 +42,12 @@ export default function InternalNews() {
 
   return (
     <>
+      {article && (
+        <Banner bannerImagePath={NewsBanner} page={article.article.title} />
+      )}
       <Container size={"60%"}>
-        {article && <Title order={4}>{article.article.title}</Title>}
         <Article />
-        {/* TODO: Add Get in touch with our team to see how we can help you. section with large contact us button  */}
+        <ContactButtonSection />
       </Container>
     </>
   );

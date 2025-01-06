@@ -11,9 +11,14 @@ import {
   Pagination,
 } from "@mantine/core";
 import announcements from "../../assets/news/announcements.json";
-import { ExternalNewsImage, InternalNewsImage } from "../../assets/images";
+import {
+  ExternalNewsImage,
+  InternalNewsImage,
+  NewsBanner,
+} from "../../assets/images";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Banner } from "../Banner";
 
 function chunk<T>(array: T[], size: number): T[][] {
   if (!array.length) {
@@ -72,6 +77,7 @@ export const News: React.FC = () => {
 
   return (
     <>
+      <Banner bannerImagePath={NewsBanner} page="News and Insights" />
       <Container size={"60%"}>
         <Box>
           <Text pt={"1rem"} size="lg">
