@@ -1,7 +1,8 @@
 import "@mantine/core/styles.css";
 import { Image, Text, Container, Grid, Title } from "@mantine/core";
-import { BartellRecruitment } from "../../../assets/images";
+import { AboutBanner, BartellRecruitment } from "../../../assets/images";
 import { ContactButtonSection } from "../../Contact";
+import { Banner } from "../../Banner";
 
 export interface PostingProps {
   image: string;
@@ -23,36 +24,39 @@ const Posting: React.FC<PostingProps> = (props: PostingProps) => {
   };
 
   return (
-    <Container
-      size={"md"}
-      fluid
-      display={"flex"}
-      style={{
-        width: "100vw",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <Title order={2} style={{ textAlign: "center" }}>
-        Current Opportunities
-      </Title>
-      <Grid align="center" w={"60%"}>
-        <Grid.Col span={3}>
-          <Image fit="contain" src={image} />
-        </Grid.Col>
-        <Grid.Col span={3}>
-          <Text>{jobName}</Text>
-          <Text>{company}</Text>
-        </Grid.Col>
-        <Grid.Col span={3} />
-        <Grid.Col span={3}>
-          <Text>{location}</Text>
-          <Text>{getPostingDate(postingDate)}</Text>
-        </Grid.Col>
-      </Grid>
-      <ContactButtonSection />
-    </Container>
+    <>
+      <Banner bannerImagePath={AboutBanner} page="Featured Recruitments" />
+      <Container
+        size={"md"}
+        fluid
+        display={"flex"}
+        style={{
+          width: "100vw",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Title order={2} style={{ textAlign: "center" }}>
+          Current Opportunities
+        </Title>
+        <Grid align="center" w={"60%"}>
+          <Grid.Col span={3}>
+            <Image fit="contain" src={image} />
+          </Grid.Col>
+          <Grid.Col span={3}>
+            <Text>{jobName}</Text>
+            <Text>{company}</Text>
+          </Grid.Col>
+          <Grid.Col span={3} />
+          <Grid.Col span={3}>
+            <Text>{location}</Text>
+            <Text>{getPostingDate(postingDate)}</Text>
+          </Grid.Col>
+        </Grid>
+        <ContactButtonSection />
+      </Container>
+    </>
   );
 };
 

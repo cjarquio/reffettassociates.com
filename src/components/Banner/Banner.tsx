@@ -16,7 +16,7 @@ export const Banner: React.FC<BannerProps> = (props: BannerProps) => {
       >
         <Image
           src={bannerImagePath}
-          fit="fill"
+          fit="cover"
           h={"15rem"}
           style={{ borderRadius: "0 0 50% 50%" }}
         />
