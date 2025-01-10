@@ -1,7 +1,6 @@
 // COMPANIES
 export {default as VOSB} from '../images/veterans/VOSB.png'
 export {default as Veteran} from '../images/veterans/Veterans.jpg'
-export {default as StockExecutive} from '../images/about/StockExecutive.jpg'
 
 // TEAM
 export {default as BillReffett} from '../images/team/BillReffett.jpg'

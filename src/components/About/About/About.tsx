@@ -1,6 +1,6 @@
 import "@mantine/core/styles.css";
-import { Box, Image, Title, Text, Flex, Container } from "@mantine/core";
-import { AboutBanner, StockExecutive } from "../../../assets/images";
+import { Box, Title, Text, Flex, Container } from "@mantine/core";
+import { AboutBanner } from "../../../assets/images";
 import { ContactButtonSection } from "../../Contact";
 import { Banner } from "../../Banner";
 
@@ -10,7 +10,6 @@ export const About: React.FC = () => {
       <Banner bannerImagePath={AboutBanner} page="About Reffett Associates" />
       <Container size={"60%"}>
         <Flex gap="xl">
-          <Image fit="cover" style={{ width: "50%" }} src={StockExecutive} />
           <Box>
             <Title order={2} style={{ textAlign: "center" }}>
               Diligent, Experienced, Relationship Focused
