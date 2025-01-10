@@ -10,7 +10,7 @@ import {
   Card,
 } from "@mantine/core";
 import { ExecutiveSearchStock, ExpertiseBanner } from "../../../assets/images";
-import { IconArrowBigRightFilled } from "@tabler/icons-react";
+import { IconArrowBigDownFilled } from "@tabler/icons-react";
 import { Banner } from "../../Banner";
 
 const successfulCandidateSteps = [
@@ -62,13 +62,8 @@ export const Services: React.FC = () => {
   return (
     <>
       <Banner bannerImagePath={ExpertiseBanner} page="Services" />
-      <Container size={"80%"}>
+      <Container size={"80%"} p={"3rem"}>
         <Flex gap="xl">
-          <Image
-            fit="cover"
-            style={{ width: "50%" }}
-            src={ExecutiveSearchStock}
-          />
           <Box>
             <Title order={2} style={{ textAlign: "center" }}>
               Producing Outstanding Candidates To Meet Short & Long Term Goals
@@ -101,30 +96,52 @@ export const Services: React.FC = () => {
         <Title order={2} style={{ textAlign: "center" }}>
           The Seven Steps to Finding Your Successful Candidate
         </Title>
-        <Grid display={"flex"} columns={16} align="center" justify="center">
-          {successfulCandidateSteps.map((step, index) => {
-            return (
-              <>
-                <Grid.Col span={2} key={step.title}>
-                  <Card shadow="sm" padding="md">
-                    <Card.Section>{step.icon}</Card.Section>
+        <Box display={"flex"}>
+          <Grid
+            display={"flex"}
+            columns={1}
+            align="center"
+            justify="center"
+            style={{ textAlign: "center" }}
+          >
+            {successfulCandidateSteps.map((step, index) => {
+              return (
+                <>
+                  <Grid.Col
+                    span={1}
+                    key={step.title}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <Card
+                      shadow="sm"
+                      padding="md"
+                      w={"60%"}
+                      style={{ border: "1px solid black" }}
+                    >
+                      <Card.Section>{step.icon}</Card.Section>
 
-                    <Text fw={500} size="lg" mt="md">
-                      {step.title}
-                    </Text>
+                      <Text fw={500} size="lg" mt="lg">
+                        {step.title}
+                      </Text>
 
-                    <Text mt="xs" c="dimmed" size="sm">
-                      {step.description}
-                    </Text>
-                  </Card>
-                </Grid.Col>
-                {index !== successfulCandidateSteps.length - 1 && (
-                  <IconArrowBigRightFilled />
-                )}
-              </>
-            );
-          })}
-        </Grid>
+                      <Text mt="xs" c="dimmed" size="md">
+                        {step.description}
+                      </Text>
+                    </Card>
+                  </Grid.Col>
+                  {index !== successfulCandidateSteps.length - 1 && (
+                    <IconArrowBigDownFilled />
+                  )}
+                </>
+              );
+            })}
+          </Grid>
+          <Image
+            fit="cover"
+            style={{ width: "50%" }}
+            src={ExecutiveSearchStock}
+          />
+        </Box>
       </Container>
     </>
   );
