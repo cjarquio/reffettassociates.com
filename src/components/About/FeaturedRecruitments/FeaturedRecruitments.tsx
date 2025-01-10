@@ -25,13 +25,9 @@ const Posting: React.FC<PostingProps> = (props: PostingProps) => {
 
   return (
     <>
-      <Banner bannerImagePath={AboutBanner} page="Featured Recruitments" />
       <Container
-        size={"md"}
-        fluid
         display={"flex"}
         style={{
-          width: "100vw",
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
@@ -40,7 +36,7 @@ const Posting: React.FC<PostingProps> = (props: PostingProps) => {
         <Title order={2} style={{ textAlign: "center" }}>
           Current Opportunities
         </Title>
-        <Grid align="center" w={"60%"}>
+        <Grid align="center">
           <Grid.Col span={3}>
             <Image fit="contain" src={image} />
           </Grid.Col>
@@ -62,7 +58,8 @@ const Posting: React.FC<PostingProps> = (props: PostingProps) => {
 
 export const FeaturedRecruitments: React.FC = () => {
   return (
-    <Container size={"60%"}>
+    <Container fluid w={"99.3vw"} p={0}>
+      <Banner bannerImagePath={AboutBanner} page="Featured Recruitments" />
       <Posting
         image={BartellRecruitment}
         jobName="Job Name"
