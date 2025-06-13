@@ -1,5 +1,5 @@
 import '@mantine/core/styles.css';
-import { Box, Image, Title, Text, Flex, Container } from '@mantine/core';
+import { Box, Image, Title, Text, Container } from '@mantine/core';
 import { AboutBanner, Veteran } from '../../../assets/images';
 import { ContactButtonSection } from '../../Contact';
 import { Banner } from '../../Banner';
