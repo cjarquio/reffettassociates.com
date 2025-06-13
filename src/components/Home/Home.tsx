@@ -75,13 +75,13 @@ export const Home: React.FC = () => {
             </Title>
           </Box>
           <Box className={classes.veteransTitle}>
-            <Title c={"#0f2f5b"} order={1}>
+            <Title c={"black"} order={1}>
               Committed to our Veterans
             </Title>
             <IconMilitaryRankFilled
               style={{ width: rem(132), height: rem(132) }}
               stroke={3}
-              color={"#0f2f5b"}
+              color={"black"}
             />
           </Box>
         </Group>

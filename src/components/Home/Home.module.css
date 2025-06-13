@@ -20,7 +20,7 @@
 .executiveSearchDescriptionBox {
   display: flex;
   align-items: center;
-  background-color: #0f2f5b;
+  background-color: black;
   height: 13rem;
 }
 .executiveSearchDescriptionBox:before {
