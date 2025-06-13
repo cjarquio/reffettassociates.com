@@ -4,15 +4,29 @@ import Autoplay from 'embla-carousel-autoplay';
 import { Container, Title, Image } from '@mantine/core';
 import classes from './Home.module.css';
 import { Carousel } from '@mantine/carousel';
-import { ACE, NRECA } from '../../assets/images/companies/NonProfits';
-import { BECU } from '../../assets/images/companies/PrivateSector';
 import {
-  BartellDrugs,
+  ArchitectOfTheCapitol,
+  SEC,
+} from '../../assets/images/companies/Government';
+import {
   SeattleMariners,
+  MetropolitanMarket,
+  OakViewGroup,
 } from '../../assets/images/companies/Retail';
-import { VA } from '../../assets/images/companies/PublicSector';
+import {
+  ArmyHistoricalFoundation,
+  CityOfSeattle,
+} from '../../assets/images/companies/PublicSector';
 
-const images = [ACE, BartellDrugs, BECU, NRECA, SeattleMariners, VA];
+const images = [
+  ArchitectOfTheCapitol,
+  SeattleMariners,
+  MetropolitanMarket,
+  OakViewGroup,
+  CityOfSeattle,
+  ArmyHistoricalFoundation,
+  SEC,
+];
 
 export const FeaturedClientsCarousel: React.FC = () => {
   const autoplay = useRef(Autoplay({ delay: 4000 }));

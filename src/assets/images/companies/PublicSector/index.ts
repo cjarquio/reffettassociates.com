@@ -1,5 +1,6 @@
 export {default as AFRL} from './AFRL.jpg'
 export {default as AAFEX} from './Army and Air Force Exchange Service.jpg'
+export { default as ArmyHistoricalFoundation } from './ArmyHistoricalFoundation.png'
 export {default as CityOfCharlotte} from './City of Charlotte.png'
 export {default as CityOfSeattle} from './City of Seattle.jpg'
 export {default as CommunityTransit} from './Community Transit.jpg'
