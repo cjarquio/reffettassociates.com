@@ -1,14 +1,14 @@
-import { createBrowserRouter } from "react-router-dom";
-import AppLayout from "./AppLayout";
-import { Home } from "../../Home";
-import { Veterans, About, Team, FeaturedRecruitments } from "../../About";
-import TeamMember from "../../About/Team/TeamMember";
-import { Contact } from "../../Contact";
+import { createBrowserRouter } from 'react-router-dom';
+import AppLayout from './AppLayout';
+import { Home } from '../../Home';
+import { Veterans, About, Team } from '../../About';
+import TeamMember from '../../About/Team/TeamMember';
+import { Contact } from '../../Contact';
 import {
   ExecutiveTransferAssistance,
   Process,
   Services,
-} from "../../Expertise";
+} from '../../Expertise';
 import {
   GovernmentContracting,
   Manufacturing,
@@ -16,83 +16,85 @@ import {
   PrivateSector,
   PublicSector,
   Retail,
-} from "../../Industries";
-import { InternalNews, News } from "../../News";
+} from '../../Industries';
+import { InternalNews, News } from '../../News';
+import { ErrorPage } from '../../ErrorPage/ErrorPage';
 
 export const router = createBrowserRouter([
   {
     element: <AppLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Home />,
       },
       {
-        path: "/about",
+        path: '/about',
         element: <About />,
       },
+      // {
+      //   path: "/recruitments",
+      //   element: <FeaturedRecruitments />,
+      // },
       {
-        path: "/recruitments",
-        element: <FeaturedRecruitments />,
-      },
-      {
-        path: "/team/:teamMember",
+        path: '/team/:teamMember',
         element: <TeamMember />,
       },
       {
-        path: "/team",
+        path: '/team',
         element: <Team />,
       },
       {
-        path: "/veterans",
+        path: '/veterans',
         element: <Veterans />,
       },
       {
-        path: "/services",
+        path: '/services',
         element: <Services />,
       },
       {
-        path: "/process",
+        path: '/process',
         element: <Process />,
       },
       {
-        path: "/executive-transfer-assistance",
+        path: '/executive-transfer-assistance',
         element: <ExecutiveTransferAssistance />,
       },
       {
-        path: "/retail",
+        path: '/retail',
         element: <Retail />,
       },
       {
-        path: "/public-sector",
+        path: '/public-sector',
         element: <PublicSector />,
       },
       {
-        path: "/private-sector",
+        path: '/private-sector',
         element: <PrivateSector />,
       },
       {
-        path: "/nonprofits",
+        path: '/nonprofits',
         element: <NonProfits />,
       },
       {
-        path: "/manufacturing-and-industrials",
+        path: '/manufacturing-and-industrials',
         element: <Manufacturing />,
       },
       {
-        path: "/government-contracting",
+        path: '/government-contracting',
         element: <GovernmentContracting />,
       },
       {
-        path: "/insights/:topicId",
+        path: '/insights/:topicId',
         element: <InternalNews />,
       },
       {
-        path: "/insights",
+        path: '/insights',
         element: <News />,
       },
       {
-        path: "/contact",
+        path: '/contact',
         element: <Contact />,
       },
     ],

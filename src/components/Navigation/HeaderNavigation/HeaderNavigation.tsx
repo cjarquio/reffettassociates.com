@@ -5,54 +5,60 @@ import {
   Group,
   Menu,
   UnstyledButton,
-} from "@mantine/core";
-import { IconPlus } from "@tabler/icons-react";
-import classes from "./HeaderNavigation.module.css";
-import { Logo } from "../../Logo/ReffettAssociatesLogo";
-import { Link, useNavigate } from "react-router-dom";
+} from '@mantine/core';
+import { IconPlus } from '@tabler/icons-react';
+import classes from './HeaderNavigation.module.css';
+import { Logo } from '../../Logo/ReffettAssociatesLogo';
+import { Link, useNavigate } from 'react-router-dom';
 
 const links = [
   {
-    link: "about",
-    label: "About",
+    link: 'about',
+    label: 'About',
     links: [
-      { link: "/about", label: "About Reffett Associates" },
-      { link: "/team", label: "Our Team" },
-      { link: "/veterans", label: "Veterans" },
-      { link: "/recruitments", label: "Featured Recruitments" },
+      { link: '/about', label: 'About Reffett Associates' },
+      { link: '/team', label: 'Our Team' },
+      { link: '/veterans', label: 'Veterans' },
+      // { link: "/recruitments", label: "Featured Recruitments" },
     ],
   },
   {
-    link: "expertise",
-    label: "Expertise",
+    link: 'expertise',
+    label: 'Expertise',
     links: [
-      { link: "/services", label: "Services" },
-      { link: "/process", label: "Process" },
+      { link: '/services', label: 'Services' },
+      { link: '/process', label: 'Process' },
       {
-        link: "/executive-transfer-assistance",
-        label: "Executive Transfer Assistance",
+        link: '/executive-transfer-assistance',
+        label: 'Executive Transfer Assistance',
       },
     ],
   },
   {
-    link: "industries",
-    label: "Industries",
+    link: 'industries',
+    label: 'Industries',
     links: [
-      { link: "/retail", label: "Retail" },
-      { link: "/public-sector", label: "Public Sector" },
-      { link: "/private-sector", label: "Private Equity and Financial Services" },
-      { link: "/nonprofits", label: "Associations and Nonprofits" },
-      { link: "/manufacturing-and-industrials", label: "Manufacturing and Industrials" },
-      { link: "/government-contracting", label: "Government Contracting" },
+      { link: '/retail', label: 'Retail' },
+      { link: '/public-sector', label: 'Public Sector' },
+      {
+        link: '/private-sector',
+        label: 'Private Equity and Financial Services',
+      },
+      { link: '/nonprofits', label: 'Associations and Nonprofits' },
+      {
+        link: '/manufacturing-and-industrials',
+        label: 'Manufacturing and Industrials',
+      },
+      { link: '/government-contracting', label: 'Government Contracting' },
     ],
   },
   {
-    link: "/insights",
-    label: "Insights",
+    link: '/insights',
+    label: 'Insights',
   },
   {
-    link: "/contact",
-    label: "Contact Us",
+    link: '/contact',
+    label: 'Contact Us',
   },
 ];
 
@@ -102,10 +108,10 @@ export const HeaderNavigation: React.FC = () => {
   });
 
   return (
-    <Container size={"lg"}>
+    <Container size={'lg'}>
       <Box className={classes.inner}>
-        <UnstyledButton onClick={() => navigate("/")}>
-          <Logo style={{ height: "3.5rem" }} />
+        <UnstyledButton onClick={() => navigate('/')}>
+          <Logo style={{ height: '3.5rem' }} />
         </UnstyledButton>
         <Group gap={5} visibleFrom="xs">
           {items}

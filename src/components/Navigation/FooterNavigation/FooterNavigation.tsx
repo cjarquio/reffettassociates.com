@@ -11,7 +11,7 @@ const footerLinks = [
       { label: "About Reffett Associates", link: "/about" },
       { label: "Our Team", link: "/team" },
       { label: "Veterans", link: "/veterans" },
-      { label: "Featured Recruitments", link: "/recruitments" },
+      // { label: "Featured Recruitments", link: "/recruitments" },
     ],
   },
   {
