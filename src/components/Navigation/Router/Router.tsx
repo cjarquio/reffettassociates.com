@@ -1,13 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
 import AppLayout from './AppLayout';
 import { Home } from '../../Home';
-import { Veterans, About, Team } from '../../About';
+import { About, Team } from '../../About';
 import TeamMember from '../../About/Team/TeamMember';
 import { Contact } from '../../Contact';
 import {
   ExecutiveTransferAssistance,
   Process,
   Services,
+  Veterans,
 } from '../../Expertise';
 import {
   GovernmentContracting,

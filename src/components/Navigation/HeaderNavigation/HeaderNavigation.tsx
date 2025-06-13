@@ -18,7 +18,6 @@ const links = [
     links: [
       { link: '/about', label: 'About Reffett Associates' },
       { link: '/team', label: 'Our Team' },
-      { link: '/veterans', label: 'Veterans' },
       // { link: "/recruitments", label: "Featured Recruitments" },
     ],
   },
@@ -28,6 +27,7 @@ const links = [
     links: [
       { link: '/services', label: 'Services' },
       { link: '/process', label: 'Process' },
+      { link: '/veterans', label: 'For Veterans' },
       {
         link: '/executive-transfer-assistance',
         label: 'Executive Transfer Assistance',
