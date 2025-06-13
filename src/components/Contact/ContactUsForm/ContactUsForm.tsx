@@ -5,16 +5,18 @@ import {
   Textarea,
   TextInput,
   Title,
-} from "@mantine/core";
-import { useForm } from "@mantine/form";
+  FileInput,
+} from '@mantine/core';
+import { useForm } from '@mantine/form';
+import { IconFileCv } from '@tabler/icons-react';
 
 export const ContactUsForm: React.FC = () => {
   const form = useForm({
     initialValues: {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
     },
     validate: {
       name: (value: string) => value.trim().length < 2,
@@ -28,37 +30,46 @@ export const ContactUsForm: React.FC = () => {
       <Title
         order={2}
         size="h1"
-        style={{ fontFamily: "Greycliff CF, var(--mantine-font-family)" }}
+        style={{ fontFamily: 'Greycliff CF, var(--mantine-font-family)' }}
         fw={900}
         ta="center"
       >
         Get in touch
       </Title>
-
+      <Title order={4} style={{ textAlign: 'center' }}>
+        People can contact us about our work, for coaching, or to submit a
+        resume
+      </Title>
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">
         <TextInput
           label="Name"
           placeholder="Your name"
           name="name"
           variant="filled"
-          {...form.getInputProps("name")}
+          {...form.getInputProps('name')}
         />
         <TextInput
           label="Email"
           placeholder="Your email"
           name="email"
           variant="filled"
-          {...form.getInputProps("email")}
+          {...form.getInputProps('email')}
         />
       </SimpleGrid>
-
       <TextInput
         label="Subject"
         placeholder="Subject"
         mt="md"
         name="subject"
         variant="filled"
-        {...form.getInputProps("subject")}
+        {...form.getInputProps('subject')}
+      />
+      <FileInput
+        leftSection={<IconFileCv size={18} stroke={1.5} />}
+        clearable
+        accept="application/pdf, .doc, .docx"
+        label="Upload files"
+        placeholder="Upload files"
       />
       <Textarea
         mt="md"
@@ -69,9 +80,8 @@ export const ContactUsForm: React.FC = () => {
         autosize
         name="message"
         variant="filled"
-        {...form.getInputProps("message")}
+        {...form.getInputProps('message')}
       />
-
       <Group justify="center" mt="xl">
         <Button type="submit" size="md">
           Send message
@@ -79,4 +89,4 @@ export const ContactUsForm: React.FC = () => {
       </Group>
     </form>
   );
-}
+};
