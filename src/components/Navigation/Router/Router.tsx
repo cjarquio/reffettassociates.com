@@ -86,7 +86,7 @@ export const router = createBrowserRouter([
         element: <InternalNews />,
       },
       {
-        path: '/insights',
+        path: '/news',
         element: <News />,
       },
       {

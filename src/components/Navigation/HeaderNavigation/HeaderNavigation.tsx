@@ -53,8 +53,8 @@ const links = [
     ],
   },
   {
-    link: '/insights',
-    label: 'Insights',
+    link: '/news',
+    label: 'News',
   },
   {
     link: '/contact',
