@@ -1,4 +1,4 @@
-import "@mantine/core/styles.css";
+import '@mantine/core/styles.css';
 import {
   Box,
   Image,
@@ -8,67 +8,67 @@ import {
   Container,
   Grid,
   Card,
-} from "@mantine/core";
-import { ExecutiveSearchStock, ExpertiseBanner } from "../../../assets/images";
-import { IconArrowBigDownFilled } from "@tabler/icons-react";
-import { Banner } from "../../Banner";
+} from '@mantine/core';
+import { ExecutiveSearchStock, ExpertiseBanner } from '../../../assets/images';
+import { IconArrowBigDownFilled } from '@tabler/icons-react';
+import { Banner } from '../../Banner';
 
 const successfulCandidateSteps = [
   {
-    title: "Getting to Know Your Organization",
+    title: 'Getting to Know Your Organization',
     icon: <></>,
     description:
-      "Meet with key executives and selected stakeholders to gain an understanding of your organization’s history, structure, operations, and values. We will design a unique recruitment strategy that will help you attain your organizational goals.",
+      'Meet with key executives and selected stakeholders to gain an understanding of your organization’s history, structure, operations, and values. We will design a unique recruitment strategy that will help you attain your organizational goals.',
   },
   {
-    title: "Defining the Position",
+    title: 'Defining the Position',
     icon: <></>,
     description:
-      "Develop a position specification including title, reporting relationships, education requirements, work experience, descriptions of basic responsibilities, and compensation.",
+      'Develop a position specification including title, reporting relationships, education requirements, work experience, descriptions of basic responsibilities, and compensation.',
   },
   {
-    title: "Recruiting Qualifying Candidates",
+    title: 'Recruiting Qualifying Candidates',
     icon: <></>,
     description:
-      "Reffett Associate senior staff will directly contact candidates through original research, drawing on the resources of our extensive database, and targeted recruitment efforts to find you top talent that match your needs and culture.",
+      'Reffett Associate senior staff will directly contact candidates through original research, drawing on the resources of our extensive database, and targeted recruitment efforts to find you top talent that match your needs and culture.',
   },
   {
-    title: "Defining Strengths and Weaknesses",
+    title: 'Defining Strengths and Weaknesses',
     icon: <></>,
     description:
-      "Our team will personally interview only the best suited candidates to ensure their fit for your critical role. We have extensive experience evaluating executive talent and a process in please to minimize bias in our process.",
+      'Our team will personally interview only the best suited candidates to ensure their fit for your critical role. We have extensive experience evaluating executive talent and a process in please to minimize bias in our process.',
   },
   {
-    title: "Meeting with Leadership and Communication",
+    title: 'Meeting with Leadership and Communication',
     icon: <></>,
     description:
-      "Provide detailed weekly status reports on our search progress and regular communication with your team. Only the top candidates are presented for individual meetings with management. The client always makes the final selection and offer of employment.",
+      'Provide detailed weekly status reports on our search progress and regular communication with your team. Only the top candidates are presented for individual meetings with management. The client always makes the final selection and offer of employment.',
   },
   {
-    title: "Selecting the Executive and Checking References",
+    title: 'Selecting the Executive and Checking References',
     icon: <></>,
     description:
       "Protect a candidate's confidentiality by performing reference and other checks only after you have expressed a strong interest in an individual. Reffett Associate will provide customized briefing materials on all final candidates.",
   },
   {
-    title: "Negotiating Compensation",
+    title: 'Negotiating Compensation',
     icon: <></>,
     description:
-      "Assist your organization with understanding the current market for your position, making an employment offer and negotiating a competitive compensation package.",
+      'Assist your organization with understanding the current market for your position, making an employment offer and negotiating a competitive compensation package.',
   },
 ];
 
-export const Services: React.FC = () => {
+export const Process: React.FC = () => {
   return (
     <>
-      <Banner bannerImagePath={ExpertiseBanner} page="Services" />
-      <Container size={"80%"} p={"3rem"}>
+      <Banner bannerImagePath={ExpertiseBanner} page="Our Process" />
+      <Container size={'80%'} p={'3rem'}>
         <Flex gap="xl">
           <Box>
-            <Title order={2} style={{ textAlign: "center" }}>
+            <Title order={2} style={{ textAlign: 'center' }}>
               Producing Outstanding Candidates To Meet Short & Long Term Goals
             </Title>
-            <Text pt={"1rem"} size="lg">
+            <Text pt={'1rem'} size="lg">
               We believe that every search is a partnership with our client and
               we won't stop working on your behalf until we find the right fit
               for your needs. Our goal as a boutique firm is to provide a high
@@ -76,7 +76,7 @@ export const Services: React.FC = () => {
               to your needs and then they will work with you until your position
               is successfully filled.
             </Text>
-            <Text pt={"1rem"} size="lg">
+            <Text pt={'1rem'} size="lg">
               Our goal as a small firm is to be able to provide a high level of
               personal attention and unparalleled service to both our clients
               and our candidates. For the Reffett Associates team, executive
@@ -84,7 +84,7 @@ export const Services: React.FC = () => {
               long-term, productive relationships with everyone with whom we
               work is our first priority.
             </Text>
-            <Text pt={"1rem"} size="lg">
+            <Text pt={'1rem'} size="lg">
               Through our time tested process we will work with you to define
               the role, go to market, identify and recruit a diverse talent pool
               and navigate the interview and hiring process. On average you will
@@ -92,17 +92,22 @@ export const Services: React.FC = () => {
               meeting.
             </Text>
           </Box>
+          <Image
+            fit="cover"
+            style={{ width: '50%' }}
+            src={ExecutiveSearchStock}
+          />
         </Flex>
-        <Title order={2} style={{ textAlign: "center" }}>
+        <Title order={2} style={{ textAlign: 'center' }}>
           The Seven Steps to Finding Your Successful Candidate
         </Title>
-        <Box display={"flex"}>
+        <Box display={'flex'}>
           <Grid
-            display={"flex"}
+            display={'flex'}
             columns={1}
             align="center"
             justify="center"
-            style={{ textAlign: "center" }}
+            style={{ textAlign: 'center' }}
           >
             {successfulCandidateSteps.map((step, index) => {
               return (
@@ -110,13 +115,13 @@ export const Services: React.FC = () => {
                   <Grid.Col
                     span={1}
                     key={step.title}
-                    style={{ display: "flex", justifyContent: "center" }}
+                    style={{ display: 'flex', justifyContent: 'center' }}
                   >
                     <Card
                       shadow="sm"
                       padding="md"
-                      w={"60%"}
-                      style={{ border: "1px solid black" }}
+                      w={'60%'}
+                      style={{ border: '1px solid black' }}
                     >
                       <Card.Section>{step.icon}</Card.Section>
 
@@ -136,15 +141,10 @@ export const Services: React.FC = () => {
               );
             })}
           </Grid>
-          <Image
-            fit="cover"
-            style={{ width: "50%" }}
-            src={ExecutiveSearchStock}
-          />
         </Box>
       </Container>
     </>
   );
 };
 
-export default Services;
+export default Process;

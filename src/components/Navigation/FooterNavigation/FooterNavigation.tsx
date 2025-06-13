@@ -16,7 +16,7 @@ const footerLinks = [
   {
     title: 'Expertise',
     links: [
-      { label: 'Services', link: '/services' },
+      { label: 'Our Process', link: '/process' },
       { label: 'Our Values', link: '/values' },
       { label: 'Veterans', link: '/veterans' },
       // {

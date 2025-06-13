@@ -4,7 +4,7 @@ import { Home } from '../../Home';
 import { About, Team } from '../../About';
 import TeamMember from '../../About/Team/TeamMember';
 import { Contact } from '../../Contact';
-import { Values, Services, Veterans } from '../../Expertise';
+import { Values, Process, Veterans } from '../../Expertise';
 import {
   GovernmentContracting,
   Manufacturing,
@@ -46,8 +46,8 @@ export const router = createBrowserRouter([
         element: <Veterans />,
       },
       {
-        path: '/services',
-        element: <Services />,
+        path: '/process',
+        element: <Process />,
       },
       {
         path: '/values',

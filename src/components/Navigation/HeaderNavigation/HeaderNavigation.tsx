@@ -25,7 +25,7 @@ const links = [
     link: 'expertise',
     label: 'Expertise',
     links: [
-      { link: '/services', label: 'Services' },
+      { link: '/process', label: 'Our Process' },
       { link: '/values', label: 'Our Values' },
       { link: '/veterans', label: 'For Veterans' },
       // {
