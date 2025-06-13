@@ -82,7 +82,7 @@ export const router = createBrowserRouter([
         element: <GovernmentContracting />,
       },
       {
-        path: '/insights/:topicId',
+        path: '/news/:topicId',
         element: <InternalNews />,
       },
       {
