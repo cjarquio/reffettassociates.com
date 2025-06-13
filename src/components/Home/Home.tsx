@@ -1,32 +1,13 @@
 import '@mantine/core/styles.css';
-import { useRef } from 'react';
-import Autoplay from 'embla-carousel-autoplay';
 import { Box, Container, Group, rem, Title, Image } from '@mantine/core';
 import StockVideo from '../../../src/assets/videos/executiveStockVideo.mp4';
 import classes from './Home.module.css';
 import { IconSearch } from '@tabler/icons-react';
-import { Carousel } from '@mantine/carousel';
 import { ContactButtonSection } from '../Contact';
-import { ACE, NRECA } from '../../assets/images/companies/NonProfits';
-import { BECU } from '../../assets/images/companies/PrivateSector';
-import {
-  BartellDrugs,
-  SeattleMariners,
-} from '../../assets/images/companies/Retail';
-import { VA } from '../../assets/images/companies/PublicSector';
 import VOSB from '../../assets/images/veterans/VOSB.png';
-
-const images = [ACE, BartellDrugs, BECU, NRECA, SeattleMariners, VA];
+import FeaturedClientsCarousel from './FeaturedClientsCarousel';
 
 export const Home: React.FC = () => {
-  const autoplay = useRef(Autoplay({ delay: 4000 }));
-
-  const slides = images.map((url) => (
-    <Carousel.Slide style={{ display: 'flex', width: '100%' }} key={url}>
-      <Image style={{ objectFit: 'contain' }} src={url} />
-    </Carousel.Slide>
-  ));
-
   return (
     <Box className={classes.root}>
       <video width={'100%'} autoPlay muted loop>
@@ -83,24 +64,7 @@ export const Home: React.FC = () => {
           </Box>
         </Group>
       </Container>
-      <Container size={'md'} className={classes.clientsContainer}>
-        <Title order={2} style={{ textAlign: 'center', padding: '2rem' }}>
-          Featured Clients
-        </Title>
-        <Carousel
-          withControls={false}
-          slideSize="33.3333333%"
-          slideGap="lg"
-          align="start"
-          slidesToScroll={3}
-          loop
-          plugins={[autoplay.current]}
-          onMouseEnter={autoplay.current.stop}
-          onMouseLeave={autoplay.current.reset}
-        >
-          {slides}
-        </Carousel>
-      </Container>
+      <FeaturedClientsCarousel />
       <ContactButtonSection />
     </Box>
   );
