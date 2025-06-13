@@ -4,7 +4,7 @@ import { Home } from '../../Home';
 import { About, Team } from '../../About';
 import TeamMember from '../../About/Team/TeamMember';
 import { Contact } from '../../Contact';
-import { Process, Services, Veterans } from '../../Expertise';
+import { Values, Services, Veterans } from '../../Expertise';
 import {
   GovernmentContracting,
   Manufacturing,
@@ -50,8 +50,8 @@ export const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: '/process',
-        element: <Process />,
+        path: '/values',
+        element: <Values />,
       },
       // {
       //   path: '/executive-transfer-assistance',
