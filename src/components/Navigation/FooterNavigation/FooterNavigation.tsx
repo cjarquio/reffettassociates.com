@@ -19,10 +19,10 @@ const footerLinks = [
       { label: 'Services', link: '/services' },
       { label: 'Process', link: '/process' },
       { label: 'Veterans', link: '/veterans' },
-      {
-        link: '/executive-transfer-assistance',
-        label: 'Executive Transfer Assistance',
-      },
+      // {
+      //   link: '/executive-transfer-assistance',
+      //   label: 'Executive Transfer Assistance',
+      // },
     ],
   },
   {

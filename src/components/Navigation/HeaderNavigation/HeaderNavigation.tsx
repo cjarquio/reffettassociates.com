@@ -28,10 +28,10 @@ const links = [
       { link: '/services', label: 'Services' },
       { link: '/process', label: 'Process' },
       { link: '/veterans', label: 'For Veterans' },
-      {
-        link: '/executive-transfer-assistance',
-        label: 'Executive Transfer Assistance',
-      },
+      // {
+      //   link: '/executive-transfer-assistance',
+      //   label: 'Executive Transfer Assistance',
+      // },
     ],
   },
   {

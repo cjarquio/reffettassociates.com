@@ -4,12 +4,7 @@ import { Home } from '../../Home';
 import { About, Team } from '../../About';
 import TeamMember from '../../About/Team/TeamMember';
 import { Contact } from '../../Contact';
-import {
-  ExecutiveTransferAssistance,
-  Process,
-  Services,
-  Veterans,
-} from '../../Expertise';
+import { Process, Services, Veterans } from '../../Expertise';
 import {
   GovernmentContracting,
   Manufacturing,
@@ -58,10 +53,10 @@ export const router = createBrowserRouter([
         path: '/process',
         element: <Process />,
       },
-      {
-        path: '/executive-transfer-assistance',
-        element: <ExecutiveTransferAssistance />,
-      },
+      // {
+      //   path: '/executive-transfer-assistance',
+      //   element: <ExecutiveTransferAssistance />,
+      // },
       {
         path: '/retail',
         element: <Retail />,
