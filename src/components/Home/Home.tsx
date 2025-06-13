@@ -76,7 +76,7 @@ export const Home: React.FC = () => {
           </Box>
           <Box className={classes.veteransTitle}>
             <Title c={"black"} order={1}>
-              Committed to our Veterans
+              Veteran Owned
             </Title>
             <IconMilitaryRankFilled
               style={{ width: rem(132), height: rem(132) }}
