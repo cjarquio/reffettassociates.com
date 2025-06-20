@@ -5,50 +5,56 @@ import {
   Textarea,
   TextInput,
   Title,
-  FileInput,
+  // FileInput,
 } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { IconFileCv } from '@tabler/icons-react';
+// import { IconFileCv } from '@tabler/icons-react';
 import emailjs from '@emailjs/browser';
+import React, { useState, useRef } from 'react';
 
 export const ContactUsForm: React.FC = () => {
-  const form = useForm({
-    mode: 'uncontrolled',
-    initialValues: {
-      name: '',
-      email: '',
-      subject: '',
-      file: null as File | null,
-      message: '',
-    },
-    validate: {
-      name: (value: string) => value.trim().length < 2,
-      email: (value: string) => !/^\S+@\S+$/.test(value),
-      subject: (value: string) => value.trim().length === 0,
-    },
+  const [values, setValues] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
   });
+  const formRef = useRef<HTMLFormElement>(null);
 
-  // const sendEmail = () => {
-  //   emailjs
-  //     .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-  //       publicKey: 'YOUR_PUBLIC_KEY',
-  //     })
-  //     .then(
-  //       () => {
-  //         console.log('SUCCESS!');
-  //       },
-  //       (error) => {
-  //         console.log('FAILED...', error.text);
-  //       }
-  //     );
-  // };
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+
+  // Need subscription to emailjs service to send attachments
+  const sendEmail = () => {
+    emailjs
+      .sendForm('service_fjt15i9', 'template_sw46zv9', formRef.current, {
+        publicKey: 'qEV-REVecmTzohSOt',
+      })
+      .then(
+        () => {
+          alert('SUCCESS! Your message has been sent.');
+
+          setValues({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
+  };
 
   return (
-    <form
-      onSubmit={form.onSubmit((values) => {
-        console.log(values);
-      })}
-    >
+    <form ref={formRef}>
       <Title
         order={2}
         size="h1"
@@ -59,8 +65,7 @@ export const ContactUsForm: React.FC = () => {
         Get in touch
       </Title>
       <Title order={4} style={{ textAlign: 'center' }}>
-        People can contact us about our work, for coaching, or to submit a
-        resume
+        People can contact us about our work or for coaching
       </Title>
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">
         <TextInput
@@ -68,14 +73,18 @@ export const ContactUsForm: React.FC = () => {
           placeholder="Your name"
           name="name"
           variant="filled"
-          {...form.getInputProps('name')}
+          onChange={handleChange}
+          value={values.name}
+          error={values.name.length > 0 && values.name.trim().length < 2}
         />
         <TextInput
           label="Email"
           placeholder="Your email"
           name="email"
           variant="filled"
-          {...form.getInputProps('email')}
+          onChange={handleChange}
+          value={values.email}
+          error={values.email.length > 0 && !/^\S+@\S+$/.test(values.email)}
         />
       </SimpleGrid>
       <TextInput
@@ -84,16 +93,18 @@ export const ContactUsForm: React.FC = () => {
         mt="md"
         name="subject"
         variant="filled"
-        {...form.getInputProps('subject')}
+        onChange={handleChange}
+        value={values.subject}
+        error={values.subject.length > 0 && values.subject.trim().length === 0}
       />
-      <FileInput
+      {/* <FileInput
         leftSection={<IconFileCv size={18} stroke={1.5} />}
         clearable
         accept="application/pdf, .doc, .docx"
         label="Upload files"
         placeholder="Upload files"
         {...form.getInputProps('file')}
-      />
+      /> */}
       <Textarea
         mt="md"
         label="Message"
@@ -103,10 +114,21 @@ export const ContactUsForm: React.FC = () => {
         autosize
         name="message"
         variant="filled"
-        {...form.getInputProps('message')}
+        onChange={handleChange}
+        value={values.message}
+        error={values.message.length > 0 && values.message.trim().length === 0}
       />
       <Group justify="center" mt="xl">
-        <Button type="submit" size="md">
+        <Button
+          disabled={
+            values.email === '' &&
+            values.name === '' &&
+            values.subject === '' &&
+            values.message === ''
+          }
+          onClick={sendEmail}
+          size="md"
+        >
           Send message
         </Button>
       </Group>
