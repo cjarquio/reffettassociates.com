@@ -32,25 +32,29 @@ export const ContactUsForm: React.FC = () => {
 
   // Need subscription to emailjs service to send attachments
   const sendEmail = () => {
-    emailjs
-      .sendForm('service_fjt15i9', 'template_sw46zv9', formRef.current, {
-        publicKey: 'qEV-REVecmTzohSOt',
-      })
-      .then(
-        () => {
-          alert('SUCCESS! Your message has been sent.');
-
-          setValues({
-            name: '',
-            email: '',
-            subject: '',
-            message: '',
-          });
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        }
-      );
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          'service_1x3q2y4',
+          'template_9v5k6w7',
+          formRef.current,
+          'user_1234567890abcdefg'
+        )
+        .then(
+          (result) => {
+            console.log('Email sent successfully:', result.text);
+            setValues({
+              name: '',
+              email: '',
+              subject: '',
+              message: '',
+            });
+          },
+          (error) => {
+            console.error('Error sending email:', error.text);
+          }
+        );
+    }
   };
 
   return (
