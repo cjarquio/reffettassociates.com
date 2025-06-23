@@ -1,4 +1,4 @@
-import "@mantine/core/styles.css";
+import '@mantine/core/styles.css';
 import {
   Image,
   Text,
@@ -8,11 +8,11 @@ import {
   Group,
   Title,
   Grid,
-} from "@mantine/core";
-import { raTeam } from "./teamHelperFunctions";
-import { Link } from "react-router-dom";
-import { Banner } from "../../Banner";
-import { AboutBanner } from "../../../assets/images";
+} from '@mantine/core';
+import { raTeam } from './teamHelperFunctions';
+import { Link } from 'react-router-dom';
+import { Banner } from '../../Banner';
+import { AboutBanner } from '../../../assets/images';
 
 export interface RaTeamInfo {
   name: string;
@@ -28,12 +28,12 @@ export interface RaTeamInfo {
 export const Team: React.FC = () => {
   return (
     <>
-      <Banner bannerImagePath={AboutBanner} page={"Our Team"} />
-      <Container size={"45%"}>
-        <Title order={2} style={{ textAlign: "center" }}>
+      <Banner bannerImagePath={AboutBanner} page={'Our Team'} />
+      <Container size={'45%'}>
+        <Title order={2} style={{ textAlign: 'center' }}>
           Experienced, Professional, & Invested In Your Goals
         </Title>
-        <Text pt={"1rem"} size="lg">
+        <Text pt={'1rem'} size="lg">
           Our team of experienced and trusted executive search experts are
           dedicated to providing our clients and candidates the best possible
           recruitment experience possible. Every search is an opportunity to
@@ -47,25 +47,19 @@ export const Team: React.FC = () => {
                   <Image
                     src={teamMember.image}
                     fit="fill"
-                    height={320}
                     alt={teamMember.name}
                   />
                 </Card.Section>
                 <Group
                   mt="md"
                   gap={0}
-                  style={{ flexDirection: "column", alignItems: "start" }}
+                  style={{ flexDirection: 'column', alignItems: 'start' }}
                 >
                   <Text fw={700}>{teamMember.name}</Text>
                   <Text fw={500}>{teamMember.title}</Text>
                   <Text size="sm" c="dimmed">
                     {teamMember.location}
                   </Text>
-                  {teamMember.email && (
-                    <Text size="sm" c="dimmed">
-                      {teamMember.email}
-                    </Text>
-                  )}
                 </Group>
                 <Link to={teamMember.link}>
                   <Button color="blue" fullWidth mt="md" radius="md">

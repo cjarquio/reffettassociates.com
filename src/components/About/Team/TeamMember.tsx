@@ -1,28 +1,33 @@
-import "@mantine/core/styles.css";
-import { Image, Title, Text, Container, Grid } from "@mantine/core";
-import { getTeamMember } from "./teamHelperFunctions";
-import { useParams } from "react-router-dom";
-import { RaTeamInfo } from "./Team";
+import '@mantine/core/styles.css';
+import { Image, Title, Text, Container, Grid } from '@mantine/core';
+import { getTeamMember } from './teamHelperFunctions';
+import { useParams } from 'react-router-dom';
+import { RaTeamInfo } from './Team';
+import { useEffect } from 'react';
 
 export const TeamMember: React.FC = () => {
   const { teamMember } = useParams();
   const employeeDescriptions = getTeamMember(teamMember) as RaTeamInfo;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <Container size={"60%"}>
-      <Grid display={"flex"} align="center" justify="center">
+    <Container size={'60%'}>
+      <Grid display={'flex'} align="center" justify="center">
         <Grid.Col span={5}>
           <Image fit="contain" src={employeeDescriptions.image} />
         </Grid.Col>
         <Grid.Col span={7}>
-          <Title order={2} style={{ textAlign: "center" }}>
+          <Title order={2} style={{ textAlign: 'center' }}>
             {employeeDescriptions.name}
           </Title>
-          <Title order={4} style={{ textAlign: "center" }} c={"dimmed"}>
+          <Title order={4} style={{ textAlign: 'center' }} c={'dimmed'}>
             {employeeDescriptions.title}
           </Title>
           {employeeDescriptions.description.map((line) => (
-            <Text pt={"1rem"} size="lg" style={{ whiteSpace: "pre-wrap" }}>
+            <Text pt={'1rem'} size="lg" style={{ whiteSpace: 'pre-wrap' }}>
               {line}
             </Text>
           ))}
