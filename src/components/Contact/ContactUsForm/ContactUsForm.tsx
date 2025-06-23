@@ -35,10 +35,10 @@ export const ContactUsForm: React.FC = () => {
     if (formRef.current) {
       emailjs
         .sendForm(
-          'service_1x3q2y4',
-          'template_9v5k6w7',
+          'service_fjt15i9',
+          'template_sw46zv9',
           formRef.current,
-          'user_1234567890abcdefg'
+          'qEV-REVecmTzohSOt'
         )
         .then(
           (result) => {
