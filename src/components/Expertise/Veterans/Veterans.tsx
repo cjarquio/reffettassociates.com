@@ -9,7 +9,7 @@ export const Veterans: React.FC = () => {
     <>
       <Banner bannerImagePath={AboutBanner} page="Committed to our Veterans" />
       <Container size={'60%'}>
-        <Image p={'3rem'} fit="contain" src={Veteran} />
+        <Image p={'3rem'} h={'40rem'} fit="contain" src={Veteran} />
         <Box>
           <Title order={2} style={{ textAlign: 'center' }}>
             Serving Those That Served
