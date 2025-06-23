@@ -4,8 +4,8 @@ import StockVideo from '../../../src/assets/videos/executiveStockVideo.mp4';
 import classes from './Home.module.css';
 import { IconSearch } from '@tabler/icons-react';
 import { ContactButtonSection } from '../Contact';
-import VOSB from '../../assets/images/veterans/VOSB.png';
 import FeaturedClientsCarousel from './FeaturedClientsCarousel';
+import { VosbBlue } from '../../assets/images';
 
 export const Home: React.FC = () => {
   return (
@@ -60,7 +60,7 @@ export const Home: React.FC = () => {
             <Title c={'black'} order={1}>
               Veteran Owned
             </Title>
-            <Image src={VOSB} p={'0.5rem'} w={rem(132)} h={rem(132)} />
+            <Image src={VosbBlue} p={'0.5rem'} w={rem(132)} h={rem(132)} />
           </Box>
         </Group>
       </Container>

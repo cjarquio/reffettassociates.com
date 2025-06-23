@@ -1,5 +1,6 @@
 // COMPANIES
 export { default as VOSB } from '../images/veterans/VOSB.png';
+export { default as VosbBlue } from '../images/veterans/VOSBBlue.png';
 export { default as Veteran } from '../images/veterans/Veterans.jpg';
 
 // TEAM
