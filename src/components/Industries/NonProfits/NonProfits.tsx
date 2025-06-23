@@ -1,5 +1,5 @@
-import { Container, Title, Image, Box, Card, Grid, Text } from "@mantine/core";
-import { NonProfitBanner } from "../../../assets/images";
+import { Container, Title, Image, Box, Card, Grid, Text } from '@mantine/core';
+import { NonProfitBanner } from '../../../assets/images';
 import {
   DiversityInc,
   TouchstoneEnergy,
@@ -13,57 +13,57 @@ import {
   ACE,
   CliffordBeers,
   ICSC,
-} from "../../../assets/images/companies/NonProfits";
-import { Banner } from "../../Banner";
+} from '../../../assets/images/companies/NonProfits';
+import { Banner } from '../../Banner';
 
 export const NonProfits: React.FC = () => {
   const retailCompanies = [
     {
-      companyName: "Touchstone Energy",
+      companyName: 'Touchstone Energy',
       image: TouchstoneEnergy,
     },
     {
-      companyName: "UnitedWay of King County",
+      companyName: 'UnitedWay of King County',
       image: UnitedWayofKingCounty,
     },
     {
-      companyName: "Diversity Inc.",
+      companyName: 'Diversity Inc.',
       image: DiversityInc,
     },
     {
-      companyName: "NRECA",
+      companyName: 'NRECA',
       image: NRECA,
     },
     {
-      companyName: "National Bureau of Asian Research",
+      companyName: 'National Bureau of Asian Research',
       image: NBR,
     },
     {
-      companyName: "National Association of Black Accountants",
+      companyName: 'National Association of Black Accountants',
       image: Naba,
     },
     {
-      companyName: "National Association of Manufacturers",
+      companyName: 'National Association of Manufacturers',
       image: NAM,
     },
     {
-      companyName: "National Society of Hispanic MBAs",
+      companyName: 'National Society of Hispanic MBAs',
       image: NSH,
     },
     {
-      companyName: "Pioneer Human Services",
+      companyName: 'Pioneer Human Services',
       image: Pioneer,
     },
     {
-      companyName: "American Council on Education",
+      companyName: 'American Council on Education',
       image: ACE,
     },
     {
-      companyName: "Clifford Beers Clinic",
+      companyName: 'Clifford Beers Clinic',
       image: CliffordBeers,
     },
     {
-      companyName: "International Council of Shopping Centers",
+      companyName: 'International Council of Shopping Centers',
       image: ICSC,
     },
   ];
@@ -73,8 +73,8 @@ export const NonProfits: React.FC = () => {
         bannerImagePath={NonProfitBanner}
         page="Associations and Nonprofits"
       />
-      <Container fluid w="60%" display={"flex"}>
-        <Container w={"80%"}>
+      <Container fluid w="65%" display={'flex'}>
+        <Container w={'100%'}>
           <Box id="retailDescription">
             <Title order={3}>Nonprofit</Title>
             <Text>
@@ -94,22 +94,21 @@ export const NonProfits: React.FC = () => {
             </Text>
           </Box>
         </Container>
-        <Container fluid>
+        <Container fluid w="100%">
           <Title order={3}>Companies Served</Title>
           <Grid>
             {retailCompanies.map((company) => (
               <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: "center" }}>
+                <Card padding="sm" style={{ alignItems: 'center' }}>
+                  <Card.Section>
+                    <Text fw={700}>{company.companyName}</Text>
+                  </Card.Section>
                   <Card.Section>
                     <Image
                       src={company.image}
                       fit="contain"
-                      w={200}
                       alt={company.companyName}
                     />
-                  </Card.Section>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
                   </Card.Section>
                 </Card>
               </Grid.Col>

@@ -7,7 +7,7 @@ import {
   Grid,
   Text,
   List,
-} from "@mantine/core";
+} from '@mantine/core';
 import {
   AconInvestments,
   AlvarezAndMarsal,
@@ -22,38 +22,38 @@ import {
   StoneCreek,
   SunCapitalPartners,
   TravelersInsurance,
-} from "../../../assets/images/companies/PrivateSector";
-import { PrivateSectorBanner } from "../../../assets/images";
-import { Banner } from "../../Banner";
+} from '../../../assets/images/companies/PrivateSector';
+import { PrivateSectorBanner } from '../../../assets/images';
+import { Banner } from '../../Banner';
 
 export const PrivateSector: React.FC = () => {
   const retailCompanies = [
     {
-      companyName: "ACON",
+      companyName: 'ACON',
       image: AconInvestments,
     },
     {
-      companyName: "The Food Partners",
+      companyName: 'The Food Partners',
       image: FoodPartners,
     },
     {
-      companyName: "Core Scientific",
+      companyName: 'Core Scientific',
       image: CoreScientific,
     },
     {
-      companyName: "Golden Gate Capital",
+      companyName: 'Golden Gate Capital',
       image: GoldenGateCapital,
     },
     {
-      companyName: "Leonard Green and Partners",
+      companyName: 'Leonard Green and Partners',
       image: LeonardGreenAndPartners,
     },
     {
-      companyName: "Morgan-Stanley",
+      companyName: 'Morgan-Stanley',
       image: MorganStanley,
     },
     {
-      companyName: "Sun Capital Partners",
+      companyName: 'Sun Capital Partners',
       image: SunCapitalPartners,
     },
     {
@@ -61,38 +61,38 @@ export const PrivateSector: React.FC = () => {
       image: TravelersInsurance,
     },
     {
-      companyName: "BECU",
+      companyName: 'BECU',
       image: BECU,
     },
     {
-      companyName: "Liberty Ridge Advisors",
+      companyName: 'Liberty Ridge Advisors',
       image: LibertyRidge,
     },
     {
-      companyName: "Stone Creek Capital",
+      companyName: 'Stone Creek Capital',
       image: StoneCreek,
     },
     {
-      companyName: "Alvarez & Marsal",
+      companyName: 'Alvarez & Marsal',
       image: AlvarezAndMarsal,
     },
     {
-      companyName: "General Atlantic",
+      companyName: 'General Atlantic',
       image: GeneralAtlantic,
     },
   ];
   return (
     <>
       <Banner bannerImagePath={PrivateSectorBanner} page="Private Sector" />
-      <Container fluid w="60%" display={"flex"}>
-        <Container w={"80%"}>
+      <Container fluid w="65%" display={'flex'}>
+        <Container w={'100%'}>
           <Box id="retailDescription">
             <Title order={3}>Private Sector</Title>
             <Text>
               As market conditions have changed, Private Equity has become a
-              greater part of our firm’s practice. We understand the talents and
-              skills required to lead companies through all the stages of the
-              life cycle, from the earliest stage start-up, to upgrading the
+              greater part of our firm{"'"}s practice. We understand the talents
+              and skills required to lead companies through all the stages of
+              the life cycle, from the earliest stage start-up, to upgrading the
               management team of a portfolio company.
             </Text>
             <Text>
@@ -121,22 +121,21 @@ export const PrivateSector: React.FC = () => {
             </Text>
           </Box>
         </Container>
-        <Container fluid>
+        <Container fluid w="100%">
           <Title order={3}>Companies Served</Title>
           <Grid>
             {retailCompanies.map((company) => (
               <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: "center" }}>
+                <Card padding="sm" style={{ alignItems: 'center' }}>
+                  <Card.Section>
+                    <Text fw={700}>{company.companyName}</Text>
+                  </Card.Section>
                   <Card.Section>
                     <Image
                       src={company.image}
                       fit="contain"
-                      w={200}
                       alt={company.companyName}
                     />
-                  </Card.Section>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
                   </Card.Section>
                 </Card>
               </Grid.Col>

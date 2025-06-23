@@ -1,5 +1,5 @@
-import { Container, Title, Image, Box, Text, Card, Grid } from "@mantine/core";
-import { RetailBanner } from "../../../assets/images";
+import { Container, Title, Image, Box, Text, Card, Grid } from '@mantine/core';
+import { RetailBanner } from '../../../assets/images';
 import {
   BassProShops,
   BartellDrugs,
@@ -28,37 +28,37 @@ import {
   Post,
   VF,
   Xochitl,
-} from "../../../assets/images/companies/Retail";
-import { Banner } from "../../Banner";
+} from '../../../assets/images/companies/Retail';
+import { Banner } from '../../Banner';
 
 export const Retail: React.FC = () => {
   const retailCompanies = [
     {
-      companyName: "Bass Pro Shops",
+      companyName: 'Bass Pro Shops',
       image: BassProShops,
     },
     {
-      companyName: "Bartell Drugs",
+      companyName: 'Bartell Drugs',
       image: BartellDrugs,
     },
     {
-      companyName: "Bi-Lo",
+      companyName: 'Bi-Lo',
       image: BiLo,
     },
     {
-      companyName: "Burlington",
+      companyName: 'Burlington',
       image: Burlington,
     },
     {
-      companyName: "Cabelas",
+      companyName: 'Cabelas',
       image: Cabelas,
     },
     {
-      companyName: "Dean Foods",
+      companyName: 'Dean Foods',
       image: DeanFoods,
     },
     {
-      companyName: "Dymatize",
+      companyName: 'Dymatize',
       image: Dymatize,
     },
     {
@@ -70,7 +70,7 @@ export const Retail: React.FC = () => {
       image: KingsFoodMarket,
     },
     {
-      companyName: "Petco",
+      companyName: 'Petco',
       image: Petco,
     },
     {
@@ -78,79 +78,79 @@ export const Retail: React.FC = () => {
       image: Schwans,
     },
     {
-      companyName: "Seattle Mariners",
+      companyName: 'Seattle Mariners',
       image: SeattleMariners,
     },
     {
-      companyName: "Army and Air Force Exchange",
+      companyName: 'Army and Air Force Exchange',
       image: AAFEX,
     },
     {
-      companyName: "Sports Authority",
+      companyName: 'Sports Authority',
       image: SportsAuthority,
     },
     {
-      companyName: "Strack",
+      companyName: 'Strack',
       image: Strack,
     },
     {
-      companyName: "The Fresh Market",
+      companyName: 'The Fresh Market',
       image: TheFreshMarket,
     },
     {
-      companyName: "Ahold USA",
+      companyName: 'Ahold USA',
       image: Ahold,
     },
     {
-      companyName: "Dean Foods",
+      companyName: 'Dean Foods',
       image: DeanFoods,
     },
     {
-      companyName: "Giant",
+      companyName: 'Giant',
       image: Giant,
     },
     {
-      companyName: "Homeland",
+      companyName: 'Homeland',
       image: Homeland,
     },
     {
-      companyName: "KVAT",
+      companyName: 'KVAT',
       image: KVAT,
     },
     {
-      companyName: "Metropolitan Market",
+      companyName: 'Metropolitan Market',
       image: MetropolitanMarket,
     },
     {
-      companyName: "Northgate Market",
+      companyName: 'Northgate Market',
       image: NorthgateMarket,
     },
     {
-      companyName: "OTG",
+      companyName: 'OTG',
       image: OTG,
     },
     {
-      companyName: "Peekay",
+      companyName: 'Peekay',
       image: Peekay,
     },
     {
-      companyName: "POST",
+      companyName: 'POST',
       image: Post,
     },
     {
-      companyName: "VF",
+      companyName: 'VF',
       image: VF,
     },
     {
-      companyName: "Xochitl",
+      companyName: 'Xochitl',
       image: Xochitl,
     },
   ];
   return (
     <>
       <Banner bannerImagePath={RetailBanner} page="Retail" />
-      <Container fluid w="60%" display={"flex"}>
-        <Container>
+      <Container fluid w="65%" display={'flex'}>
+        <Container w={'100%'}>
           <Box id="retailDescription">
             <Title order={3}>Retail</Title>
             <Text>
@@ -179,22 +179,21 @@ export const Retail: React.FC = () => {
             </Text>
           </Box>
         </Container>
-        <Container fluid>
+        <Container fluid w={'100%'}>
           <Title order={3}>Companies Served</Title>
           <Grid>
             {retailCompanies.map((company) => (
               <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: "center" }}>
+                <Card padding="sm" style={{ alignItems: 'center' }}>
+                  <Card.Section>
+                    <Text fw={700}>{company.companyName}</Text>
+                  </Card.Section>
                   <Card.Section>
                     <Image
                       src={company.image}
                       fit="contain"
-                      w={200}
                       alt={company.companyName}
                     />
-                  </Card.Section>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
                   </Card.Section>
                 </Card>
               </Grid.Col>

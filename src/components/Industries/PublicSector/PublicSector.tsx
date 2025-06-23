@@ -1,5 +1,5 @@
-import { Container, Title, Image, Box, Card, Grid, Text } from "@mantine/core";
-import { PublicSectorBanner } from "../../../assets/images";
+import { Container, Title, Image, Box, Card, Grid, Text } from '@mantine/core';
+import { PublicSectorBanner } from '../../../assets/images';
 import {
   AAFEX,
   AFRL,
@@ -17,81 +17,81 @@ import {
   USDA,
   UsMerchantMarine,
   VA,
-} from "../../../assets/images/companies/PublicSector";
-import { Banner } from "../../Banner";
+} from '../../../assets/images/companies/PublicSector';
+import { Banner } from '../../Banner';
 
 export const PublicSector: React.FC = () => {
   const retailCompanies = [
     {
-      companyName: "AFRL",
+      companyName: 'AFRL',
       image: AFRL,
     },
     {
-      companyName: "US Food and Drug Administration",
+      companyName: 'US Food and Drug Administration',
       image: FDA,
     },
     {
-      companyName: "US Department of Defense",
+      companyName: 'US Department of Defense',
       image: DoD,
     },
     {
-      companyName: "US Department of Transporation",
+      companyName: 'US Department of Transporation',
       image: DoT,
     },
     {
-      companyName: "FirstNet",
+      companyName: 'FirstNet',
       image: FirstNet,
     },
     {
-      companyName: "US Merchant Maritime Adminisitration",
+      companyName: 'US Merchant Maritime Adminisitration',
       image: UsMerchantMarine,
     },
     {
-      companyName: "Army and Air Force Exchange Service",
+      companyName: 'Army and Air Force Exchange Service',
       image: AAFEX,
     },
     {
-      companyName: "City of Charlotte",
+      companyName: 'City of Charlotte',
       image: CityOfCharlotte,
     },
     {
-      companyName: "City of Seattle",
+      companyName: 'City of Seattle',
       image: CityOfSeattle,
     },
     {
-      companyName: "Community Transit",
+      companyName: 'Community Transit',
       image: CommunityTransit,
     },
     {
-      companyName: "US Department of Agriculture",
+      companyName: 'US Department of Agriculture',
       image: USDA,
     },
     {
-      companyName: "US Department of Veteran Affairs",
+      companyName: 'US Department of Veteran Affairs',
       image: VA,
     },
     {
-      companyName: "Naval Postgraduate School",
+      companyName: 'Naval Postgraduate School',
       image: NavalPostGradSchool,
     },
     {
-      companyName: "Northwest Seaport Alliance",
+      companyName: 'Northwest Seaport Alliance',
       image: NorthwestSeaport,
     },
     {
-      companyName: "Sound Transit",
+      companyName: 'Sound Transit',
       image: SoundTransit,
     },
     {
-      companyName: "PGBC",
+      companyName: 'PGBC',
       image: PGBC,
     },
   ];
   return (
     <>
       <Banner bannerImagePath={PublicSectorBanner} page="Public Sector" />
-      <Container fluid w="60%" display={"flex"}>
-        <Container w={"80%"}>
+      <Container fluid w="65%" display={'flex'}>
+        <Container w={'100%'}>
           <Box id="retailDescription">
             <Title order={3}>Public Sector</Title>
             <Text>
@@ -114,22 +114,21 @@ export const PublicSector: React.FC = () => {
             </Text>
           </Box>
         </Container>
-        <Container fluid>
+        <Container fluid w={'100%'}>
           <Title order={3}>Companies Served</Title>
           <Grid>
             {retailCompanies.map((company) => (
               <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: "center" }}>
+                <Card padding="sm" style={{ alignItems: 'center' }}>
+                  <Card.Section>
+                    <Text fw={700}>{company.companyName}</Text>
+                  </Card.Section>
                   <Card.Section>
                     <Image
                       src={company.image}
                       fit="contain"
-                      w={200}
                       alt={company.companyName}
                     />
-                  </Card.Section>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
                   </Card.Section>
                 </Card>
               </Grid.Col>

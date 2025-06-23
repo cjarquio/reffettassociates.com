@@ -1,5 +1,5 @@
-import { Container, Title, Image, Text, Box, Card, Grid } from "@mantine/core";
-import { GovernmentContractingBanner } from "../../../assets/images";
+import { Container, Title, Image, Text, Box, Card, Grid } from '@mantine/core';
+import { GovernmentContractingBanner } from '../../../assets/images';
 import {
   Battelle,
   DynCorp,
@@ -9,41 +9,41 @@ import {
   TASC,
   NRECA,
   SOC,
-} from "../../../assets/images/companies/Government";
-import { Banner } from "../../Banner";
+} from '../../../assets/images/companies/Government';
+import { Banner } from '../../Banner';
 
 export const GovernmentContracting: React.FC = () => {
   const retailCompanies = [
     {
-      companyName: "Battelle",
+      companyName: 'Battelle',
       image: Battelle,
     },
     {
-      companyName: "Fluor",
+      companyName: 'Fluor',
       image: Fluor,
     },
     {
-      companyName: "Hitachi Consulting",
+      companyName: 'Hitachi Consulting',
       image: Hitachi,
     },
     {
-      companyName: "Point Blank Enterprises",
+      companyName: 'Point Blank Enterprises',
       image: PointBlank,
     },
     {
-      companyName: "TASC",
+      companyName: 'TASC',
       image: TASC,
     },
     {
-      companyName: "DynCorp International",
+      companyName: 'DynCorp International',
       image: DynCorp,
     },
     {
-      companyName: "NRECA",
+      companyName: 'NRECA',
       image: NRECA,
     },
     {
-      companyName: "SOC",
+      companyName: 'SOC',
       image: SOC,
     },
   ];
@@ -53,8 +53,8 @@ export const GovernmentContracting: React.FC = () => {
         bannerImagePath={GovernmentContractingBanner}
         page="Government Contracting"
       />
-      <Container fluid w="60%" display={"flex"}>
-        <Container w={"80%"}>
+      <Container fluid w="65%" display={'flex'}>
+        <Container w={'100%'}>
           <Box id="retailDescription">
             <Title order={3}>Government Contracting</Title>
             <Text>
@@ -79,22 +79,21 @@ export const GovernmentContracting: React.FC = () => {
             </Text>
           </Box>
         </Container>
-        <Container fluid>
+        <Container fluid w={'100%'}>
           <Title order={3}>Companies Served</Title>
           <Grid>
             {retailCompanies.map((company) => (
-              <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: "center" }}>
+              <Grid.Col span={4} key={company.companyName}>
+                <Card padding="lg" style={{ alignItems: 'center' }}>
+                  <Card.Section>
+                    <Text fw={700}>{company.companyName}</Text>
+                  </Card.Section>
                   <Card.Section>
                     <Image
                       src={company.image}
                       fit="contain"
-                      w={200}
                       alt={company.companyName}
                     />
-                  </Card.Section>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
                   </Card.Section>
                 </Card>
               </Grid.Col>

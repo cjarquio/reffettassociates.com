@@ -1,5 +1,5 @@
-import { Container, Title, Image, Text, Box, Card, Grid } from "@mantine/core";
-import { ManufacturingBanner } from "../../../assets/images";
+import { Container, Title, Image, Text, Box, Card, Grid } from '@mantine/core';
+import { ManufacturingBanner } from '../../../assets/images';
 import {
   CastorAndPollux,
   CutterAndBuck,
@@ -12,33 +12,33 @@ import {
   VF,
   ItgBrands,
   CoreScientific,
-} from "../../../assets/images/companies/Manufacturing";
-import { Banner } from "../../Banner";
+} from '../../../assets/images/companies/Manufacturing';
+import { Banner } from '../../Banner';
 
 export const Manufacturing: React.FC = () => {
   const retailCompanies = [
     {
-      companyName: "Castor & Pollux",
+      companyName: 'Castor & Pollux',
       image: CastorAndPollux,
     },
     {
-      companyName: "Cutter & Buck",
+      companyName: 'Cutter & Buck',
       image: CutterAndBuck,
     },
     {
-      companyName: "Emerald Perfomance Materials",
+      companyName: 'Emerald Perfomance Materials',
       image: Emerald,
     },
     {
-      companyName: "Kaman",
+      companyName: 'Kaman',
       image: Kaman,
     },
     {
-      companyName: "Lorillard",
+      companyName: 'Lorillard',
       image: Lorillard,
     },
     {
-      companyName: "POST",
+      companyName: 'POST',
       image: Post,
     },
     {
@@ -46,27 +46,27 @@ export const Manufacturing: React.FC = () => {
       image: Schwans,
     },
     {
-      companyName: "Xochitl",
+      companyName: 'Xochitl',
       image: Xochitl,
     },
     {
-      companyName: "VF Outlets",
+      companyName: 'VF Outlets',
       image: VF,
     },
     {
-      companyName: "itgBrands",
+      companyName: 'itgBrands',
       image: ItgBrands,
     },
     {
-      companyName: "Core Scientific",
+      companyName: 'Core Scientific',
       image: CoreScientific,
     },
   ];
   return (
     <>
       <Banner bannerImagePath={ManufacturingBanner} page="Manufacturing" />
-      <Container fluid w="60%" display={"flex"}>
-        <Container w={"80%"}>
+      <Container fluid w="65%" display={'flex'}>
+        <Container w={'100%'}>
           <Box id="retailDescription">
             <Title order={3}>Manufacturing</Title>
             <Text>
@@ -87,22 +87,21 @@ export const Manufacturing: React.FC = () => {
             </Text>
           </Box>
         </Container>
-        <Container fluid>
+        <Container w={'100%'}>
           <Title order={3}>Companies Served</Title>
           <Grid>
             {retailCompanies.map((company) => (
               <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: "center" }}>
+                <Card padding="sm" style={{ alignItems: 'center' }}>
+                  <Card.Section>
+                    <Text fw={700}>{company.companyName}</Text>
+                  </Card.Section>
                   <Card.Section>
                     <Image
                       src={company.image}
                       fit="contain"
-                      w={200}
                       alt={company.companyName}
                     />
-                  </Card.Section>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
                   </Card.Section>
                 </Card>
               </Grid.Col>
