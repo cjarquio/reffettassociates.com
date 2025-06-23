@@ -42,7 +42,7 @@ export const News: React.FC = () => {
 
   const handleClick = (external: boolean, link: string) => {
     if (external) {
-      window.location.href = link;
+      window.open(link, '_blank', 'noopener,noreferrer');
     } else {
       navigate(link);
     }
