@@ -3,15 +3,10 @@ import { Image, Title, Text, Container, Grid } from '@mantine/core';
 import { getTeamMember } from './teamHelperFunctions';
 import { useParams } from 'react-router-dom';
 import { RaTeamInfo } from './Team';
-import { useEffect } from 'react';
 
 export const TeamMember: React.FC = () => {
   const { teamMember } = useParams();
   const employeeDescriptions = getTeamMember(teamMember) as RaTeamInfo;
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <Container size={'60%'}>
