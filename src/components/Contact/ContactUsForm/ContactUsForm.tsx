@@ -69,7 +69,8 @@ export const ContactUsForm: React.FC = () => {
         Get in touch
       </Title>
       <Title order={4} style={{ textAlign: 'center' }}>
-        People can contact us about our work or for coaching
+        Want to connect with us? Feel free to call or send us email and a
+        Reffett Associates team member will follow up with you.
       </Title>
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">
         <TextInput

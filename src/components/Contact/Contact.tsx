@@ -11,7 +11,7 @@ export const Contact: React.FC = () => {
       <Container fluid w={'99vw'}>
         <Container size={'40%'}>
           <Title order={3} style={{ textAlign: 'center' }}>
-            Contact Reffett Associates directly at 425.637.2993 or 703.351.5062
+            Contact Reffett Associates directly at 425.637.2993
           </Title>
           <ContactMap />
         </Container>
