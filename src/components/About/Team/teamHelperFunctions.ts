@@ -1,17 +1,18 @@
 import {
-  BillReffett, 
-  EricReffett, 
-  GlennLesniak, 
-  KernGilette, 
-  LizzyShaw, 
-  MargaretGottlieb, 
-  MarshallReffett, 
-  MindeePrichard, 
-  NancyHoffman, 
-  SamMayberry, 
-  TimGeriak, 
-  TomYoung} from '../../../assets/images'
-import { RaTeamInfo } from './Team'
+  BillReffett,
+  EricReffett,
+  GlennLesniak,
+  KernGilette,
+  LizzyShaw,
+  MargaretGottlieb,
+  MarshallReffett,
+  MindeePrichard,
+  NancyHoffman,
+  SamMayberry,
+  TomDanowski,
+  TomYoung,
+} from '../../../assets/images';
+import { RaTeamInfo } from './Team';
 
 export const raTeam: RaTeamInfo[] = [
   {
@@ -25,8 +26,8 @@ export const raTeam: RaTeamInfo[] = [
     description: [
       "Bill Reffett has successfully identified and placed key executive leaders for major companies across the United States. Prior to establishing Reffett & Associates, Bill was a Vice President and Partner with Korn/Ferry International, where he was responsible for initiating the firm's national supermarket practice. Additionally, he was a member of the firm's national specialty retail practice, where he focused on companies along the west coast.",
       "Before entering the executive search industry, he served as the Senior Vice President, Chief Administrative Officer for Cavenham (USA), the US-based investment arm of the late Sir James Goldsmith. Bill also served as a Board Member and Senior Vice President for the organization's operating company, Grand Union, where he was responsible for areas such as human resources, legal, labor relations, and communications. Prior to joining Sir James' organization, he served as a Senior Vice President of a major department store company. Bill has 27 years of combined active and reserve military experience, retiring as a Colonel.",
-      "Bill earned his BS in Engineering from the United States Military Academy, and a JD from Capital University. He is also a graduate of the US Army War College. Bill currently serves on the Boards of several local Seattle non-profit organizations."
-    ]
+      'Bill earned his BS in Engineering from the United States Military Academy, and a JD from Capital University. He is also a graduate of the US Army War College. Bill currently serves on the Boards of several local Seattle non-profit organizations.',
+    ],
   },
   {
     name: 'Nancy Hoffman',
@@ -37,13 +38,13 @@ export const raTeam: RaTeamInfo[] = [
     email: 'nancy.hoffmann@reffettassociates.com',
     ph: '(336) 856-8128',
     description: [
-      "Nancy Hoffmann joined Reffett Associates in 1998 as a Managing Director. This followed a 22-year corporate executive management career in textiles, apparel, home furnishings, and financial services. She held line positions with P&L responsibility for sales, marketing, merchandising, and operations in several consumer products companies.",
+      'Nancy Hoffmann joined Reffett Associates in 1998 as a Managing Director. This followed a 22-year corporate executive management career in textiles, apparel, home furnishings, and financial services. She held line positions with P&L responsibility for sales, marketing, merchandising, and operations in several consumer products companies.',
       "She served as Director of Marketing for Graphic Dimensions Ltd. where she had marketing responsibility for the company's B to B mail order, retail, wholesale, and fulfillment business. Catalog Age nominated the Graphic Dimensions catalog for best in category in 1997 and 1998 during her tenure.",
-      "Previously, Nancy held leadership positions with furniture manufacturers Yield House, Enfield Industrie and Country Curtains. She also was Executive Vice President of Marketing and Sales for Stanley Furnishings and EVP of Lace Lastics Co. where she directed their start-up Oxford House division.",
+      'Previously, Nancy held leadership positions with furniture manufacturers Yield House, Enfield Industrie and Country Curtains. She also was Executive Vice President of Marketing and Sales for Stanley Furnishings and EVP of Lace Lastics Co. where she directed their start-up Oxford House division.',
       "She received a Master's degree from the University of South Carolina, and her undergraduate degree is from Winthrop College.",
-      "During her 22-year career in executive search, Nancy has focused on the supermarket, wholesale food, specialty retail, and other consumer products industries. She recruited talented senior level executives for all disciplines: marketing, sales, merchandising, operations, supply chain, finance, and human resources.",
-      "She was elected to the Greensboro City Council in 2011, was re-elected to two-year terms in 2013 and 2015, and elected to a four-year term in 2017."
-    ]
+      'During her 22-year career in executive search, Nancy has focused on the supermarket, wholesale food, specialty retail, and other consumer products industries. She recruited talented senior level executives for all disciplines: marketing, sales, merchandising, operations, supply chain, finance, and human resources.',
+      'She was elected to the Greensboro City Council in 2011, was re-elected to two-year terms in 2013 and 2015, and elected to a four-year term in 2017.',
+    ],
   },
   {
     name: 'Sam Mayberry',
@@ -55,23 +56,22 @@ export const raTeam: RaTeamInfo[] = [
       "Sam Mayberry leads Reffett Associate's Supply Chain and co-leads the Non-profit practice. He is an experienced senior executive that has focused his executive search practice on retail, consumer products, logistics and non-profits. He has spent more than 35 years building and leading teams to develop cutting edge business strategies in the retail, wholesale, and eCommerce channels.",
       "Sam has held executive positions in merchandising, operations, and private label at Supervalu, Albertson's, Amazon, Food Lifeline and most recently at Sam Mayberry Consulting, where he provides Management Consulting services for Brand, Product, Sourcing and Staffing strategy development.",
       "Mayberry leverages an entrepreneurial mindset with strong business acumen and expertise in sales, marketing, supply chain and operations to find the best fit for every client's organization. With deep roots in the areas of food retail, wholesale and Consumer Packaged Goods channels Sam is focused on filling executive and management positions in Supply Chain, Logistics, Sales, Marketing, Procurement and more.",
-      "He holds a BS degree in Business Administration from Illinois Wesleyan University and resides in Seattle with his wife and has 4 grown children and two grandchildren. He is a past Chairman of the Iowa Industry Association and the Shakopee, Minnesota Park and Recreation Board."
-    ]
+      'He holds a BS degree in Business Administration from Illinois Wesleyan University and resides in Seattle with his wife and has 4 grown children and two grandchildren. He is a past Chairman of the Iowa Industry Association and the Shakopee, Minnesota Park and Recreation Board.',
+    ],
   },
   {
-    name: 'Tim Geriak',
-    link: 'tim-geriak',
-    image: TimGeriak,
-    title: 'Managing Director',
-    location: 'Sacramento, California',
-    email: 'Tim@reffettassociates.com',
-    ph: '(408) 896-0547',
+    name: 'Tom Danowski',
+    link: 'tom-danowski',
+    image: TomDanowski,
+    title: 'Managing Director - CPG Practice',
+    location: 'Seattle, Washington',
     description: [
-      "Tim joins Reffett Associates having most recently served as the Senior Managing Director for Robert Half Executive Search. Tim brings a plethora of experience in identifying key executive hires organization wide. Known for his astute judgement of talent and his consultative style, Tim is often referred to as a business partner and a trusted confidant.",
-      "The vast majority of Tim's career has been dedicated to supporting pre-revenue startups through fortune 500 companies that are looking for game-changing leadership hires to shape and actualize their strategic visions. Tim is well-versed in a multitude of industries with deep knowledge in trends, drivers, and success indicators.",
-      "Growing up as a competitive athlete and an avid fan of baseball, he approaches his searches with the same determination and enthusiasm as he did a playoff game. Winning is now defined as coaching and mentoring his clients and candidates to achieve a successful outcome.",
-      "Tim holds a BS degree in Finance from Chapman University and resides in Northern California with his wife and children. In his free time, he enjoys surfing, skiing, volunteering, and unwinding at his ranch with his family."
-    ]
+      "Tom Danowski is the Managing Director of the firm's CPG practice.",
+      "Most recently he was the CEO & President of the Oregon Wine Commission for nearly 13 years leading the team working alongside 1,100 wineries and 1,400 grape growers driving Oregon's $8B wine industry to record sales and global recognition.",
+      'Tom is a veteran general manager and consumer products executive who has held officer-level roles in both publicly traded and private-equity-owned enterprises. He also established a successful track record as CEO for more than a decade in the non-profit sector.',
+      'Tom started his career in New York at the Saatchi ad agency working on the Procter & Gamble account. From there he went on to marketing and category management positions at Kraft Foods & Coca-Cola before returning to the Pacific Northwest for senior positions with Starbucks and Chateau Ste. Michelle.',
+      "He is a high-energy leader known for insightful, strategic analyses, innovative thinking and nurturing talent. Tom will use these skills and his industry experience to help grow Reffett Associates' private sector and non-profit executive recruitment practices.",
+    ],
   },
   {
     name: 'Tom Young',
@@ -80,13 +80,13 @@ export const raTeam: RaTeamInfo[] = [
     title: 'Director of Operations And Sustainability Manager',
     location: 'Seattle, Washington',
     description: [
-      "Tom Young leads Reffett Associates Municipal Government Practice and co-leads the Non-profit practice. He is also active in private sector and non-profit executive recruiting. In addition, Tom is Reffett Associates Sustainability Manager and helps the Firm focus on how they can develop and foster more sustainable business practices.",
-      "Tom brings a career as a congressional staffer focused on federal legislative, policy and constituent services experience to Reffett Associates.",
-      "As District Director and Counsel for a Member of Congress (WA 08) Tom oversaw community and constituent services, casework and was the district office policy lead for business, energy, environment, and transportation issues. Through this work he developed deep roots in the Trade, Small Business, Clean Technology, Transportation and Maritime industries.",
+      'Tom Young leads Reffett Associates Municipal Government Practice and co-leads the Non-profit practice. He is also active in private sector and non-profit executive recruiting. In addition, Tom is Reffett Associates Sustainability Manager and helps the Firm focus on how they can develop and foster more sustainable business practices.',
+      'Tom brings a career as a congressional staffer focused on federal legislative, policy and constituent services experience to Reffett Associates.',
+      'As District Director and Counsel for a Member of Congress (WA 08) Tom oversaw community and constituent services, casework and was the district office policy lead for business, energy, environment, and transportation issues. Through this work he developed deep roots in the Trade, Small Business, Clean Technology, Transportation and Maritime industries.',
       "In addition, Tom was the Congressman's veteran and military liaison working with all branches of the military, directing Veteran's Affairs casework, running the 8th District Military Academy nominations process and developed and organized multiple Veterans' Resource Fairs that were recognized as a Congressional Best Practice.",
       "In 2011, Tom was named to the Puget Sound Business Journal's 40 Under 40 for his work with the business community. Currently, Tom is a member of the Washington State China Relations Council, CleanTech Alliance, and World Affairs Council. Tom is a Leadership Tomorrow alum Class of 2010 and served on the Curriculum Committee from 2011 – 2017.",
-      "He earned his J.D. and a Master of Public Policy from Regent University in Virginia Beach, Virginia and attended undergraduate studies at the University of Washington where he earned his Bachelor of Arts in History and Minor in Classical Studies."
-    ]
+      'He earned his J.D. and a Master of Public Policy from Regent University in Virginia Beach, Virginia and attended undergraduate studies at the University of Washington where he earned his Bachelor of Arts in History and Minor in Classical Studies.',
+    ],
   },
   {
     name: 'Eric Reffett',
@@ -98,9 +98,9 @@ export const raTeam: RaTeamInfo[] = [
     ph: '(703) 351-5062',
     description: [
       "Dr. Eric Reffett joins Reffett Associates having spent 19 years at Booz Allen Hamilton where he led a variety of efforts for US Government clients, most recently leading many of Booz Allen's efforts in the Chemical, Biological, Radiological, and Nuclear arena. Eric joins us having served as a Principal for Booz Allen Hamilton based in Washington, DC, his focus at Booz Allen has been leading highly technical delivery for clients throughout the Government. Dr. Reffett joins Reffett Associates as a Managing Director focusing on the Public Sector, Government Contracting & Professional Services, and Associations & Nonprofits practices and leads our Washington DC office.",
-      "Capitalizing on his expertise developed leading highly technical delivery, Dr. Reffett focuses on identifying and recruiting technical talent for Government and industry. His relationships within the research and development community, academia, and industry allow him to reach out to a broad variety of potential candidates with diverse skills to serve the technical staffing needs of our clients. His expertise is identifying those one of a kind candidates for difficult to fill positions.",
-      "Prior to joining Booz Allen, Eric worked as an Analyst at Synergy who was acquired by ICF International. Eric is a 24-year veteran of the USAF, serving in a variety of command positions. He is a member of the George Mason University Honors College Advisory Board, holds a Doctorate from the University of Alabama, is graduate of Harvard's Kennedy School of Government, and the Air Force Academy."
-    ]
+      'Capitalizing on his expertise developed leading highly technical delivery, Dr. Reffett focuses on identifying and recruiting technical talent for Government and industry. His relationships within the research and development community, academia, and industry allow him to reach out to a broad variety of potential candidates with diverse skills to serve the technical staffing needs of our clients. His expertise is identifying those one of a kind candidates for difficult to fill positions.',
+      "Prior to joining Booz Allen, Eric worked as an Analyst at Synergy who was acquired by ICF International. Eric is a 24-year veteran of the USAF, serving in a variety of command positions. He is a member of the George Mason University Honors College Advisory Board, holds a Doctorate from the University of Alabama, is graduate of Harvard's Kennedy School of Government, and the Air Force Academy.",
+    ],
   },
   {
     name: 'Margaret Gottlieb',
@@ -109,10 +109,10 @@ export const raTeam: RaTeamInfo[] = [
     title: 'Managing Director',
     location: 'Metro DC',
     description: [
-      "Margaret Gottlieb has over a decade of leadership experience in the retained executive search business. Prior to joining Reffett Associates, Ms. Gottlieb served as the Managing Director of Foster Partners, a KPMG-affiliate, retained executive search firm. At Foster Partners, Margaret handled business development and conducted executive searches for a wide array of prominent private and public sector clients. During her tenure at Foster Partners, Margaret was one of the first people in the country to be awarded retained searches for the Federal Government, including: the Internal Revenue Service, Office of Personnel Management, Government Accounting Office, US Department of Agriculture, Federal Aviation Administration, and the US Department of Energy.",
-      "Earlier in her career, Mag specialized in federal and state legislative affairs. She has held positions as Government Affairs Director for the Direct Marketing Association, President of the Washington Area State Relations Group, and Chair of the Congressional Relations Committee, Women in Government Relations. Additionally, Margaret worked on Capitol Hill and in the Ohio House of Representatives.",
-      "Mag co-authored An Association Guide to Shaping a State Government Relations Program for the American Society of Association Executives. She has been interviewed and quoted widely in leading print and media outlets, including The Wall Street Journal, The New York Times, and The Washington Post and has appeared on CNN. She received her BA in History from the University of Cincinnati and her J.D. from the Cleveland-Marshall College of Law, where she was an editor of the law review."
-    ]
+      'Margaret Gottlieb has over a decade of leadership experience in the retained executive search business. Prior to joining Reffett Associates, Ms. Gottlieb served as the Managing Director of Foster Partners, a KPMG-affiliate, retained executive search firm. At Foster Partners, Margaret handled business development and conducted executive searches for a wide array of prominent private and public sector clients. During her tenure at Foster Partners, Margaret was one of the first people in the country to be awarded retained searches for the Federal Government, including: the Internal Revenue Service, Office of Personnel Management, Government Accounting Office, US Department of Agriculture, Federal Aviation Administration, and the US Department of Energy.',
+      'Earlier in her career, Mag specialized in federal and state legislative affairs. She has held positions as Government Affairs Director for the Direct Marketing Association, President of the Washington Area State Relations Group, and Chair of the Congressional Relations Committee, Women in Government Relations. Additionally, Margaret worked on Capitol Hill and in the Ohio House of Representatives.',
+      'Mag co-authored An Association Guide to Shaping a State Government Relations Program for the American Society of Association Executives. She has been interviewed and quoted widely in leading print and media outlets, including The Wall Street Journal, The New York Times, and The Washington Post and has appeared on CNN. She received her BA in History from the University of Cincinnati and her J.D. from the Cleveland-Marshall College of Law, where she was an editor of the law review.',
+    ],
   },
   {
     name: 'Kern Gillette',
@@ -122,10 +122,10 @@ export const raTeam: RaTeamInfo[] = [
     location: 'Seattle, Washington',
     description: [
       "Mr. Gillette has broad and deep experience as an operating executive. Positions include President and CEO of Cinnabon, Molbak's and Graces Kitchen. He was CFO of Reese Brothers, Cinnabon, Grace's Kitchen, and Olympic Boat Centers.",
-      "His work as an executive and advisor has spanned a variety of industries, including food processing, multi-unit retail including restaurants, technology, manufacturing, franchise, retail and wholesale distribution, seafood catching and processing, lumber and specialty building products, financial and professional services, aerospace, real estate and construction, and alternative energy.",
-      "He has direct experience with a wide variety of capital structures including family owned, private equity, ESOP, public, and cooperative.",
-      "Mr. Gillette earned a bachelor's degree in accounting from the University of Washington and an MBA from Eastern Washington University. He is also a Certified Public Accountant."
-    ]
+      'His work as an executive and advisor has spanned a variety of industries, including food processing, multi-unit retail including restaurants, technology, manufacturing, franchise, retail and wholesale distribution, seafood catching and processing, lumber and specialty building products, financial and professional services, aerospace, real estate and construction, and alternative energy.',
+      'He has direct experience with a wide variety of capital structures including family owned, private equity, ESOP, public, and cooperative.',
+      "Mr. Gillette earned a bachelor's degree in accounting from the University of Washington and an MBA from Eastern Washington University. He is also a Certified Public Accountant (retired).",
+    ],
   },
   {
     name: 'Marshall Reffett',
@@ -135,9 +135,9 @@ export const raTeam: RaTeamInfo[] = [
     location: 'Seattle, Washington',
     description: [
       "Marshall Reffett is a ten-year veteran of the executive search industry. He directs the firm's federal government search practice through proposal writing and capture management. Marshall is also actively involved in the firm's other practice areas where he regularly conducts senior level assignments. Previous clients include organizations in the public sector, defense contractors, retail, manufacturing, Private Equity, and technology industries.",
-      "Marshall previously worked on Capitol Hill for a Member of the House Ways and Means Committee. In his time on the Hill he worked closely with senior government leaders to navigate the legislative, appropriation and authorization processes. This experience has given Marshall a greater understanding of and insight into the workings of the federal government and the surrounding industries.",
-      "Marshall received his Master of Arts from the US Naval War College in National Security and Strategic Studies with distinction, completing his Area of Study coursework at John Hopkins' School of Advanced International Studies. Marshall received his Bachelor of Arts from Wake Forest University. He is an MBA candidate at the University of Illinois at Urbana-Champaign in the Gies College of Business."
-    ]
+      'Marshall previously worked on Capitol Hill for a Member of the House Ways and Means Committee. In his time on the Hill he worked closely with senior government leaders to navigate the legislative, appropriation and authorization processes. This experience has given Marshall a greater understanding of and insight into the workings of the federal government and the surrounding industries.',
+      "Marshall received his Master of Arts from the US Naval War College in National Security and Strategic Studies with distinction, completing his Area of Study coursework at John Hopkins' School of Advanced International Studies. Marshall received his Bachelor of Arts from Wake Forest University. He is an MBA candidate at the University of Illinois at Urbana-Champaign in the Gies College of Business.",
+    ],
   },
   {
     name: 'Lizzy Shaw',
@@ -147,13 +147,13 @@ export const raTeam: RaTeamInfo[] = [
     location: 'Seattle, Washington',
     email: 'lizzy.shaw@reffettassociates.com',
     description: [
-      "Lizzy Shaw is an experienced executive with 18 years of leadership experience in non-profit, government, and the private sector.",
+      'Lizzy Shaw is an experienced executive with 18 years of leadership experience in non-profit, government, and the private sector.',
       "Most recently Lizzy worked on the Microsoft campus to facilitate, coordinate and execute more than 30,000 events and experiences on Microsoft's Redmond, Washington campus. This role included oversight of facility space and strike teams. Events included summits hosting international dignitaries as well as supporting 25 Microsoft business groups and community initiatives.",
-      "In 2021 Lizzy was a partner in the roll out of two COVID vaccination clinics placed onsite in conjunction with King County, in partnership with Starbucks.",
+      'In 2021 Lizzy was a partner in the roll out of two COVID vaccination clinics placed onsite in conjunction with King County, in partnership with Starbucks.',
       "Prior to this Lizzy worked for 3 municipalities promoting economic development and community events. From 2014 to 2016 Lizzy led the Snoqualmie Valley Chamber of Commerce acting as an advocate for the Chamber's individual members and the needs of the business community at the local, state and federal levels.",
-      "She remains deeply committed to helping build and support a healthy community for all. Lizzy has a successful track record in working collaboratively with a wide range of groups and stakeholders to help them develop and refine their strategic planning, executive communication and innovative solutions. Her focus on helping clients develop and retain high-performance teams and her passion for providing the highest quality customer service make her an exceptional partner for any executive recruitment client.",
-      "Her affiliations include: \n• East King County Legislative Coalition Member 2013-2016\n• Lodging Tax Advisory Fund Committee Member 2013-2015 Facilitator & Chair\n• Main Street Management Historic District Merchant Association Leader\n• Valley Young Professionals Foundation Chair\n• Rotary Board of Directors Liaison\n• Snoqualmie Economic Development Commission Liaison\n• Snoqualmie Arts Commission\n• Former March of Dimes Ambassador\n• Former member of National Organization for Women (NOW) Legal Ad hoc Committee\n• Third Level Crises and Michigan 211 Volunteer Project Manager 2005-2007",
-    ]
+      'She remains deeply committed to helping build and support a healthy community for all. Lizzy has a successful track record in working collaboratively with a wide range of groups and stakeholders to help them develop and refine their strategic planning, executive communication and innovative solutions. Her focus on helping clients develop and retain high-performance teams and her passion for providing the highest quality customer service make her an exceptional partner for any executive recruitment client.',
+      'Her affiliations include: \n• East King County Legislative Coalition Member 2013-2016\n• Lodging Tax Advisory Fund Committee Member 2013-2015 Facilitator & Chair\n• Main Street Management Historic District Merchant Association Leader\n• Valley Young Professionals Foundation Chair\n• Rotary Board of Directors Liaison\n• Snoqualmie Economic Development Commission Liaison\n• Snoqualmie Arts Commission\n• Former March of Dimes Ambassador\n• Former member of National Organization for Women (NOW) Legal Ad hoc Committee\n• Third Level Crises and Michigan 211 Volunteer Project Manager 2005-2007',
+    ],
   },
   {
     name: 'Gen. Glenn Lesniak (Ret.)',
@@ -165,11 +165,11 @@ export const raTeam: RaTeamInfo[] = [
     description: [
       "Gen. Glen Lesniak's (Ret.) executive search practice includes tech, cyber security, and private industry. He has a passion and focus for helping military personnel translate their service into meaningful careers in the private sector.",
       "Glenn is a professional business leader, mentor and education professional. He has worked as Chief Operating Officer for Saga Innovations and is an adjunct professor at St. Mary's University. He also maintains an executive mentoring practice through the Thayer Leadership Development Group.",
-      "Formerly, Glenn served as Deputy Chief Management Officer of the U.S. Army Reserve at the Pentagon, and Chief Operating Officer of the 210,000 employees of the U.S Army Reserve Command at Fort Bragg, NC. Leader in process/performance improvement, operations management, matrix support management, and customer service.",
+      'Formerly, Glenn served as Deputy Chief Management Officer of the U.S. Army Reserve at the Pentagon, and Chief Operating Officer of the 210,000 employees of the U.S Army Reserve Command at Fort Bragg, NC. Leader in process/performance improvement, operations management, matrix support management, and customer service.',
       "He has extensive corporate and military leadership experience and a strong focus on the customer. Glenn's background includes extensive experience in Engineering Construction, Project Management, Project Planning, Construction Management, and Contract Negotiation. He also has experience in the areas of Tele- and data- communications. His duties in the military also included formulation and managing of large operational and project budgets.",
-      "In addition, he is a Licensed Professional Engineer in Virginia and maintains a Top Secret Security Clearance.",
-      "Glenn is a graduate of West Point, the US Army War College and the University of Missouri-Rolla."
-    ]
+      'In addition, he is a Licensed Professional Engineer in Virginia and maintains a Top Secret Security Clearance.',
+      'Glenn is a graduate of West Point, the US Army War College and the University of Missouri-Rolla.',
+    ],
   },
   {
     name: 'Mindee Prichard',
@@ -178,12 +178,12 @@ export const raTeam: RaTeamInfo[] = [
     title: 'Office Manager',
     location: 'Seattle, Washington',
     description: [
-      "Mindee brings 15+ years of accounting experience to Reffett Associates. Prior to joining Reffett Associates as Office Manager, Mindee was a Tax Manager at Moss Adams for 11 years. She took time off from the workforce to start a family and re-entered the workforce part-time once her youngest was in preschool.",
-      "Mindee graduated from Western Washington University with a Bachelor of Arts in Business Administration with an emphasis in Accounting. Mindee, and her husband Matt, her 3 children and 2 boxers reside in Snoqualmie, WA."
-    ]
+      'Mindee brings 15+ years of accounting experience to Reffett Associates. Prior to joining Reffett Associates as Office Manager, Mindee was a Tax Manager at Moss Adams for 11 years. She took time off from the workforce to start a family and re-entered the workforce part-time once her youngest was in preschool.',
+      'Mindee graduated from Western Washington University with a Bachelor of Arts in Business Administration with an emphasis in Accounting. Mindee, and her husband Matt, her 3 children and 2 boxers reside in Snoqualmie, WA.',
+    ],
   },
-]
+];
 
 export const getTeamMember = (link?: string) => {
-  return raTeam.find((teamMember: RaTeamInfo) => teamMember.link === link)
-}
+  return raTeam.find((teamMember: RaTeamInfo) => teamMember.link === link);
+};

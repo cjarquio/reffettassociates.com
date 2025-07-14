@@ -14,7 +14,7 @@ export { default as MarshallReffett } from '../images/team/MarshallReffett.jpg';
 export { default as MindeePrichard } from '../images/team/MindeePrichard.png';
 export { default as NancyHoffman } from '../images/team/NancyHoffman.jpg';
 export { default as SamMayberry } from '../images/team/SamMayberry.jpg';
-export { default as TimGeriak } from '../images/team/TimGeriak.jpg';
+export { default as TomDanowski } from '../images/team/TomDanowski.jpg';
 export { default as TomYoung } from '../images/team/TomYoung.png';
 
 // RECRUITMENTS
