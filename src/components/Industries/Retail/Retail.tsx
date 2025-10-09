@@ -30,6 +30,7 @@ import {
   Xochitl,
 } from '../../../assets/images/companies/Retail';
 import { Banner } from '../../Banner';
+import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const Retail: React.FC = () => {
   const retailCompanies = [
@@ -147,61 +148,34 @@ export const Retail: React.FC = () => {
     },
   ];
   return (
-    <>
-      <Banner bannerImagePath={RetailBanner} page="Retail" />
-      <Container fluid w="65%" display={'flex'}>
-        <Container w={'100%'}>
-          <Box id="retailDescription">
-            <Title order={3}>Retail</Title>
-            <Text>
-              We understand the challenges that you face, and what is needed to
-              drive success. In today's omni-channel retail world, leaders must
-              be knowledgeable and versatile. This is not an environment for the
-              timid.
-            </Text>
-            <Text>
-              Our Managing Directors were selected based on their expertise in
-              key leadership roles in the industries they serve. Our Retail /
-              Consumer team is composed of senior executives who have been on
-              “your side” of the desk. They understand the importance of
-              identifying superior leaders and recruiting them to the
-              organization. The search firm you select must have the same sense
-              of urgency displayed by your organization - timeliness is
-              essential to effective candidate placement.
-            </Text>
-            <Text>
-              We have assisted companies in all areas of the Retail / Consumer
-              world, such as traditional department stores, specialty retail
-              companies, business to consumer, and on-line retailing. Each
-              search engagement is specifically tailored to the needs of the
-              client and is personally conducted by a Managing Director - from
-              the beginning to its successful conclusion.
-            </Text>
-          </Box>
-        </Container>
-        <Container fluid w={'100%'}>
-          <Title order={3}>Companies Served</Title>
-          <Grid>
-            {retailCompanies.map((company) => (
-              <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: 'center' }}>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
-                  </Card.Section>
-                  <Card.Section>
-                    <Image
-                      src={company.image}
-                      fit="contain"
-                      alt={company.companyName}
-                    />
-                  </Card.Section>
-                </Card>
-              </Grid.Col>
-            ))}
-          </Grid>
-        </Container>
-      </Container>
-    </>
+    <IndustryTemplate
+      bannerPath={RetailBanner}
+      pageTitle="Retail"
+      industryCompanies={retailCompanies}
+    >
+      <Text>
+        We understand the challenges that you face, and what is needed to drive
+        success. In today's omni-channel retail world, leaders must be
+        knowledgeable and versatile. This is not an environment for the timid.
+      </Text>
+      <Text>
+        Our Managing Directors were selected based on their expertise in key
+        leadership roles in the industries they serve. Our Retail / Consumer
+        team is composed of senior executives who have been on “your side” of
+        the desk. They understand the importance of identifying superior leaders
+        and recruiting them to the organization. The search firm you select must
+        have the same sense of urgency displayed by your organization -
+        timeliness is essential to effective candidate placement.
+      </Text>
+      <Text>
+        We have assisted companies in all areas of the Retail / Consumer world,
+        such as traditional department stores, specialty retail companies,
+        business to consumer, and on-line retailing. Each search engagement is
+        specifically tailored to the needs of the client and is personally
+        conducted by a Managing Director - from the beginning to its successful
+        conclusion.
+      </Text>
+    </IndustryTemplate>
   );
 };
 
