@@ -1,4 +1,4 @@
-import { Container, Title, Image, Box, Text, Card, Grid } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { RetailBanner } from '../../../assets/images';
 import {
   BassProShops,
@@ -29,7 +29,6 @@ import {
   VF,
   Xochitl,
 } from '../../../assets/images/companies/Retail';
-import { Banner } from '../../Banner';
 import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const Retail: React.FC = () => {
