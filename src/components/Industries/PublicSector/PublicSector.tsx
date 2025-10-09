@@ -1,4 +1,4 @@
-import { Container, Title, Image, Box, Card, Grid, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { PublicSectorBanner } from '../../../assets/images';
 import {
   AAFEX,
@@ -18,10 +18,10 @@ import {
   UsMerchantMarine,
   VA,
 } from '../../../assets/images/companies/PublicSector';
-import { Banner } from '../../Banner';
+import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const PublicSector: React.FC = () => {
-  const retailCompanies = [
+  const publicSectorCompanies = [
     {
       companyName: 'AFRL',
       image: AFRL,
@@ -88,55 +88,29 @@ export const PublicSector: React.FC = () => {
     },
   ];
   return (
-    <>
-      <Banner bannerImagePath={PublicSectorBanner} page="Public Sector" />
-      <Container fluid w="65%" display={'flex'}>
-        <Container w={'100%'}>
-          <Box id="retailDescription">
-            <Title order={3}>Public Sector</Title>
-            <Text>
-              As a leading provider of retained executive search services across
-              all levels of government, including federal, state and local
-              governments and agencies, we possess a unique understanding of
-              your needs. Our group of Managing Directors bring with them
-              unparalleled experience in the public sector. With experience
-              ranging from holding senior level positions in the Department of
-              Defense, on Capitol Hill, and working with State and Local
-              officials our team is experienced in the government hiring process
-              and the issues that you confront finding a diverse and qualified
-              talent pool.
-            </Text>
-            <Text>
-              Reffett Associates is a veteran-owned business and maintains a GSA
-              contract (GS-02F-0194W). We are one of the few executive search
-              firms to be awarded this prestigious qualification after
-              completing their extensive qualification process.
-            </Text>
-          </Box>
-        </Container>
-        <Container fluid w={'100%'}>
-          <Title order={3}>Companies Served</Title>
-          <Grid>
-            {retailCompanies.map((company) => (
-              <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: 'center' }}>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
-                  </Card.Section>
-                  <Card.Section>
-                    <Image
-                      src={company.image}
-                      fit="contain"
-                      alt={company.companyName}
-                    />
-                  </Card.Section>
-                </Card>
-              </Grid.Col>
-            ))}
-          </Grid>
-        </Container>
-      </Container>
-    </>
+    <IndustryTemplate
+      bannerPath={PublicSectorBanner}
+      pageTitle="Public Sector"
+      industryCompanies={publicSectorCompanies}
+    >
+      <Text>
+        As a leading provider of retained executive search services across all
+        levels of government, including federal, state and local governments and
+        agencies, we possess a unique understanding of your needs. Our group of
+        Managing Directors bring with them unparalleled experience in the public
+        sector. With experience ranging from holding senior level positions in
+        the Department of Defense, on Capitol Hill, and working with State and
+        Local officials our team is experienced in the government hiring process
+        and the issues that you confront finding a diverse and qualified talent
+        pool.
+      </Text>
+      <Text>
+        Reffett Associates is a veteran-owned business and maintains a GSA
+        contract (GS-02F-0194W). We are one of the few executive search firms to
+        be awarded this prestigious qualification after completing their
+        extensive qualification process.
+      </Text>
+    </IndustryTemplate>
   );
 };
 
