@@ -1,13 +1,4 @@
-import {
-  Container,
-  Title,
-  Image,
-  Box,
-  Card,
-  Grid,
-  Text,
-  List,
-} from '@mantine/core';
+import { Text, List } from '@mantine/core';
 import {
   AconInvestments,
   AlvarezAndMarsal,
@@ -24,10 +15,10 @@ import {
   TravelersInsurance,
 } from '../../../assets/images/companies/PrivateSector';
 import { PrivateSectorBanner } from '../../../assets/images';
-import { Banner } from '../../Banner';
+import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const PrivateSector: React.FC = () => {
-  const retailCompanies = [
+  const privateSectorCompanies = [
     {
       companyName: 'ACON',
       image: AconInvestments,
@@ -82,68 +73,43 @@ export const PrivateSector: React.FC = () => {
     },
   ];
   return (
-    <>
-      <Banner bannerImagePath={PrivateSectorBanner} page="Private Sector" />
-      <Container fluid w="65%" display={'flex'}>
-        <Container w={'100%'}>
-          <Box id="retailDescription">
-            <Title order={3}>Private Sector</Title>
-            <Text>
-              As market conditions have changed, Private Equity has become a
-              greater part of our firm{"'"}s practice. We understand the talents
-              and skills required to lead companies through all the stages of
-              the life cycle, from the earliest stage start-up, to upgrading the
-              management team of a portfolio company.
-            </Text>
-            <Text>
-              Our firm has assisted major Private Equity firms in all stages of
-              their evaluation process:
-              <List size="sm" withPadding>
-                <List.Item>
-                  On a consulting basis, using our extensive network to help
-                  provide overall market intelligence, current talent
-                  evaluation, and company position.
-                </List.Item>
-                <List.Item>
-                  Performing pre-investment evaluation on a company's existing
-                  human capital, their leadership, and overall culture.
-                </List.Item>
-                <List.Item>
-                  Identifying and recruiting executives at all company levels,
-                  who can quickly provide the value added to transform the
-                  portfolio company performance.
-                </List.Item>
-                <List.Item>
-                  Determining long range talent resources, both internal and
-                  external to the company.
-                </List.Item>
-              </List>
-            </Text>
-          </Box>
-        </Container>
-        <Container fluid w="100%">
-          <Title order={3}>Companies Served</Title>
-          <Grid>
-            {retailCompanies.map((company) => (
-              <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: 'center' }}>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
-                  </Card.Section>
-                  <Card.Section>
-                    <Image
-                      src={company.image}
-                      fit="contain"
-                      alt={company.companyName}
-                    />
-                  </Card.Section>
-                </Card>
-              </Grid.Col>
-            ))}
-          </Grid>
-        </Container>
-      </Container>
-    </>
+    <IndustryTemplate
+      pageTitle="Private Sector"
+      bannerPath={PrivateSectorBanner}
+      industryCompanies={privateSectorCompanies}
+    >
+      <Text>
+        As market conditions have changed, Private Equity has become a greater
+        part of our firm{"'"}s practice. We understand the talents and skills
+        required to lead companies through all the stages of the life cycle,
+        from the earliest stage start-up, to upgrading the management team of a
+        portfolio company.
+      </Text>
+      <Text>
+        Our firm has assisted major Private Equity firms in all stages of their
+        evaluation process:
+        <List size="sm" withPadding>
+          <List.Item>
+            On a consulting basis, using our extensive network to help provide
+            overall market intelligence, current talent evaluation, and company
+            position.
+          </List.Item>
+          <List.Item>
+            Performing pre-investment evaluation on a company's existing human
+            capital, their leadership, and overall culture.
+          </List.Item>
+          <List.Item>
+            Identifying and recruiting executives at all company levels, who can
+            quickly provide the value added to transform the portfolio company
+            performance.
+          </List.Item>
+          <List.Item>
+            Determining long range talent resources, both internal and external
+            to the company.
+          </List.Item>
+        </List>
+      </Text>
+    </IndustryTemplate>
   );
 };
 
