@@ -1,4 +1,4 @@
-import { Container, Title, Image, Box, Card, Grid, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { NonProfitBanner } from '../../../assets/images';
 import {
   DiversityInc,
@@ -14,7 +14,7 @@ import {
   CliffordBeers,
   ICSC,
 } from '../../../assets/images/companies/NonProfits';
-import { Banner } from '../../Banner';
+import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const NonProfits: React.FC = () => {
   const retailCompanies = [
@@ -68,55 +68,27 @@ export const NonProfits: React.FC = () => {
     },
   ];
   return (
-    <>
-      <Banner
-        bannerImagePath={NonProfitBanner}
-        page="Associations and Nonprofits"
-      />
-      <Container fluid w="65%" display={'flex'}>
-        <Container w={'100%'}>
-          <Box id="retailDescription">
-            <Title order={3}>Nonprofit</Title>
-            <Text>
-              Outstanding leadership skills are developed over a lifetime of
-              great opportunities and experiences. We are intimately familiar
-              with association and not-for-profit organizations and the
-              challenges they face every day.
-            </Text>
-            <Text>
-              We are especially well qualified to identify that unique person to
-              fit your organization's needs. As not-for-profit organizations
-              begin operating more like businesses and implementing best
-              practices and governance structures, effective leadership at the
-              top is imperative. Reffett Associates will find the individuals
-              who best fit your organization and will work towards the
-              achievement of your organization's mission.
-            </Text>
-          </Box>
-        </Container>
-        <Container fluid w="100%">
-          <Title order={3}>Companies Served</Title>
-          <Grid>
-            {retailCompanies.map((company) => (
-              <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: 'center' }}>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
-                  </Card.Section>
-                  <Card.Section>
-                    <Image
-                      src={company.image}
-                      fit="contain"
-                      alt={company.companyName}
-                    />
-                  </Card.Section>
-                </Card>
-              </Grid.Col>
-            ))}
-          </Grid>
-        </Container>
-      </Container>
-    </>
+    <IndustryTemplate
+      pageTitle="Associations and Nonprofits"
+      bannerPath={NonProfitBanner}
+      industryCompanies={retailCompanies}
+    >
+      <Text>
+        Outstanding leadership skills are developed over a lifetime of great
+        opportunities and experiences. We are intimately familiar with
+        association and not-for-profit organizations and the challenges they
+        face every day.
+      </Text>
+      <Text>
+        We are especially well qualified to identify that unique person to fit
+        your organization's needs. As not-for-profit organizations begin
+        operating more like businesses and implementing best practices and
+        governance structures, effective leadership at the top is imperative.
+        Reffett Associates will find the individuals who best fit your
+        organization and will work towards the achievement of your
+        organization's mission.
+      </Text>
+    </IndustryTemplate>
   );
 };
 
