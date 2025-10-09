@@ -40,6 +40,10 @@ const footerLinks = [
         label: 'Manufacturing and Industrials',
         link: '/manufacturing-and-industrials',
       },
+      {
+        label: 'Higher Education and Related',
+        link: '/higher-education',
+      },
     ],
   },
   {

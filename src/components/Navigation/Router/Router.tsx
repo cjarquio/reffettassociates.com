@@ -7,6 +7,7 @@ import { Contact } from '../../Contact';
 import { Values, Process, Veterans } from '../../Expertise';
 import {
   GovernmentContracting,
+  HigherEducation,
   Manufacturing,
   NonProfits,
   PrivateSector,
@@ -80,6 +81,10 @@ export const router = createBrowserRouter([
       {
         path: '/government-contracting',
         element: <GovernmentContracting />,
+      },
+      {
+        path: 'higher-education',
+        element: <HigherEducation />,
       },
       {
         path: '/news/:topicId',
