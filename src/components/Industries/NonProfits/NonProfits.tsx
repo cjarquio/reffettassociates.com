@@ -17,7 +17,7 @@ import {
 import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const NonProfits: React.FC = () => {
-  const retailCompanies = [
+  const nonprofitCompanies = [
     {
       companyName: 'Touchstone Energy',
       image: TouchstoneEnergy,
@@ -71,7 +71,7 @@ export const NonProfits: React.FC = () => {
     <IndustryTemplate
       pageTitle="Associations and Nonprofits"
       bannerPath={NonProfitBanner}
-      industryCompanies={retailCompanies}
+      industryCompanies={nonprofitCompanies}
     >
       <Text>
         Outstanding leadership skills are developed over a lifetime of great
