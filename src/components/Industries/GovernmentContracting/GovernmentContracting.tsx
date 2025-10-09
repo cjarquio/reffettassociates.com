@@ -1,4 +1,4 @@
-import { Container, Title, Image, Text, Box, Card, Grid } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { GovernmentContractingBanner } from '../../../assets/images';
 import {
   Battelle,
@@ -10,10 +10,10 @@ import {
   NRECA,
   SOC,
 } from '../../../assets/images/companies/Government';
-import { Banner } from '../../Banner';
+import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const GovernmentContracting: React.FC = () => {
-  const retailCompanies = [
+  const governmentContractingCompanies = [
     {
       companyName: 'Battelle',
       image: Battelle,
@@ -48,60 +48,31 @@ export const GovernmentContracting: React.FC = () => {
     },
   ];
   return (
-    <>
-      <Banner
-        bannerImagePath={GovernmentContractingBanner}
-        page="Government Contracting"
-      />
-      <Container fluid w="65%" display={'flex'}>
-        <Container w={'100%'}>
-          <Box id="retailDescription">
-            <Title order={3}>Government Contracting</Title>
-            <Text>
-              Success in today's Federal, State and Local Government markets
-              requires leaders and executives who understand this rapidly
-              changing marketplace. Our group of Managing Directors has a deep
-              understanding of your needs, and how to navigate the intricacies
-              of doing business with the government.
-            </Text>
-            <Text>
-              With experience at all levels of Federal Government contracting
-              and broad experience in working with the top Federal, State and
-              Local Government service providers, we understand the unique
-              requirements for senior leaders and executives with experience in
-              government contracting and program management. This includes
-              contractors performing work overseas and in combat zones in
-              support of US Forces.
-            </Text>
-            <Text>
-              Our experience encompasses the entire Federal Government, and a
-              majority of the top 100 Federal contractors.
-            </Text>
-          </Box>
-        </Container>
-        <Container fluid w={'100%'}>
-          <Title order={3}>Companies Served</Title>
-          <Grid>
-            {retailCompanies.map((company) => (
-              <Grid.Col span={4} key={company.companyName}>
-                <Card padding="lg" style={{ alignItems: 'center' }}>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
-                  </Card.Section>
-                  <Card.Section>
-                    <Image
-                      src={company.image}
-                      fit="contain"
-                      alt={company.companyName}
-                    />
-                  </Card.Section>
-                </Card>
-              </Grid.Col>
-            ))}
-          </Grid>
-        </Container>
-      </Container>
-    </>
+    <IndustryTemplate
+      pageTitle="Government Contracting"
+      bannerPath={GovernmentContractingBanner}
+      industryCompanies={governmentContractingCompanies}
+    >
+      <Text>
+        Success in today's Federal, State and Local Government markets requires
+        leaders and executives who understand this rapidly changing marketplace.
+        Our group of Managing Directors has a deep understanding of your needs,
+        and how to navigate the intricacies of doing business with the
+        government.
+      </Text>
+      <Text>
+        With experience at all levels of Federal Government contracting and
+        broad experience in working with the top Federal, State and Local
+        Government service providers, we understand the unique requirements for
+        senior leaders and executives with experience in government contracting
+        and program management. This includes contractors performing work
+        overseas and in combat zones in support of US Forces.
+      </Text>
+      <Text>
+        Our experience encompasses the entire Federal Government, and a majority
+        of the top 100 Federal contractors.
+      </Text>
+    </IndustryTemplate>
   );
 };
 
