@@ -1,51 +1,55 @@
 import { Text } from '@mantine/core';
 import { HigherEducationBanner } from '../../../assets/images';
 import {
-  Battelle,
-  DynCorp,
-  Fluor,
-  Hitachi,
-  PointBlank,
-  TASC,
-  NRECA,
-  SOC,
-} from '../../../assets/images/companies/Government';
+  AFRL,
+  LibraryOfCongress,
+  NationalBureauOfAsianResearch,
+  NavalPostGraduateSchool,
+  NavalWarCollege,
+  PNNL,
+  SnoIsleLibraryFoundation,
+  UnitedStatesMerchantMarineAcademy,
+  USAirForceSchoolOfAerospaceMedicine,
+} from '../../../assets/images/companies/HigherEducation';
 import IndustryTemplate from '../IndustryTemplate/IndustryTemplate';
 
 export const HigherEducation: React.FC = () => {
-  // TODO: Add higher education companies
   const higherEducationCompanies = [
     {
-      companyName: 'Battelle',
-      image: Battelle,
+      companyName: 'The Air Force Research Laboratories',
+      image: AFRL,
     },
     {
-      companyName: 'Fluor',
-      image: Fluor,
+      companyName: 'The Library of Congress',
+      image: LibraryOfCongress,
     },
     {
-      companyName: 'Hitachi Consulting',
-      image: Hitachi,
+      companyName: 'National Bureau of Asian Research',
+      image: NationalBureauOfAsianResearch,
     },
     {
-      companyName: 'Point Blank Enterprises',
-      image: PointBlank,
+      companyName: 'The Naval Post Graduate School',
+      image: NavalPostGraduateSchool,
     },
     {
-      companyName: 'TASC',
-      image: TASC,
+      companyName: 'The Naval War College',
+      image: NavalWarCollege,
     },
     {
-      companyName: 'DynCorp International',
-      image: DynCorp,
+      companyName: 'Pacific Northwest National Laboratory ',
+      image: PNNL,
     },
     {
-      companyName: 'NRECA',
-      image: NRECA,
+      companyName: 'Sno-isle Library Foundation',
+      image: SnoIsleLibraryFoundation,
     },
     {
-      companyName: 'SOC',
-      image: SOC,
+      companyName: 'The United States Merchant Marine Academy ',
+      image: UnitedStatesMerchantMarineAcademy,
+    },
+    {
+      companyName: 'The United States Airforce School of Aerospace Medicine',
+      image: USAirForceSchoolOfAerospaceMedicine,
     },
   ];
   return (
