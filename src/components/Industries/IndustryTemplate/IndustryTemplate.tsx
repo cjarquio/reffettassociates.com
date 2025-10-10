@@ -20,33 +20,36 @@ export const IndustryTemplate: React.FC<IndustryTemplateProps> = (
   return (
     <>
       <Banner bannerImagePath={bannerPath} page={pageTitle} />
-      <Container fluid w="65%" display={'flex'}>
-        <Container w={'100%'}>
+      <Container fluid w="65%">
+        <Container fluid w={'80%'}>
           <Box id={`${pageTitle} Description`}>
             <Title order={3}>{pageTitle}</Title>
             {children}
           </Box>
-        </Container>
-        <Container fluid w={'100%'}>
-          <Title order={3}>Companies Served</Title>
-          <Grid>
-            {industryCompanies.map((company) => (
-              <Grid.Col span={3} key={company.companyName}>
-                <Card padding="sm" style={{ alignItems: 'center' }}>
-                  <Card.Section>
-                    <Text fw={700}>{company.companyName}</Text>
-                  </Card.Section>
-                  <Card.Section>
-                    <Image
-                      src={company.image}
-                      fit="contain"
-                      alt={company.companyName}
-                    />
-                  </Card.Section>
-                </Card>
-              </Grid.Col>
-            ))}
-          </Grid>
+          <Box py={'2rem'}>
+            <Title order={3}>Companies Served</Title>
+            <Grid>
+              {industryCompanies.map((company) => (
+                <Grid.Col span={2.2} key={company.companyName}>
+                  <Card
+                    padding="sm"
+                    style={{ alignItems: 'center', textAlign: 'center' }}
+                  >
+                    <Card.Section>
+                      <Text fw={700}>{company.companyName}</Text>
+                    </Card.Section>
+                    <Card.Section>
+                      <Image
+                        src={company.image}
+                        fit="contain"
+                        alt={company.companyName}
+                      />
+                    </Card.Section>
+                  </Card>
+                </Grid.Col>
+              ))}
+            </Grid>
+          </Box>
         </Container>
       </Container>
     </>
