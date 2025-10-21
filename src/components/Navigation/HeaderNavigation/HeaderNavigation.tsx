@@ -50,6 +50,10 @@ const links = [
         label: 'Manufacturing and Industrials',
       },
       { link: '/government-contracting', label: 'Government Contracting' },
+      {
+        label: 'Higher Education and Related',
+        link: '/higher-education',
+      },
     ],
   },
   {

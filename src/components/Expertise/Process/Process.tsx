@@ -77,12 +77,12 @@ export const Process: React.FC = () => {
               is successfully filled.
             </Text>
             <Text pt={'1rem'} size="lg">
-              Our goal as a small firm is to be able to provide a high level of
-              personal attention and unparalleled service to both our clients
-              and our candidates. For the Reffett Associates team, executive
-              recruiting is all about relationships. Building and maintaining
-              long-term, productive relationships with everyone with whom we
-              work is our first priority.
+              Our goal as firm is to be able to provide a high level of personal
+              attention and unparalleled service to both our clients and our
+              candidates. For the Reffett Associates team, executive recruiting
+              is all about relationships. Building and maintaining long-term,
+              productive relationships with everyone with whom we work is our
+              first priority.
             </Text>
             <Text pt={'1rem'} size="lg">
               Through our time tested process we will work with you to define
@@ -98,50 +98,52 @@ export const Process: React.FC = () => {
             src={ExecutiveSearchStock}
           />
         </Flex>
-        <Title order={2} style={{ textAlign: 'center' }}>
-          The Seven Steps to Finding Your Successful Candidate
-        </Title>
-        <Box display={'flex'}>
-          <Grid
-            display={'flex'}
-            columns={1}
-            align="center"
-            justify="center"
-            style={{ textAlign: 'center' }}
-          >
-            {successfulCandidateSteps.map((step, index) => {
-              return (
-                <>
-                  <Grid.Col
-                    span={1}
-                    key={step.title}
-                    style={{ display: 'flex', justifyContent: 'center' }}
-                  >
-                    <Card
-                      shadow="sm"
-                      padding="md"
-                      w={'60%'}
-                      style={{ border: '1px solid black' }}
+        <Container pt={'5rem'}>
+          <Title order={2} style={{ textAlign: 'center' }}>
+            The Seven Steps to Finding Your Successful Candidate
+          </Title>
+          <Box display={'flex'}>
+            <Grid
+              display={'flex'}
+              columns={1}
+              align="center"
+              justify="center"
+              style={{ textAlign: 'center' }}
+            >
+              {successfulCandidateSteps.map((step, index) => {
+                return (
+                  <>
+                    <Grid.Col
+                      span={1}
+                      key={step.title}
+                      style={{ display: 'flex', justifyContent: 'center' }}
                     >
-                      <Card.Section>{step.icon}</Card.Section>
+                      <Card
+                        shadow="sm"
+                        padding="md"
+                        w={'60%'}
+                        style={{ border: '1px solid black' }}
+                      >
+                        <Card.Section>{step.icon}</Card.Section>
 
-                      <Text fw={500} size="lg" mt="lg">
-                        {step.title}
-                      </Text>
+                        <Text fw={500} size="lg" mt="lg">
+                          {step.title}
+                        </Text>
 
-                      <Text mt="xs" c="dimmed" size="md">
-                        {step.description}
-                      </Text>
-                    </Card>
-                  </Grid.Col>
-                  {index !== successfulCandidateSteps.length - 1 && (
-                    <IconArrowBigDownFilled />
-                  )}
-                </>
-              );
-            })}
-          </Grid>
-        </Box>
+                        <Text mt="xs" c="dimmed" size="md">
+                          {step.description}
+                        </Text>
+                      </Card>
+                    </Grid.Col>
+                    {index !== successfulCandidateSteps.length - 1 && (
+                      <IconArrowBigDownFilled />
+                    )}
+                  </>
+                );
+              })}
+            </Grid>
+          </Box>
+        </Container>
       </Container>
     </>
   );

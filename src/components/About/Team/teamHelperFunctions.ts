@@ -100,10 +100,10 @@ export const raTeam: RaTeamInfo[] = [
     ],
   },
   {
-    name: 'Kern Gillette, CPA (Retired)',
+    name: 'Kern Gillette',
     link: 'kern-gillette',
     image: KernGilette,
-    title: 'Managing Director',
+    title: 'Managing Director - CPA (Retired)',
     location: 'Seattle, Washington',
     description: [
       "Mr. Gillette has broad and deep experience as an operating executive. Positions include President and CEO of Cinnabon, Molbak's and Graces Kitchen. He was CFO of Reese Brothers, Cinnabon, Grace's Kitchen, and Olympic Boat Centers.",

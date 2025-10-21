@@ -29,7 +29,7 @@ export const Team: React.FC = () => {
   return (
     <>
       <Banner bannerImagePath={AboutBanner} page={'Our Team'} />
-      <Container size={'45%'}>
+      <Container size={'50%'}>
         <Title order={2} style={{ textAlign: 'center' }}>
           Experienced, Professional, & Invested In Your Goals
         </Title>

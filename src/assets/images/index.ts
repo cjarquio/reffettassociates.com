@@ -35,6 +35,7 @@ export { default as AboutBanner } from '../images/banners/AboutBanner.jpg';
 export { default as ContactBanner } from '../images/banners/ContactBanner.jpg';
 export { default as ExpertiseBanner } from '../images/banners/ExpertiseBanner.jpg';
 export { default as NewsBanner } from '../images/banners/NewsBanner.jpg';
+export { default as HigherEducationBanner } from '../images/companies/HigherEducation/highereducation.jpg';
 
 // INSIGHTS
 export { default as ExternalNewsImage } from '../images/insights/externalNews.jpg';
