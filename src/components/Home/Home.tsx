@@ -1,11 +1,12 @@
 import '@mantine/core/styles.css';
 import { Box, Container, Group, rem, Title, Image } from '@mantine/core';
 import StockVideo from '../../../src/assets/videos/executiveStockVideo.mp4';
-import classes from './Home.module.css';
+import classes from './Home.module.css'
 import { IconSearch } from '@tabler/icons-react';
 import { ContactButtonSection } from '../Contact';
 import FeaturedClientsCarousel from './FeaturedClientsCarousel';
 import { VosbBlue } from '../../assets/images';
+import {FeaturedJobs} from './FeaturedJobs'
 
 export const Home: React.FC = () => {
   return (
@@ -65,6 +66,12 @@ export const Home: React.FC = () => {
         </Group>
       </Container>
       <FeaturedClientsCarousel />
+      <Container>
+        <Title order={2}>Featured Recruitments</Title>
+        <Box>
+          <FeaturedJobs />
+        </Box>
+      </Container>
       <ContactButtonSection />
     </Box>
   );

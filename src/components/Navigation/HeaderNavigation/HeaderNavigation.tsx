@@ -1,5 +1,6 @@
 import {
   Box,
+  Burger,
   Center,
   Container,
   Group,
@@ -10,6 +11,7 @@ import { IconPlus } from '@tabler/icons-react';
 import classes from './HeaderNavigation.module.css';
 import { Logo } from '../../Logo/ReffettAssociatesLogo';
 import { Link, useNavigate } from 'react-router-dom';
+import { useDisclosure } from '@mantine/hooks';
 
 const links = [
   {
@@ -67,6 +69,7 @@ const links = [
 ];
 
 export const HeaderNavigation: React.FC = () => {
+  const [opened, { toggle }] = useDisclosure(false);
   const navigate = useNavigate();
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
@@ -113,7 +116,7 @@ export const HeaderNavigation: React.FC = () => {
 
   return (
     <Container size={'lg'}>
-      <Box className={classes.inner}>
+      <Box className={classes.inner} visibleFrom="sm">
         <UnstyledButton onClick={() => navigate('/')}>
           <Logo style={{ height: '3.5rem' }} />
         </UnstyledButton>
@@ -121,6 +124,12 @@ export const HeaderNavigation: React.FC = () => {
           {items}
         </Group>
       </Box>
+      <Burger
+          opened={opened}
+          onClick={toggle}
+          size="sm"
+          hiddenFrom="sm"
+        />
     </Container>
   );
 };
